@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f4f7fb">
+<title>何處是底：整理與評估｜2026/11/01</title>
+<style>
+:root{--ink:#10233f;--muted:#5b6b80;--line:#dfe7f1;--paper:#fff;--bg:#f4f7fb;--navy:#0d315e;--blue:#1f5d9c;--up:#c62828;--down:#087f5b;--amber:#b86100;--shadow:0 12px 36px rgba(16,35,63,.07)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.72;overflow-x:hidden}
+.page{width:min(1100px,100%);margin:auto;padding:24px 18px 56px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;box-shadow:0 7px 26px rgba(16,35,63,.045)}
+.up{color:var(--up)}.down{color:var(--down)}
+/* hero */
+.hero{padding:30px;background:linear-gradient(135deg,#fff 0%,#f5f8fc 65%,#e8f1fa 100%);position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.hero:after{content:"";position:absolute;width:350px;height:350px;border-radius:50%;right:-160px;top:-210px;background:radial-gradient(circle,rgba(198,40,40,.11),transparent 68%);pointer-events:none}
+.eyebrow{font-size:13px;color:var(--blue);font-weight:900;letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.14;letter-spacing:-.03em;margin:10px 0 6px}
+.date{color:var(--muted);font-size:15px;font-weight:750}.subtitle{margin:6px 0 0;font-size:16px;color:#33475f;font-weight:700}
+.thesis{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:19px;font-weight:850;line-height:1.6}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pill{display:inline-block;border-radius:999px;padding:6px 13px;font-weight:900;font-size:14px;border:1px solid var(--line);background:#fff;line-height:1.45}
+.pill.kgi{background:#eaf2fb;color:var(--blue);border-color:#cfe0f2}.pill.judge{background:#fff4e2;color:#8b4d06;border-color:#f0d8b6}
+/* nav */
+.nav{position:sticky;top:0;z-index:5;background:rgba(244,247,251,.94);backdrop-filter:blur(8px);margin:14px -18px 0;padding:10px 18px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line)}
+.nav::-webkit-scrollbar{display:none}.nav a{flex:none;font-size:14px;font-weight:800;color:var(--navy);text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+/* sections */
+.section{margin-top:30px;scroll-margin-top:64px}
+.head{display:flex;align-items:end;justify-content:space-between;gap:10px;margin:0 2px 12px}
+.head h2{margin:0;font-size:23px;line-height:1.3}.head span{font-size:14px;color:var(--muted);font-weight:700}
+.tag{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:2px 10px;margin-bottom:8px}
+.tag.fact{background:#eaf2fb;color:var(--blue)}.tag.judge{background:#fff1d9;color:#8b4d06}
+/* stat tiles */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.metric{padding:15px 14px;min-width:0}.metric small{display:block;font-size:14px;color:var(--muted);font-weight:850}
+.metric b{display:block;font-size:23px;line-height:1.25;margin-top:4px;font-variant-numeric:tabular-nums}
+.metric p{margin:5px 0 0;font-size:14px;color:#5b6b80;line-height:1.5}.metric p.up,.metric p.down{font-weight:800}
+/* list rows (MA / sectors) */
+.panel{padding:20px}.panel h3{margin:0 0 12px;font-size:19px}
+.rows{display:grid;gap:8px}.row{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;padding:11px 13px;border-radius:12px;background:#f8fafc;border:1px solid #edf1f6;font-size:16px}
+.row span:nth-child(2){font-variant-numeric:tabular-nums;font-weight:750}.row span:last-child{color:var(--muted);font-size:14px}
+.srow{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:17px}.srow:first-of-type{border-top:0}.srow b{font-variant-numeric:tabular-nums}
+/* boxes */
+.level,.caution{background:#fff8ed;border:1px solid #f0d8b6;border-radius:16px;padding:16px 18px;color:#664a2e;font-size:16px}
+.level{margin-top:12px}.caution h2{margin:0 0 8px;color:#8b4d06;font-size:21px}
+.caution ul,.plain ul{margin:0;padding-left:20px}.caution li,.plain li{margin:6px 0}
+.plain{padding:18px 18px}.plain p{margin:0}
+.theme{padding:18px}.theme h3{margin:0 0 6px;font-size:18px;color:var(--navy)}.theme p{margin:0;color:#33475f;font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.chip{border:1px solid var(--line);background:#f8fafc;border-radius:999px;padding:5px 11px;font-size:14px;font-weight:800;color:var(--blue)}
+.scenario{padding:20px}.scenario b{display:block;font-size:21px;margin-bottom:6px}.scenario p{font-size:16px;color:#33475f;margin:0}
+.scenario.s-down{border-top:5px solid var(--down)}.scenario.s-amber{border-top:5px solid var(--amber)}
+.event{padding:16px 18px}.event small{color:var(--muted);font-weight:850;font-size:14px}.event p{font-size:16px;color:#33475f;margin:4px 0 0}
+/* analyst judgment */
+.decision{padding:24px;background:linear-gradient(135deg,#0b2d56,#164c83);color:#fff;border:none}
+.decision h2{margin:0 0 4px;font-size:23px}.decision .badge{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:3px 11px;background:#ffd98a;color:#4a3000;margin-bottom:10px}
+.decision p{color:#e3edf8;font-size:16px;margin:0}.decision-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:15px}
+.decision-item{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);border-radius:14px;padding:15px}
+.decision-item small{display:block;color:#acd0f0;font-weight:900;font-size:14px;margin-bottom:3px}
+details.orig{margin-top:10px;font-size:15px;color:#33475f}details.orig summary{cursor:pointer;font-weight:800;color:var(--blue);font-size:14px}details.orig ul{padding-left:20px;margin:8px 0 0}details.orig li{margin:5px 0}
+.footer{margin-top:26px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:14px}
+@media(max-width:850px){.grid4{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:1fr}}
+@media(max-width:620px){.page{padding:12px 12px 42px}.nav{margin:12px -12px 0;padding:9px 12px}.hero{padding:22px 18px;border-radius:18px}.grid3,.decision-grid{grid-template-columns:1fr}.grid2,.grid4{gap:8px}.metric{padding:13px 12px}.metric b{font-size:21px}.panel,.scenario,.decision{padding:18px 16px}.head{align-items:start;flex-direction:column;gap:0}}
+.note{margin:10px 4px 0;font-size:15px;color:var(--muted)}
+@media(max-width:620px){.grid2.stack{grid-template-columns:1fr}}
+
+.bl{margin:10px 0 0;padding-left:20px}.bl li{margin:7px 0;font-size:17px;line-height:1.75;color:#22364f}
+.pt{padding:20px 18px;margin-top:14px;border-top:6px solid var(--acc,#0d315e)}
+.pt h3{margin:0 0 4px;font-size:20px;line-height:1.35;color:var(--navy);display:flex;gap:10px;align-items:flex-start}
+.pt h3 i{font-style:normal;flex:none;display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:10px;background:var(--acc,#0d315e);color:#fff;font-size:16px;font-weight:900}
+.pt>p{margin:8px 0 0;font-size:17px;line-height:1.78;color:#22364f}
+.pt .grid2,.pt .grid3{margin-top:12px}.pt .metric{box-shadow:none;background:#f8fafc}
+.pt .srow span{color:#33475f;font-size:16px}.pt .srow b{text-align:right}
+.decision ul{margin:10px 0 0;padding-left:20px}.decision li{margin:7px 0;font-size:17px;line-height:1.75;color:#e3edf8}
+.decision .decision-item p{font-size:16px}.decision .decision-item b{display:block;font-size:22px;color:#fff;margin:2px 0}
+.decision .last{margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,.2);font-size:17px;font-weight:800;color:#fff}
+.jbox{border-top-color:#b86100}.jtag{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:2px 10px;background:#fff1d9;color:#8b4d06;margin-bottom:6px}
+.red-box{background:#fdf0f0;border:1px solid #f3cccc;border-radius:16px;padding:14px 16px;margin-top:12px}
+.red-box .chip{color:#c62828;border-color:#f3cccc;background:#fff}
+.lead{font-size:17px;line-height:1.78;color:#22364f;margin:0}
+.caution p{margin:0;font-size:17px;line-height:1.75}
+.pt .grid3.keep{grid-template-columns:repeat(3,1fr)}.pt .grid3.keep .metric{padding:12px 10px}
+.footer p{margin:4px 0}.footer a{color:var(--blue);overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="hero card" id="top">
+<div class="eyebrow">策略報告整理</div>
+<h1>何處是底：整理與評估</h1>
+<div class="date">2026/11/01</div>
+<p class="subtitle">何處是底：整理與評估（Manny 2026-11-01）</p>
+<div class="pills"><span class="pill kgi">國金策略（一凌策略研究），華爾街見聞 11/1 轉載</span><span class="pill judge">事實／Manny 判斷分開呈現</span></div>
+<p class="thesis">結論：按歷史極端行情標準，現在不具備抄底條件；需交易指標出現極端值＋美股止穩。</p>
+</header>
+<nav class="nav"><a href="#facts">報告重點</a><a href="#manny">Manny 判斷</a><a href="#check">底部檢查表</a><a href="#left">左側交易</a><a href="#time">時間點</a></nav>
+<section class="section" id="facts"><div class="head"><h2>一、報告重點（事實）</h2></div>
+<article class="pt card" style="--acc:#0d315e"><span class="tag fact">事實</span><h3><i>1</i>轉折點：雲端業者投資報酬受質疑</h3>
+<div class="grid3 keep"><div class="metric card"><small>AWS 年增</small><b class="up">39.3%</b></div><div class="metric card"><small>Google Cloud 年增</small><b class="up">102.6%</b></div><div class="metric card"><small>Azure 年增</small><b class="up">48.2%</b></div></div>
+<div class="grid2"><div class="metric card"><small>Google 廣告年增</small><b class="up">10.6%</b></div><div class="metric card"><small>亞馬遜電商年增</small><b class="up">1.6%</b></div></div>
+<div class="grid2 stack"><div class="metric card"><small>亞馬遜利息支出占淨利</small><b class="">8.2%</b><p>2025 年約 3%</p></div></div>
+<ul class="bl"><li>3Q26 雲端業務仍高成長：AWS 年增 39.3%、Google Cloud 年增 102.6%、Azure 年增 48.2%。</li><li>傳統業務放慢：Google 廣告年增 10.6%、亞馬遜電商年增 1.6%。</li><li>對外融資增加：亞馬遜利息支出占淨利從 2025 年約 3% 升到 8.2%。</li><li>Google、亞馬遜自由現金流大降，「雲端成長→現金流修復→資本支出擴張」正向循環尚未形成；市場只獎勵自由現金流為正的微軟。</li></ul></article><article class="pt card" style="--acc:#1f5d9c"><span class="tag fact">事實</span><h3><i>2</i>美債利率與美國經濟</h3><p>美債利率可能已見頂，但下行幅度有限；美國經濟仍有韌性，快速下行要等 AI 融資明顯收縮。</p></article><article class="pt card" style="--acc:#5b3fa8"><span class="tag fact">事實</span><h3><i>3</i>類比 2007–2008：</h3>
+<div class="grid2"><div class="metric card"><small>本輪 AI 硬體股（自 7 月初）</small><b class="down">約54%</b><p>回撤</p></div><div class="metric card"><small>中國週期股（2007/10–2008/6）</small><b class="down">62%</b><p>回撤</p></div></div>
+<ul class="bl"><li>本輪 AI 硬體股自 7 月初回撤約 54%，斜率更陡。</li><li>2007/10–2008/6 中國週期股回撤 62%。</li><li>真正加速下跌在 2008 年 8 月後（美國信用危機），全 A 再跌 40% 以上。關鍵在美國科技與債務循環會不會出事。</li></ul></article><article class="pt card" style="--acc:#b86100"><span class="tag fact">事實</span><h3><i>4</i>交易指標進入底部區，但未到歷史極值：</h3>
+<div class="panel" style="padding:4px 0 0">
+<div class="srow"><span>兩融擔保比例</span><b>約244%–250%</b></div>
+<div class="srow"><span>歷史極值</span><b>220%–240%</b></div>
+<div class="srow"><span>科創 50、創業板、中證 1000 隱含波動率</span><b>近三年 90 百分位以上</b></div>
+<div class="srow"><span>市場寬度</span><b>歷史低點</b></div>
+<div class="srow"><span>主動型基金 AI 硬體超配</span><b>26.4%</b></div></div>
+<ul class="bl"><li>兩融擔保比例約 244%–250%（歷史極值 220%–240%）。</li><li>科創 50、創業板、中證 1000 隱含波動率在近三年 90 百分位以上，但離極值仍有距離。</li><li>市場寬度在歷史低點。</li><li>籌碼未洗清：主動型基金 AI 硬體超配 26.4%，仍高於歷史多數主流題材超配峰值。</li></ul></article><article class="pt card" style="--acc:#c62828"><span class="tag fact">事實</span><h3><i>5</i>結論</h3>
+<div class="caution" style="margin-top:10px"><p>結論：按歷史極端行情標準，現在不具備抄底條件；需交易指標出現極端值＋美股止穩。</p></div>
+<div class="grid3" style="margin-top:12px">
+<div class="theme card"><h3>能源鏈</h3><div class="chips"><span class="chip ">煤</span><span class="chip ">油</span><span class="chip ">油運</span></div></div>
+<div class="theme card"><h3>高景氣延續</h3><div class="chips"><span class="chip ">醫療服務</span><span class="chip ">航運港口等</span></div></div>
+<div class="theme card"><h3>困境反轉</h3><div class="chips"><span class="chip ">造紙</span><span class="chip ">煉化</span><span class="chip ">醫材等</span></div></div></div>
+<ul class="bl"><li>避開科技的方向：能源鏈（煤、油、油運）、高景氣延續（醫療服務、航運港口等）、困境反轉（造紙、煉化、醫材等）。</li><li>黃金在實際利率剛反轉時可能先受流動性衝擊，等時機。</li></ul></article></section>
+<section class="section" id="manny"><article class="decision card"><span class="badge">Manny 判斷（分析師觀點）</span><h2>二、Manny 的判斷</h2>
+<p>報告講 A 股，但邏輯適用台股：台股 AI 硬體同為美國雲端業者上游。台股位階更早期——A 股科技股已跌 54%，台股 10/30 才剛跌破半年線。</p>
+<p style="margin-top:12px;font-weight:800;color:#fff">同意「還不是抄底時點」：</p>
+<div class="decision-grid">
+<div class="decision-item"><small>1. VIX</small><b>19.42</b><p>VIX 19.42，近月期貨已倒掛，但未到恐慌值。</p></div>
+<div class="decision-item"><small>2. 信用利差（HY OAS）</small><b>3.26%</b><p>信用利差（HY OAS 3.26%）尚未擴大。</p></div>
+<div class="decision-item"><small>3. 台股融資餘額</small><b>6,300 億以上</b><p>台股融資餘額仍在 6,300 億以上，槓桿未清。</p></div></div>
+<p class="last">底部需「情緒極值＋信用不惡化＋美股止穩」同時出現；只看跌幅是最大陷阱。</p></article></section><section class="section" id="check"><div class="head"><h2>三、確認底部檢查表（台股＋美股）</h2></div>
+<span class="jtag">Manny 判斷</span><article class="pt card" style="--acc:#c62828"><h3><i>1</i>情緒極值（三項中達兩項）</h3><ul class="bl"><li>VIX 衝上 30 以上後回落、期貨曲線回到正價差；</li><li>台指 VIX 創波段新高後回落；</li><li>上市櫃整體融資維持率跌破 150%、出現斷頭賣壓。</li></ul></article><article class="pt card" style="--acc:#b86100"><h3><i>2</i>槓桿出清</h3><ul class="bl"><li>台股融資餘額自高點減少 15%–20% 以上。</li></ul></article><article class="pt card" style="--acc:#1f5d9c"><h3><i>3</i>信用守住</h3><ul class="bl"><li>HY 利差未破 4.5%、Oracle CDS 低於 450bp、私募信貸無暫停贖回。</li></ul></article><article class="pt card" style="--acc:#5b3fa8"><h3><i>4</i>領先指標止穩</h3><ul class="bl"><li>費半與雲端業者不再創新低；</li><li>外資連 3 天以上回補現貨、期貨空單減少。</li></ul></article><article class="pt card" style="--acc:#087f5b"><h3><i>5</i>價格確認</h3><ul class="bl"><li>長下影線或爆量長紅，之後 3–5 天不破該 K 棒低點，再站回月線。</li></ul></article><div class="caution" style="margin-top:14px"><p>（以上門檻為 Manny 判斷；融資維持率、台指 VIX、外資期貨空單即時數據目前無資料。）</p></div></section><section class="section" id="left"><div class="head"><h2>四、左側交易做法（不用 sell put）</h2></div>
+<span class="jtag">Manny 判斷</span><article class="pt card" style="--acc:#0d315e"><h3><i>1</i><span>先定總部位，分 3–4 批；每批只在出現新的極值訊號時買，不機械式加碼。</span></h3></article><article class="pt card" style="--acc:#1f5d9c"><h3><i>2</i><span>第一批不超過 20%–25%，挑基本面確定、跌深的核心股（如台積電、台達電；台達電分批價位 1,300–1,335、1,250、1,195–1,220 元）。</span></h3><div class="panel" style="padding:8px 0 0"><div class="srow"><span>台達電分批價位</span><b>1,300–1,335</b></div><div class="srow"><span></span><b>1,250</b></div><div class="srow"><span></span><b>1,195–1,220 元</b></div></div></article><article class="pt card" style="--acc:#5b3fa8"><h3><i>3</i><span>每批同時設避險與停損：搭配大盤或費半 put spread（1–2 個月）；個股收盤跌破預設價位就停損，不攤平。</span></h3></article><article class="pt card" style="--acc:#b86100"><h3><i>4</i><span>左側期間股票總曝險 60%–70%，其餘現金或短天期國庫券。</span></h3><div class="grid2 stack"><div class="metric card"><small>左側期間股票總曝險</small><b class="">60%–70%</b></div></div></article><article class="pt card" style="--acc:#087f5b"><h3><i>5</i><span>右側確認（價格確認條件成立）後再補滿部位。</span></h3></article><article class="pt card" style="--acc:#c62828"><h3><i>6</i><span>轉防守：信用指標任兩項亮紅燈（HY OAS &gt;4.5%、IG OAS &gt;1.30%、Oracle 被降至非投資級），代表類似 2008 年 8 月後，停止左側買進並減碼。</span></h3><div class="red-box"><div class="chips"><span class="chip ">HY OAS &gt;4.5%</span><span class="chip ">IG OAS &gt;1.30%</span><span class="chip ">Oracle 被降至非投資級</span></div></div></article></section>
+<section class="section" id="time"><div class="head"><h2>時間點</h2></div>
+<article class="event card"><small>11/3–11/4</small><div class="chips"><span class="chip ">美國期中選舉</span><span class="chip ">AMD 財報（台北 11/4 清晨）</span><span class="chip ">財政部再融資</span></div><p style="margin-top:10px">11/3–11/4 有美國期中選舉、AMD 財報（台北 11/4 清晨）、財政部再融資，較可能出現情緒極值；之前只觀察。</p></article></section>
+<footer class="footer"><p>來源：國金策略（一凌策略研究），華爾街見聞 11/1 轉載 <a href="https://wallstreetcn.com/articles/3784945">https://wallstreetcn.com/articles/3784945</a></p><p>整理：Manny｜版面：小布</p><p><b>僅供參考，非投資建議</b></p></footer>
+</main>
+</body>
+</html>
