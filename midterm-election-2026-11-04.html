@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f4f7fb">
+<title>美國期中選舉｜全球股市衝擊與交易策略</title>
+<style>
+:root{--ink:#10233f;--muted:#5b6b80;--line:#dfe7f1;--paper:#fff;--bg:#f4f7fb;--navy:#0d315e;--blue:#1f5d9c;--up:#c62828;--down:#087f5b;--amber:#b86100;--shadow:0 12px 36px rgba(16,35,63,.07)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.72;overflow-x:hidden}
+.page{width:min(1100px,100%);margin:auto;padding:24px 18px 56px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;box-shadow:0 7px 26px rgba(16,35,63,.045)}
+.up{color:var(--up)}.down{color:var(--down)}
+/* hero */
+.hero{padding:30px;background:linear-gradient(135deg,#fff 0%,#f5f8fc 65%,#e8f1fa 100%);position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.hero:after{content:"";position:absolute;width:350px;height:350px;border-radius:50%;right:-160px;top:-210px;background:radial-gradient(circle,rgba(198,40,40,.11),transparent 68%);pointer-events:none}
+.eyebrow{font-size:13px;color:var(--blue);font-weight:900;letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.14;letter-spacing:-.03em;margin:10px 0 6px}
+.date{color:var(--muted);font-size:15px;font-weight:750}.subtitle{margin:6px 0 0;font-size:16px;color:#33475f;font-weight:700}
+.thesis{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:19px;font-weight:850;line-height:1.6}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pill{display:inline-block;border-radius:999px;padding:6px 13px;font-weight:900;font-size:14px;border:1px solid var(--line);background:#fff;line-height:1.45}
+.pill.kgi{background:#eaf2fb;color:var(--blue);border-color:#cfe0f2}.pill.judge{background:#fff4e2;color:#8b4d06;border-color:#f0d8b6}
+/* nav */
+.nav{position:sticky;top:0;z-index:5;background:rgba(244,247,251,.94);backdrop-filter:blur(8px);margin:14px -18px 0;padding:10px 18px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line)}
+.nav::-webkit-scrollbar{display:none}.nav a{flex:none;font-size:14px;font-weight:800;color:var(--navy);text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+/* sections */
+.section{margin-top:30px;scroll-margin-top:64px}
+.head{display:flex;align-items:end;justify-content:space-between;gap:10px;margin:0 2px 12px}
+.head h2{margin:0;font-size:23px;line-height:1.3}.head span{font-size:14px;color:var(--muted);font-weight:700}
+.tag{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:2px 10px;margin-bottom:8px}
+.tag.fact{background:#eaf2fb;color:var(--blue)}.tag.judge{background:#fff1d9;color:#8b4d06}
+/* stat tiles */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.metric{padding:15px 14px;min-width:0}.metric small{display:block;font-size:14px;color:var(--muted);font-weight:850}
+.metric b{display:block;font-size:23px;line-height:1.25;margin-top:4px;font-variant-numeric:tabular-nums}
+.metric p{margin:5px 0 0;font-size:14px;color:#5b6b80;line-height:1.5}.metric p.up,.metric p.down{font-weight:800}
+/* list rows (MA / sectors) */
+.panel{padding:20px}.panel h3{margin:0 0 12px;font-size:19px}
+.rows{display:grid;gap:8px}.row{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;padding:11px 13px;border-radius:12px;background:#f8fafc;border:1px solid #edf1f6;font-size:16px}
+.row span:nth-child(2){font-variant-numeric:tabular-nums;font-weight:750}.row span:last-child{color:var(--muted);font-size:14px}
+.srow{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:17px}.srow:first-of-type{border-top:0}.srow b{font-variant-numeric:tabular-nums}
+/* boxes */
+.level,.caution{background:#fff8ed;border:1px solid #f0d8b6;border-radius:16px;padding:16px 18px;color:#664a2e;font-size:16px}
+.level{margin-top:12px}.caution h2{margin:0 0 8px;color:#8b4d06;font-size:21px}
+.caution ul,.plain ul{margin:0;padding-left:20px}.caution li,.plain li{margin:6px 0}
+.plain{padding:18px 18px}.plain p{margin:0}
+.theme{padding:18px}.theme h3{margin:0 0 6px;font-size:18px;color:var(--navy)}.theme p{margin:0;color:#33475f;font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.chip{border:1px solid var(--line);background:#f8fafc;border-radius:999px;padding:5px 11px;font-size:14px;font-weight:800;color:var(--blue)}
+.scenario{padding:20px}.scenario b{display:block;font-size:21px;margin-bottom:6px}.scenario p{font-size:16px;color:#33475f;margin:0}
+.scenario.s-down{border-top:5px solid var(--down)}.scenario.s-amber{border-top:5px solid var(--amber)}
+.event{padding:16px 18px}.event small{color:var(--muted);font-weight:850;font-size:14px}.event p{font-size:16px;color:#33475f;margin:4px 0 0}
+/* analyst judgment */
+.decision{padding:24px;background:linear-gradient(135deg,#0b2d56,#164c83);color:#fff;border:none}
+.decision h2{margin:0 0 4px;font-size:23px}.decision .badge{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:3px 11px;background:#ffd98a;color:#4a3000;margin-bottom:10px}
+.decision p{color:#e3edf8;font-size:16px;margin:0}.decision-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:15px}
+.decision-item{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);border-radius:14px;padding:15px}
+.decision-item small{display:block;color:#acd0f0;font-weight:900;font-size:14px;margin-bottom:3px}
+details.orig{margin-top:10px;font-size:15px;color:#33475f}details.orig summary{cursor:pointer;font-weight:800;color:var(--blue);font-size:14px}details.orig ul{padding-left:20px;margin:8px 0 0}details.orig li{margin:5px 0}
+.footer{margin-top:26px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:14px}
+@media(max-width:850px){.grid4{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:1fr}}
+@media(max-width:620px){.page{padding:12px 12px 42px}.nav{margin:12px -12px 0;padding:9px 12px}.hero{padding:22px 18px;border-radius:18px}.grid3,.decision-grid{grid-template-columns:1fr}.grid2,.grid4{gap:8px}.metric{padding:13px 12px}.metric b{font-size:21px}.panel,.scenario,.decision{padding:18px 16px}.head{align-items:start;flex-direction:column;gap:0}}
+.note{margin:10px 4px 0;font-size:15px;color:var(--muted)}
+@media(max-width:620px){.grid2.stack{grid-template-columns:1fr}}
+
+.stance{margin-top:16px;padding:18px 18px;border-radius:18px;background:#fff8ed;border:2px solid #f0b866;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.stance small{display:block;font-size:14px;font-weight:900;color:#8b4d06;letter-spacing:.06em}
+.stance b{display:block;font-size:clamp(30px,6.5vw,40px);line-height:1.15;color:#8b2c00;letter-spacing:.02em}
+.stance p{margin:0;font-size:17px;font-weight:800;color:#5a3a12;flex:1 1 220px}
+.frame{margin-top:14px;padding:14px 16px;border-radius:14px;background:#eef4fb;border:1px solid #cfe0f2;font-size:17px;color:var(--navy);line-height:1.75}
+.lead{margin-top:12px;padding:18px}.lead p{margin:0;font-size:17px;color:#33475f}
+.plainlist{margin:0;padding-left:20px}.plainlist li{margin:8px 0;font-size:17px}
+.stack{display:grid;gap:12px}
+.theme p,.theme li{font-size:17px}
+.sub{margin:18px 2px 8px;font-size:19px;color:var(--navy);font-weight:900}
+.signals{counter-reset:s;list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.signals li{counter-increment:s;position:relative;padding:14px 16px 14px 52px;background:#fff;border:1px solid var(--line);border-radius:16px;font-size:17px;color:#33475f}
+.signals li:before{content:counter(s);position:absolute;left:14px;top:14px;width:28px;height:28px;border-radius:50%;background:var(--navy);color:#fff;font-weight:900;font-size:15px;display:flex;align-items:center;justify-content:center}
+.signals li:last-child{border:2px solid #f0b866;background:#fffaf2}
+.tbl{max-width:100%;overflow-x:auto;border-radius:16px;border:1px solid var(--line);background:#fff;margin-top:6px}
+.tbl table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:16px;line-height:1.6}
+.tbl th{background:var(--navy);color:#fff;text-align:left;font-weight:900;padding:10px 10px;font-size:15px}
+.tbl td{padding:11px 10px;border-top:1px solid var(--line);vertical-align:top;color:#33475f;overflow-wrap:anywhere;word-break:break-word}
+.tbl td:first-child{font-weight:850;color:var(--ink)}
+.tbl tr.base td{background:#fff8ed}
+.tbl.c3 th:first-child,.tbl.c3 td:first-child{width:32%}
+.tbl.alloc th:nth-child(2),.tbl.alloc td:nth-child(2){width:15%;text-align:center}
+.tbl.alloc td:nth-child(2){font-size:20px;font-weight:900;color:var(--navy)}
+.tbl.c4 th:first-child,.tbl.c4 td:first-child{width:21%}
+.cap{margin:16px 2px 4px;font-size:18px;font-weight:900;color:var(--navy)}
+.cap span{display:block;font-size:14.5px;color:var(--muted);font-weight:700}
+.warn{margin-top:14px}.warn p{margin:0;font-size:17px}
+.decision .stance{background:rgba(255,217,138,.14);border-color:#ffd98a}
+.decision .stance small{color:#ffd98a}.decision .stance b{color:#fff}.decision .stance p{color:#e3edf8}
+.decision p{font-size:17px;margin-top:12px}.decision ul{margin:8px 0 0;padding-left:20px;color:#e3edf8;font-size:17px}.decision li{margin:9px 0;line-height:1.7}
+.decision b{color:#ffd98a}
+.decision .up{color:#ff9e9e}.decision .down{color:#7fe0bd}
+.footer{font-size:15px;line-height:1.8}
+@media(max-width:620px){.tbl table{font-size:15px}.tbl th{font-size:14px;padding:9px 7px}.tbl td{padding:10px 7px}.tbl.alloc td:nth-child(2){font-size:18px}.signals li{padding-left:48px}}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="hero card">
+  <div class="eyebrow">US Midterm 2026・Buy-side</div>
+  <h1>美國期中選舉｜全球股市衝擊與交易策略</h1>
+  <div class="date">2026/11/04｜華爾街 Buy-side 投資委員會觀點（開票資訊截至台灣時間 11/4 13:00）</div>
+  <div class="stance"><div><small>目前戰術立場</small><b>中性偏防守</b></div><p>不追空、不急著抄底，等待市場確認。</p></div>
+  <div class="thesis"><b>核心判斷：</b> 這次期中選舉真正重要的，不是哪個政黨贏，而是結果會不會改變市場對「財政赤字、關稅政策、美債殖利率、企業獲利」的定價。</div>
+  <div class="frame"><b>交易框架：</b> 選舉結果 → 政策執行能力 → 美債與美元反應 → 全球資金流向 → 股市產業輪動。</div>
+</header>
+<nav class="nav" aria-label="頁面導覽"><a href="#s1">開票</a><a href="#s2">情境</a><a href="#s3">全球</a><a href="#s4">策略</a><a href="#s5">五指標</a><a href="#s6">最終決策</a></nav>
+<article class="theme card lead"><p>未來 1～3 個月，我們優先觀察 10 年期美債殖利率、美元指數、SOXX/SPY 相對強弱與市場廣度，而不是依勝負追漲殺跌。AI 資本支出、科技股估值與利率高度連動，選舉可能成為市場重新調整風險溢酬的催化劑。</p></article>
+<section class="section" id="s1"><div class="head"><h2>一、最新開票：民主黨已拿下參議院，眾議院接近底定</h2><span>漲紅・跌綠</span></div><div class="stack"><article class="theme card"><p><b>參議院：</b> AP 已宣布民主黨奪回控制權（需 51 席，選前共和黨 53 席）。德州、堪薩斯、南卡數十年來首次選出民主黨參議員，北卡、俄亥俄也翻轉。</p></article><article class="theme card"><p><b>眾議院：</b> AP 尚未宣布，但民主黨已翻轉 7 席、「瀕臨過半」；Decision Desk HQ 已預測民主黨拿下眾議院。</p></article><article class="theme card"><p><b>關鍵限制：</b> 民主黨不太可能取得推翻總統否決所需的三分之二多數，實質結果是「行政與國會分立」。</p></article></div><div class="cap"><b>市場快照（Reuters 11/4 亞洲時段，非即時報價）：</b></div><article class="theme card"><ul class="plainlist"><li>S&amp;P 500 期貨約 <span class="down">−1.2%</span>、Nasdaq 期貨逾 <span class="down">−2%</span>（較早一版為 <span class="down">−0.8%</span> / <span class="down">−1.8%</span>，跌幅隨開票擴大）</li><li>美債 10Y 4.906%（<span class="down">−6bp</span>）；美元指數一度 101.30，一個月低點</li><li>日經重新開盤後約 <span class="down">−3%</span>～<span class="down">−3.6%</span>，韓股 <span class="down">−1.6%</span>～<span class="down">−3%</span></li></ul></article><div class="cap"><b>三個值得注意的訊號：</b></div><ol class="signals"><li><b>利多撐不住：</b> 11/3 現貨收盤 S&amp;P <span class="up">+0.36%</span>、Nasdaq <span class="up">+0.83%</span>，AMD、SMCI、ANET 盤後財測強勁，期貨卻全部吐回。這是政策風險重新定價，不是基本面轉差。</li><li><b>Nasdaq 跌幅大於 S&amp;P：</b> 市場在調整 AI、科技巨頭與資料中心的監管與政治風險。</li><li><b>股票與美元同跌：</b> 不是典型的美元避險，而是全球資金重新評估美國資產的相對吸引力。這一點最重要。</li></ol></section>
+<section class="section" id="s2"><div class="head"><h2>二、三種政治情境與資產定價</h2></div><div class="tbl c3"><table><thead><tr><th>情境</th><th>美股可能反應</th><th>主要交易方向</th></tr></thead><tbody><tr class="base"><td data-h="情境">民主黨兩院，無否決多數（基準）</td><td data-h="美股可能反應">短期偏空，監管與財政僵局風險上升</td><td data-h="主要交易方向">降低高估值科技曝險，加碼短天期公債，等待錯殺</td></tr><tr><td data-h="情境">眾議院翻盤失敗、國會分裂</td><td data-h="美股可能反應">政策僵局但市場較快消化</td><td data-h="主要交易方向">逢回布局高品質大型股</td></tr><tr><td data-h="情境">民主黨兩院且推動資料中心／AI 嚴格立法</td><td data-h="美股可能反應">科技股估值進一步壓縮</td><td data-h="主要交易方向">減碼 AI 基建鏈，轉向現金流與定價能力</td></tr></tbody></table></div><p class="note">這是政策傳導情境，不是機率預測。</p><div class="caution warn"><p><b>最需要重新定價的是 AI 投資鏈。</b> 新變數是資料中心已成為選舉議題：喬治亞、德州、密西根的民主黨州長候選人主張暫停新建資料中心，州層級的用電與許可阻力比聯邦 AI 立法更具體、更快。但國會監督權增加，不等於 AI 法規立即改變，也不代表 CSP 資本支出必然下降。</p></div></section>
+<section class="section" id="s3"><div class="head"><h2>三、全球股市：誰最容易受衝擊</h2></div><div class="stack"><article class="theme card"><p><b>台灣：</b> 台股 11/3 已先重挫 1,612 點（<span class="down">−3.59%</span>），外資賣超 1,073 億元，新台幣收 32.76，EWT <span class="down">−2.37%</span>。選舉利空部分已先反映。只要 AI 訂單、先進封裝需求不變，修正可能形成中期布局機會；優先看台積電與高現金流供應商，進場條件是外資期貨空單收斂、新台幣止貶。</p></article><article class="theme card"><p><b>韓國：</b> SK Hynix、Samsung 的 HBM 與記憶體高度受 AI 資本支出預期影響；若 CSP 延後建置，市場會先下修記憶體景氣。</p></article><article class="theme card"><p><b>日本：</b> 日圓升值壓抑出口與半導體設備股；美債殖利率下降則改善部分利率敏感資產估值。</p></article><article class="theme card"><p><b>歐洲：</b> 美國貿易政策不確定性下降有利部分出口商；美國國防支出變化與全球景氣放緩是風險。</p></article></div></section>
+<section class="section" id="s4"><div class="head"><h2>四、交易策略：先防守，再找錯殺</h2></div><article class="theme card lead"><p>不建議在結果公布當天全面抄底，採「價格確認、分批進場、動態風控」。</p></article><div class="cap">事件交易資金池示範配置<span>（非整體組合或個人持倉建議）</span></div><div class="tbl alloc"><table><thead><tr><th>部位</th><th>比重</th><th>出場或調整條件</th></tr></thead><tbody><tr><td data-h="部位">現金／短天期美債</td><td data-h="比重">40%</td><td data-h="出場或調整條件">條件確認後逐步轉入股票</td></tr><tr><td data-h="部位">大型優質股／SPY</td><td data-h="比重">30%</td><td data-h="出場或調整條件">SPY 收盤失守 MA200 則減半</td></tr><tr><td data-h="部位">AI／半導體</td><td data-h="比重">20%</td><td data-h="出場或調整條件">SOXX 相對 SPY 連續兩週走弱、或 QQQ 帶量跌破 MA200 則出清</td></tr><tr><td data-h="部位">戰術避險</td><td data-h="比重">10%</td><td data-h="出場或調整條件">指數賣權價差或 VIX 買權；VIX 回落至 20 以下逐步了結</td></tr></tbody></table></div><div class="cap"><b>執行三階段</b></div><div class="tbl c3"><table><thead><tr><th>時間</th><th>操作</th><th>風控條件</th></tr></thead><tbody><tr><td data-h="時間">0–48 小時</td><td data-h="操作">保留現金，不追高、不急著攤平</td><td data-h="風控條件">觀察 VIX、10Y、Nasdaq</td></tr><tr><td data-h="時間">3–10 個交易日</td><td data-h="操作">分批買進基本面未變的優質股</td><td data-h="風控條件">SPY 守住 MA200、QQQ 守住 MA200（目前僅高 0.92%），SOXX 相對強弱改善</td></tr><tr><td data-h="時間">2–6 週</td><td data-h="操作">依財報與政策進展提高股票曝險</td><td data-h="風控條件">市場廣度回升、信用利差未惡化</td></tr></tbody></table></div><div class="caution warn"><p><b>不要把跌幅當成安全邊際。</b> 若股價下跌同時伴隨獲利預期下修，合理估值也會跟著下降。</p></div></section>
+<section class="section" id="s5"><div class="head"><h2>五、今晚開盤前最重視的五個指標</h2></div><p class="note" style="margin-top:0">（戰術觀察門檻，非統計回測最佳參數）</p><div class="tbl c4"><table><thead><tr><th>指標</th><th>目前起點</th><th>偏多確認</th><th>風險警訊</th></tr></thead><tbody><tr><td data-h="指標">VIX</td><td data-h="目前起點">20.83</td><td data-h="偏多確認">回落至 20 以下</td><td data-h="風險警訊">升破 25</td></tr><tr><td data-h="指標">美國 10Y</td><td data-h="目前起點">4.906%</td><td data-h="偏多確認">殖利率降、股市止跌</td><td data-h="風險警訊">殖利率升、股市續跌</td></tr><tr><td data-h="指標">SOXX/SPY</td><td data-h="目前起點">SOXX 三條均線之下</td><td data-h="偏多確認">相對強弱連續改善</td><td data-h="風險警訊">半導體持續落後</td></tr><tr><td data-h="指標">S&amp;P 500 廣度</td><td data-h="目前起點">等權重指數 11/3 <span class="down">−0.4%</span></td><td data-h="偏多確認">站上 50MA 比率回升</td><td data-h="風險警訊">跌破 40% 且持續惡化</td></tr><tr><td data-h="指標">HY OAS</td><td data-h="目前起點">—</td><td data-h="偏多確認">利差穩定</td><td data-h="風險警訊">突破 4.5% 紅燈</td></tr></tbody></table></div><div class="caution warn"><p><b>殖利率下降不一定是利多。</b> 若民主黨主導國會使財政刺激減少，殖利率下降反映的是赤字與債券供給預期下降、期限溢酬收斂，這對成長股估值是支撐；若是市場擔心衰退而買債避險，股票仍可能下跌。這個區分決定成長股多快止穩。背景是 JOLTS 強勁使 12 月升息預期升溫，本週五非農是關鍵驗證。</p></div></section>
+<section class="section decision card" id="s6"><span class="badge">Buy-side 投資委員會觀點</span><h2>六、Buy side最終決策建議</h2><div class="stance"><div><small>目前戰術立場</small><b>中性偏防守</b></div><p>不追空、不急著抄底，等待市場確認。</p></div><p><b>基準情境：</b> 民主黨勝選引發短期政策風險重新定價，但只要 AI 訂單與企業 EPS 沒有實質惡化，選舉本身未必足以終結科技股中期多頭。</p><p><b>真正需要降低中期股票配置的情境：</b> 政治監管升溫、AI 資本支出下修、信用利差擴大，三者同時出現。</p><p><b>最值得研究的問題：</b> 這次政治衝擊，會不會讓市場從「AI 算力擴張交易」轉向「AI 投資報酬率與現金流交易」？</p><p>可檢驗的指標：</p><ul class=""><li>CSP 下一季資本支出指引是否維持或上修</li><li>GPU 租金價格：B200 從每小時 4.5 美元漲到 6.5 美元、H100 從 2 美元漲到 3 美元（凱基 11/4），目前仍是「需求未崩」的反證</li><li>州層級資料中心禁建或用電限制是否實際立法</li></ul><p>若答案是肯定的，2027 年最大的機會將不再是全面買進 AI 供應鏈，而是挑選具定價能力、訂單能見度與自由現金流的企業，這也是未來 6～12 個月的選股方向。</p></section>
+<footer class="footer"><b>資料參考：AP 2026/11/4、Reuters 2026/11/3–11/4、凱基投顧 2026/11/4。開票與報價持續變動；以上為事件情境分析，非保證報酬的交易建議。</b><br>開票資訊截至台灣時間 11/4 13:00。僅供參考，非投資建議。<br>版面：小布</footer>
+</main>
+</body>
+</html>
