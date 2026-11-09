@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#f4f7fb">
-<title>美股投資晨報｜2026/11/10</title>
+<title>Nan 整理｜美股投資晨報 2026/11/10</title>
 <style>
 :root{--ink:#10233f;--muted:#5b6b80;--line:#dfe7f1;--paper:#fff;--bg:#f4f7fb;--navy:#0d315e;--blue:#1f5d9c;--up:#c62828;--down:#087f5b;--amber:#b86100;--shadow:0 12px 36px rgba(16,35,63,.07)}
 *{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -65,230 +65,199 @@ details.orig{margin-top:10px;font-size:15px;color:#33475f}details.orig summary{c
 @media(max-width:620px){.grid2.stack{grid-template-columns:1fr}}
 
 .stack3{display:grid;gap:12px}
-.metric b .up,.metric p .up,.metric b span.up{color:var(--up)}
-.metric b .down,.metric p .down,.metric b span.down{color:var(--down)}
+.metric b .up,.metric p .up,.metric b span.up,.row span.up{color:var(--up)}
+.metric b .down,.metric p .down,.metric b span.down,.row span.down{color:var(--down)}
 .metric p.up,.metric p.down{font-weight:800}
-.metric p span.up,.metric p span.down{font-weight:800}
 .prose{margin:12px 0 0;padding:16px 18px;font-size:16.5px;color:#33475f;line-height:1.75}
 .day{padding:16px 18px}.day h3{margin:0 0 8px;font-size:19px;color:var(--navy)}
-.day .srow{justify-content:flex-start;gap:14px;font-size:16.5px;display:flex;padding:8px 0;border-top:1px solid var(--line)}
-.day .srow:first-of-type{border-top:0}
-.day .srow b{display:inline-block;min-width:5.6em;color:var(--blue);flex:none}
-.day .srow span{min-width:0}
+.sch{width:100%;border-collapse:collapse;font-size:16.5px;margin-top:4px}
+.sch th{font-size:14px;color:var(--muted);text-align:left;padding:0 8px 6px;border-bottom:1px solid var(--line)}
+.sch td{border-bottom:1px solid var(--line);padding:10px 8px;vertical-align:top}
+.sch tr:last-child td{border-bottom:none}
+.sch td.dt{font-weight:900;color:var(--navy);white-space:nowrap}
+.sch .hot{color:var(--up);font-weight:800}
 .decision ul{margin:8px 0 0;padding-left:20px;color:#e3edf8;font-size:16.5px}
 .decision li{margin:10px 0;line-height:1.7}
+.decision .k{display:inline-flex;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.2);color:#fff;font-weight:900;align-items:center;justify-content:center;font-size:14px;margin-right:8px}.decision .quote{font-size:20px;font-weight:900;color:#fff;margin:6px 0 10px;line-height:1.45}
 .footer{font-size:15px;line-height:1.75}
 .amber{background:#fff8ed;border:1px solid #f0d8b6;border-radius:16px;padding:16px 18px;color:#664a2e;font-size:16px;margin-top:12px}
 .amber b{color:#8b4d06}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 .chip{border:1px solid var(--line);background:#f8fafc;border-radius:999px;padding:5px 11px;font-size:14px;font-weight:800;color:var(--blue)}
 .chip.warn{background:#fff1d9;color:#8b4d06;border-color:#f0d8b6}
-.uv{display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap}
 .theme p+p{margin-top:8px}
-.panel{padding:20px}.panel h3{margin:0 0 12px;font-size:19px}
+.fwbar{display:flex;height:36px;border-radius:8px;overflow:hidden;margin:6px 0;font-weight:900;font-size:15px;color:#fff}
+.fwbar > div{display:flex;align-items:center;justify-content:center;min-width:0;padding:0 4px;text-align:center;line-height:1.2}
+.fwlab{font-size:16px;font-weight:900;color:var(--navy);margin-top:10px}
+.fwsub{font-size:14.5px;color:var(--muted);font-weight:700}
+.fwnote{font-size:14.5px;color:var(--muted);font-weight:700;margin:0 0 6px}
+.trk{display:grid;gap:10px;margin-top:8px}
+.head h2 .no{display:inline-flex;width:28px;height:28px;border-radius:50%;background:var(--up);color:#fff;align-items:center;justify-content:center;font-size:15px;margin-right:6px;vertical-align:middle}.trkrow{display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:start;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:#f8fafc}
+.tkb{font-weight:900;font-size:18px;color:var(--navy);text-align:center;padding:8px 6px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.tkb.k{border:2px solid var(--navy)}
 </style>
 </head>
 <body>
 <main class="page">
 
 <header class="hero card">
-  <div class="eyebrow">US Market Morning · Nan</div>
+  <div class="eyebrow">Nan 整理｜美股投資晨報 2026/11/10</div>
   <h1>美股投資晨報｜2026/11/10</h1>
-  <div class="date">數據截至美股 2026/11/09 收盤・Yahoo Finance 核對</div>
-  <p class="note" style="margin:8px 0 0">（數據截至美股11月9日收盤）</p>
-  <div class="thesis">三大指數強勁反彈：標普 7,549.94（+2.35%）、納指 25,253.14（+2.74%）；費半 +6.85%；VIX 19.92；NVDA -4.27%。今日台北 21:30 美國 10 月 CPI，盤後 CRWV 財報。</div>
+  <div class="date">2026/11/10（二） 截至 11/9（一）收盤</div>
+  <div class="thesis">美股投資晨報 油價暴跌催化反彈 × 情緒修復仍受限</div>
   <div class="pills">
-    <span class="pill kgi">事實｜Yahoo 核對數字</span>
-    <span class="pill judge">未驗證項另標 chip</span>
+    <span class="pill kgi">事實｜Yahoo／Investing.com 核對</span>
+    <span class="pill judge">未驗證項標「晨報引用，未驗證」</span>
   </div>
 </header>
 <nav class="nav" aria-label="頁面導覽">
-  <a href="#s1">指數與情緒</a><a href="#verify">核對對照</a><a href="#s2">四大焦點</a><a href="#s3">債匯油金</a>
-  <a href="#s4">FedWatch</a><a href="#s5">重磅日程</a><a href="#s6">財報</a>
-  <a href="#buyside">Buy side 判斷</a>
+  <a href="#s1">① 指數</a><a href="#s2">② 焦點</a><a href="#s3">③ 債匯油金</a>
+  <a href="#s4">④ FedWatch</a><a href="#s5">⑤ 日程</a><a href="#s6">⑥ 企業</a>
+  <a href="#s7">⑦ 晨報判斷</a>
 </nav>
 
-<section class="section" id="s1"><div class="head"><h2>1. 美股主要指數與情緒</h2><span>漲紅・跌綠｜11/09 收盤</span></div>
+<section class="section" id="s1"><div class="head"><h2><span class="no">1</span> 主要指數與市場情緒</h2><span>11/9 收盤｜日漲跌｜Yahoo 核對</span>
+<p class="note">1 主要指數與市場情緒 11/9 收盤｜日漲跌｜Yahoo 核對</p></div>
 <div class="grid2">
-  <article class="metric card"><small>標普 500</small> <b>7,549.94</b><p class=""><span class="up">+2.35%</span>　+173.08</p></article>
-  <article class="metric card"><small>道瓊</small> <b>52,389.75</b><p class=""><span class="up">+2.15%</span>　+1,104.02</p></article>
-  <article class="metric card"><small>那斯達克</small> <b>25,253.14</b><p class=""><span class="up">+2.74%</span>　+673.71</p></article>
-  <article class="metric card"><small>羅素 2000</small> <b>2,840.81</b><p class=""><span class="up">+3.15%</span>　+86.70</p></article>
-  <article class="metric card"><small>費城半導體 SOX</small> <b>10,033.93</b><p class=""><span class="up">+6.85%</span>　+643.68</p></article>
-  <article class="metric card"><small>VIX</small> <b>19.92</b><p class=""><span class="down">-22.31%</span>　-5.72</p></article>
+  <article class="metric card"><small>S&P 500</small> <b>7,549.94</b> <p class=""><span class="up">▲ 2.35%</span></p></article>
+  <article class="metric card"><small>道瓊</small> <b>52,389.75</b> <p class=""><span class="up">▲ 2.15%</span></p></article>
+  <article class="metric card"><small>那斯達克</small> <b>25,253.14</b> <p class=""><span class="up">▲ 2.74%</span></p></article>
+  <article class="metric card"><small>羅素 2000</small> <b>2,840.81</b> <p class=""><span class="up">▲ 3.15%</span></p></article>
+  <article class="metric card"><small>SOX 半導體</small> <b>10,033.93</b> <p class=""><span class="up">▲ 6.85%</span></p></article>
+  <article class="metric card"><small>VIX</small> <b>19.92</b> <p class=""><span class="down">▼ 22.31%</span></p></article>
 </div>
-<article class="theme card" style="margin-top:12px"><span class="tag fact">盤勢（核對後）</span>
-<p>周一（11/9）三大指數強勁反彈，為4月以來最佳單日表現，收復上周大部分失地。</p>
-<p>標普500：7,549.94（+2.35%）</p>
-<p>道指：52,389.75（+2.15%）</p>
-<p>納指：25,253.14（+2.74%）</p>
-<p>羅素2000：2,840.81（+3.15%）</p>
-<p>VIX大跌22%至19.92，廣度極佳（上漲/下跌約5.7:1），消費可選與工業領漲。油價暴跌緩解通脹擔憂是主要催化，儘管NVDA因CEO調查重挫超4%。市場情緒由恐慌轉向修復，風險偏好回升，但仍受AI監管與利率路徑制約。</p>
-<div class="chips" style="margin-top:12px"><span class="chip warn">晨報引用，未驗證</span><span class="chip">廣度上漲/下跌約 5.7:1</span><span class="chip">4 月以來最佳單日表現</span><span class="chip">消費可選與工業領漲</span><span class="chip">NVDA CEO 調查敘事</span></div>
-<p>「4 月以來最佳單日表現」、廣度上漲/下跌約 5.7:1、消費可選與工業領漲</p>
-<p>NVIDIA（NVDA）收 178.67（-4.27%）。費半 ^SOX 單日 +6.85% 至 10,033.93；MOVE 85.98（-7.32%）；TSM +3.51%。</p>
-</article>
-<article class="theme card" style="margin-top:12px"><span class="tag fact">個股補充（Yahoo）</span>
-<div class="grid2" style="margin-top:4px">
-  <article class="metric card"><small>NVIDIA NVDA</small> <b>178.67</b><p class=""><span class="down">-4.27%</span></p></article>
-  <article class="metric card"><small>台積電 ADR TSM</small> <b>388.62</b><p class=""><span class="up">+3.51%</span></p></article>
-  <article class="metric card"><small>CoreWeave CRWV</small> <b>48.98</b><p class=""><span class="up">+5.56%</span></p></article>
-  <article class="metric card"><small>Applied Materials AMAT</small> <b>370.55</b><p class=""><span class="up">+11.37%</span></p></article>
-  <article class="metric card"><small>Cisco CSCO</small> <b>98.65</b><p class=""><span class="up">+5.11%</span></p></article>
-  <article class="metric card"><small>MOVE</small> <b>85.98</b><p class=""><span class="down">-7.32%</span></p></article>
-</div>
+<article class="theme card" style="margin-top:12px"><span class="tag fact">盤勢</span>
+<p>三大指數強勢反彈（晨報：4 月以來最佳單日，未驗證）。油價暴跌緩解通膨擔憂為主要催化；NVDA 因 CEO 調查重挫。情緒由恐慌轉修復，仍受 AI 監管與利率路徑制約。 <b>漲跌家數約 5.7:1（晨報引用，未驗證）</b></p>
+<div class="chips"><span class="chip warn">晨報引用，未驗證</span><span class="chip">4 月以來最佳單日（未驗證）</span><span class="chip">漲跌家數約 5.7:1</span></div>
 </article>
 </section>
 
 
-<section class="section" id="verify"><div class="head"><h2>Yahoo 核對對照（11/09 vs 11/06）</h2><span>以此為準</span></div>
-<article class="theme card">
-<p>標普500 ^GSPC：11/09 收盤 7,549.94，11/06 收盤 7,376.86，漲跌 +173.08（+2.35%）。</p>
-<p>道瓊 ^DJI：52,389.75，11/06 收盤 51,285.73，漲跌 +1,104.02（+2.15%）。</p>
-<p>那斯達克 ^IXIC：25,253.14，11/06 收盤 24,579.43，漲跌 +673.71（+2.74%）。</p>
-<p>羅素2000 ^RUT：2,840.81，11/06 收盤 2,754.11，漲跌 +86.70（+3.15%）。</p>
-<p>費城半導體 ^SOX：10,033.93，11/06 收盤 9,390.25，漲跌 +643.68（+6.85%）。</p>
-<p>VIX：19.92，11/06 收盤 25.64，漲跌 -5.72（-22.31%）。</p>
-<p>MOVE：85.98，11/06 收盤 92.77，漲跌 -6.79（-7.32%）。</p>
-<p>10年美債殖利率 ^TNX：4.864%，11/06 收盤 4.859%，漲跌 +0.005（+0.10%）。</p>
-<p>美元指數：101.70，11/06 收盤 102.30，漲跌 -0.60（-0.59%）。</p>
-<p>WTI 原油：86.38，11/06 收盤 90.83，漲跌 -4.45（-4.90%）。</p>
-<p>布倫特原油：92.17，11/06 收盤 98.32，漲跌 -6.15（-6.26%）。</p>
-<p>黃金：4,149.50，11/06 收盤 4,074.90，漲跌 +74.60（+1.83%）。</p>
-<p>台積電ADR TSM：388.62，11/06 收盤 375.44，漲跌 +13.18（+3.51%）。</p>
-<p>NVIDIA NVDA：178.67，11/06 收盤 186.64，漲跌 -7.97（-4.27%）。</p>
-<p>CoreWeave CRWV：48.98，11/06 收盤 46.40，漲跌 +2.58（+5.56%）。</p>
-<p>Applied Materials AMAT：370.55，11/06 收盤 332.72，漲跌 +37.83（+11.37%）。</p>
-<p>Cisco CSCO：98.65，11/06 收盤 93.85，漲跌 +4.80（+5.11%）。</p>
-<p>近一週參考（Yahoo：2026/11/03 收盤 → 2026/11/09 收盤）：WTI（CL=F）-10.11%；Brent（BZ=F）-11.03%；黃金（GC=F）+5.31%；10年美債（^TNX）-1.78%（4.952%→4.864%）；美元指數 -0.17%（101.87→101.70）。</p>
-</article>
+<p class="note">S&amp;P 500 7,549.94 ▲ 2.35%</p>
+<p class="note">道瓊 52,389.75 ▲ 2.15%</p>
+<p class="note">那斯達克 25,253.14 ▲ 2.74%</p>
+<p class="note">羅素 2000 2,840.81 ▲ 3.15%</p>
+<p class="note">SOX 半導體 10,033.93 ▲ 6.85%</p>
+<p class="note">VIX 19.92 ▼ 22.31%</p>
+<p class="note">美 10Y 殖利率 4.86% Yahoo ^TNX｜日 +0.10%</p>
+<p class="note">美元指數 DXY 101.68 日 ▼0.61%</p>
+<p class="note">WTI 原油 $86.22 日 ▼5.08%｜Brent $92.21</p>
+<p class="note">黃金 COMEX $4,153.6 日 ▲1.93%</p>
 
-<details class="orig card plain"><summary>看核對表（扁平列）</summary>
-<p>項目 代號 11/09 收盤 11/06 收盤 漲跌 漲跌幅 晨報數字 核對</p>
-<p>項目 漲跌幅 晨報 核對</p>
-<ul>
-<li>標普500 ^GSPC 7,549.94 7,376.86 +173.08 +2.35% 7,549.94（+2.35%）</li>
-<li>道瓊 ^DJI 52,389.75 51,285.73 +1,104.02 +2.15% 52,389.75（+2.15%）</li>
-<li>那斯達克 ^IXIC 25,253.14 24,579.43 +673.71 +2.74% 25,253.14（+2.74%）</li>
-<li>羅素2000 ^RUT 2,840.81 2,754.11 +86.70 +3.15% 2,840.81（+3.15%）</li>
-<li>費城半導體 ^SOX 10,033.93 9,390.25 +643.68 +6.85% 晨報未給費半單日數</li>
-<li>VIX ^VIX 19.92 25.64 -5.72 -22.31% 大跌 22% 至 19.92</li>
-<li>MOVE ^MOVE 85.98 92.77 -6.79 -7.32% 晨報未提</li>
-<li>10年美債殖利率 ^TNX 4.864% 4.859% +0.005 +0.10% 約 4.86%</li>
-<li>美元指數 DX-Y.NYB 101.70 102.30 -0.60 -0.59% 約 101.7–101.9</li>
-<li>WTI 原油 CL=F 86.38 90.83 -4.45 -4.90% 約 86–87</li>
-<li>布倫特原油 BZ=F 92.17 98.32 -6.15 -6.26% Brent 更劇烈（未給收盤）</li>
-<li>黃金 GC=F 4,149.50 4,074.90 +74.60 +1.83% 約 4,149（+約 1.8%）</li>
-<li>台積電ADR TSM 388.62 375.44 +13.18 +3.51% 晨報未點名</li>
-<li>NVIDIA NVDA 178.67 186.64 -7.97 -4.27% 重挫超 4%</li>
-<li>CoreWeave CRWV 48.98 46.40 +2.58 +5.56% 盤後財報標的</li>
-<li>Applied Materials AMAT 370.55 332.72 +37.83 +11.37% 本週財報標的</li>
-<li>Cisco CSCO 98.65 93.85 +4.80 +5.11% 本週財報標的</li>
-<li>WTI（CL=F） -10.11% 單週跌幅超 10%</li>
-<li>Brent（BZ=F） -11.03% Brent 更劇烈</li>
-<li>黃金（GC=F） +5.31% 近週表現強勁（日漲約 1.8%）</li>
-<li>10年美債（^TNX） -1.78%（4.952%→4.864%） 近週震盪回落</li>
-<li>美元指數 -0.17%（101.87→101.70） 近週偏軟</li>
-</ul>
-</details>
-</section>
-
-<section class="section" id="s2"><div class="head"><h2>2. 本週四大焦點深度剖析</h2></div>
+<section class="section" id="s2"><div class="head"><h2><span class="no">2</span> 本週四大焦點</h2><span>「晨報觀點」為原文判斷</span>
+<p class="note">2 本週四大焦點 「晨報觀點」為原文判斷</p></div>
 <div class="stack3">
-<article class="theme card" style="border-top:5px solid var(--blue)"><h3>10月CPI（周二）</h3>
-<p>核心關注點，市場預期環比放緩，將直接決定12月加息概率與科技股估值。</p>
+<article class="theme card" style="border-top:5px solid var(--blue)"><h3>10 月 CPI（週二）</h3>
+<p><b class="up">決定 12 月加息機率與科技股估值</b></p>
+<p>晨報觀點：非農後市場更盯通膨路徑</p>
 </article>
-<article class="theme card" style="border-top:5px solid var(--up)"><h3>AI板塊與NVDA事件</h3>
-<p class="uv"><span class="chip warn">晨報引用，未驗證</span></p>
-<p>CEO獨立調查引發治理疑慮，NVDA已近七個月低點；CRWV、AMAT、CSCO等財報將檢驗數據中心需求是否持續。</p>
+<article class="theme card" style="border-top:5px solid var(--up)"><h3>AI 板塊與 NVDA</h3>
+<p><b class="up">CEO 獨立調查・近七個月低點</b></p>
+<p>晨報：CRWV／AMAT／CSCO 財報檢驗資料中心需求</p>
 </article>
-<article class="theme card" style="border-top:5px solid var(--amber)"><h3>利率路徑與Fed政策</h3>
-<p>強勁非農後12月加息概率高企，CPI若偏熱將進一步鞏固鷹派預期。</p>
+<article class="theme card" style="border-top:5px solid var(--amber)"><h3>利率路徑</h3>
+<p><b class="up">強勁非農後 12 月加息機率偏高</b></p>
+<p>晨報觀點：與 FedWatch 升息定價呼應</p>
 </article>
 <article class="theme card" style="border-top:5px solid var(--down)"><h3>油價與地緣</h3>
-<p class="uv"><span class="chip warn">晨報引用，未驗證</span></p>
-<p>伊朗局勢緩和預期推動油價單週大跌，為股市提供喘息，但中東風險仍存。</p>
+<p><b>WTI 單日 −5.08%（Yahoo）</b></p>
+<p>晨報：伊朗緩和預期，單週大跌未驗證；中東風險仍在 <span class="chip warn">晨報引用，未驗證</span></p>
 </article>
 </div>
 </section>
 
-<section class="section" id="s3"><div class="head"><h2>3. 美債、美元、原油、黃金近一週走勢</h2><span>11/09 收盤｜近一週參考</span></div>
+
+<p class="note">10 月 CPI（週二） 決定 12 月加息機率與科技股估值 晨報觀點：非農後市場更盯通膨路徑</p>
+<p class="note">AI 板塊與 NVDA CEO 獨立調查・近七個月低點 晨報：CRWV／AMAT／CSCO 財報檢驗資料中心需求</p>
+<p class="note">利率路徑 強勁非農後 12 月加息機率偏高 晨報觀點：與 FedWatch 升息定價呼應</p>
+<p class="note">油價與地緣 WTI 單日 −5.08%（Yahoo） 晨報：伊朗緩和預期，單週大跌未驗證；中東風險仍在</p>
+
+<section class="section" id="s3"><div class="head"><h2><span class="no">3</span> 債・匯・油・金</h2><span>11/9 收盤｜Yahoo</span>
+<p class="note">3 債・匯・油・金 11/9 收盤｜Yahoo</p></div>
 <div class="grid2">
-  <article class="metric card"><small>10年美債殖利率</small> <b>4.864%</b><p class=""><span class="up">+0.10% 日</span>　近週 -1.78%（4.952%→4.864%）</p></article>
-  <article class="metric card"><small>美元指數 DXY</small> <b>101.70</b><p class=""><span class="down">-0.59%</span>　近週 -0.17%</p></article>
-  <article class="metric card"><small>WTI 原油</small> <b>86.38</b><p class=""><span class="down">-4.90% 日</span>　單週 -10.11%</p></article>
-  <article class="metric card"><small>布倫特原油</small> <b>92.17</b><p class=""><span class="down">-6.26% 日</span>　單週 -11.03%</p></article>
-  <article class="metric card"><small>黃金</small> <b>4,149.50</b><p class=""><span class="up">+1.83%</span>　近週 +5.31%</p></article>
-  <article class="metric card"><small>MOVE</small> <b>85.98</b><p class=""><span class="down">-7.32%</span></p></article>
-</div>
-<article class="theme card" style="margin-top:12px"><span class="tag fact">晨報原文對照</span>
-<p>美債：10年期收益率約4.86%，近週震盪回落，油價下跌與避險需求支撐。</p>
-<p>美元：DXY收於約101.7–101.9，近週偏軟，受油價與風險偏好回升影響。</p>
-<p>原油：WTI約86–87美元，單週跌幅超10%，Brent更劇烈，主要因中東緊張緩解。<span class="chip warn">晨報引用，未驗證</span></p>
-<p>黃金：升至約4,149美元（+約1.8%），受美元偏弱與避險支撐，近週表現強勁。</p>
-</article>
-</section>
-
-<section class="section" id="s4"><div class="head"><h2>4. CME FedWatch最新利率路徑機率</h2><span>晨報引用</span></div>
-<article class="theme card">
-<p>無法驗證（晨報引用，未驗證）：</p><div class="chips"><span class="chip warn">晨報引用，未驗證</span></div>
-<p style="margin-top:10px">12月8–9日會議：25bp加息概率約78–86%（近期多源數據），維持不變約14–22%，降息概率接近0。市場已基本定價一次年底加息，後續路徑視CPI與12月就業數據而定。當前目標區間為3.75–4.00%。 CME FedWatch：12 月會議 25bp 加息機率約 78–86%、維持不變約 14–22%、降息接近 0；當前目標區間 3.75–4.00%（晨報引用，未驗證）。</p>
-</article>
-</section>
-
-<section class="section" id="s5"><div class="head"><h2>5. 本週重磅日程（台灣時間）</h2><span>台灣時間</span></div>
-<div class="stack3">
-<article class="event card day"><h3>11/10（二）</h3>
-<p>11/10（二）21:30：美國10月CPI</p>
-<p>11/10（二）盤後：CoreWeave（CRWV）財報</p>
-</article>
-<article class="event card day"><h3>11/11（三）</h3>
-<div class="srow"><b>—</b><span>退伍軍人節（股市開市、債市休市）</span></div>
-</article>
-<article class="event card day"><h3>11/12（四）</h3>
-<p>11/12（四）21:30：初請失業金；盤後Applied Materials（AMAT）、Cisco（CSCO）等</p>
-</article>
-<article class="event card day"><h3>11/13（五）</h3>
-<p>11/13（五）21:30：10月PPI</p>
-</article>
+  <article class="metric card"><small>美 10Y 殖利率</small> <b>4.86%</b> <p class="">Yahoo ^TNX｜日 +0.10%</p></article>
+  <article class="metric card"><small>美元指數 DXY</small> <b>101.68</b> <p class=""><span class="down">日 ▼0.61%</span></p></article>
+  <article class="metric card"><small>WTI 原油</small> <b>$86.22</b> <p class=""><span class="down">日 ▼5.08%</span>｜Brent $92.21</p></article>
+  <article class="metric card"><small>黃金 COMEX</small> <b>$4,153.6</b> <p class=""><span class="up">日 ▲1.93%</span></p></article>
 </div>
 </section>
 
-<section class="section" id="s6"><div class="head"><h2>6. 焦點企業財報與產業追蹤</h2></div>
-<div class="amber"><b>原文截斷</b>：信件在「6. 焦點企業財報與產業追蹤」段落截斷（「CRW ...」），後續未取得；勿開啟 grok.com Continue reading。</div>
-<article class="theme card" style="margin-top:12px">
-<p>財報季尾聲，AI基礎設施與半導體設備是重點。CRW ...（信件於此截斷）</p>
-<p>Yahoo 補充（11/09 收盤）：CoreWeave（CRWV）48.98（+5.56%）；Applied Materials（AMAT）370.55（+11.37%）；Cisco（CSCO）98.65（+5.11%）。</p>
-</article>
-</section>
-
-
-<section class="section" id="note"><div class="head"><h2>核對備註</h2></div>
+<section class="section" id="s4"><div class="head"><h2><span class="no">4</span> FedWatch</h2><span>Investing.com｜11/10 07:05 台灣</span>
+<p class="note">4 FedWatch Investing.com｜11/10 07:05 台灣</p></div>
 <article class="theme card">
-<p>三大指數、羅素、VIX、10Y、DXY、WTI、黃金與 Yahoo 一致或僅尾數／區間吻合；NVDA -4.27% 符合「重挫超 4%」。</p>
-<p>補充：費半 ^SOX 單日 +6.85% 至 10,033.93；MOVE 85.98（-7.32%）；TSM +3.51%；CRWV / AMAT / CSCO 11/09 收盤見上表。</p>
-<p>WTI 單週（11/03→11/09）-10.11%、Brent -11.03%，與「單週跌幅超 10%、Brent 更劇烈」一致。</p>
-<p>FedWatch、廣度 5.7:1、NVDA CEO 調查敘事、地緣判斷屬晨報引用／觀點，圖表請標「晨報引用，未驗證」或與 Buy side 判斷分開；本檔無 Buy side 新判斷。</p>
-<p>今日焦點：台灣時間 11/10 21:30 美國 10 月 CPI；盤後 CRWV 財報。</p>
+<p class="fwnote">現行 3.75–4.00%（Fed 10/28 聲明）｜Updated Nov 09 06:05PM EST</p>
+<div class="fwlab">12/9 會議</div>
+<div class="fwbar">
+  <div style="width:17.2%;background:#7a8499">17.2%</div>
+  <div style="width:82.8%;background:#c62828">升一碼 82.8%</div>
+</div>
+<p class="fwsub">維持 17.2%｜升 25bp 82.8%｜降息 0%（前日升 75.5%）</p>
+<div class="fwlab">1/27 會議（累計）</div>
+<div class="fwbar" style="height:32px;font-size:14px">
+  <div style="width:12.7%;background:#7a8499">12.7%</div>
+  <div style="width:65.6%;background:#c62828">+25bp 65.6%</div>
+  <div style="width:21.7%;background:#7a0b1c">21.7%</div>
+</div>
+<p class="fwsub">維持 12.7%｜+25bp 65.6%｜+50bp 21.7%</p>
 </article>
 </section>
 
-<section class="section decision card" id="buyside">
-<span class="badge">分析師觀點・非事實</span>
-<h2>Buy side 的判斷</h2>
-<p style="color:#acd0f0;font-size:14px;margin:0 0 4px">本檔無 Buy side 新判斷；以下為晨報中的判斷／敘事，與 Yahoo 核對事實分開呈現。</p>
+<section class="section" id="s5"><div class="head"><h2><span class="no">5</span> 本週重磅日程</h2><span>台灣時間（美東 UTC−5，＋13 小時）</span>
+<p class="note">5 本週重磅日程 台灣時間（美東 UTC−5，＋13 小時）</p></div>
+<article class="card" style="padding:8px 12px">
+<table class="sch">
+  <tr><td class="dt">11/10 二</td><td> <span class="hot num">21:30</span> 美國 10 月 CPI </td><td> 美東 08:30</td></tr>
+  <tr><td class="dt">11/11 三 清晨</td><td> CoreWeave（CRWV）財報 </td><td> 美東 11/10 盤後 16:00（Yahoo）</td></tr>
+  <tr><td class="dt">11/11 三</td><td> 美國退伍軍人節 </td><td> 股市開、債市休</td></tr>
+  <tr><td class="dt">11/12 四</td><td> <span class="hot num">21:30</span> 初請失業金 </td><td> 美東 08:30</td></tr>
+  <tr><td class="dt">11/13 五 清晨</td><td> AMAT、CSCO 財報 </td><td> 美東 11/12 盤後</td></tr>
+  <tr><td class="dt">11/13 五</td><td> <span class="hot num">21:30</span> 美國 10 月 PPI </td><td> 美東 08:30</td></tr>
+</table>
+<p class="note">11/10 二 21:30 美國 10 月 CPI 美東 08:30</p>
+<p class="note">11/11 三 清晨 CoreWeave（CRWV）財報 美東 11/10 盤後 16:00（Yahoo）</p>
+<p class="note">11/11 三 美國退伍軍人節 股市開、債市休</p>
+<p class="note">11/12 四 21:30 初請失業金 美東 08:30</p>
+<p class="note">11/13 五 清晨 AMAT、CSCO 財報 美東 11/12 盤後</p>
+<p class="note">11/13 五 21:30 美國 10 月 PPI 美東 08:30</p>
+</article>
+</section>
+
+<section class="section" id="s6"><div class="head"><h2><span class="no">6</span> 焦點企業與產業追蹤</h2><span>晨報於財報段截斷</span>
+<p class="note">6 焦點企業與產業追蹤 晨報於財報段截斷</p></div>
+<div class="amber"><b>原文截斷</b>：晨報於財報段截斷——其後缺段。</div>
+<div class="trk">
+  <div class="trkrow"><span class="tkb k">NVDA</span><span>收 <b class="down">▼4.27%</b>（$178.67）。晨報：因 CEO 獨立調查重挫超 4%、近七個月低點（晨報引用，未驗證調查細節） <span class="chip warn">晨報引用，未驗證</span></span></div>
+  <div class="trkrow"><span class="tkb k">TSM</span><span>ADR 收 <b class="up">▲3.51%</b>（$388.62，Yahoo 補充）</span></div>
+  <div class="trkrow"><span class="tkb k">SOX</span><span>收 <b class="up">▲6.85%</b>（10,033.93），半導體領漲（Yahoo 補充）</span></div>
+  <div class="trkrow"><span class="tkb">AI／設備</span><span>晨報：財報季尾聲，AI 基礎設施與半導體設備為重點——<b>其後缺段</b></span></div>
+</div>
+</section>
+
+
+<p class="note">NVDA 收 ▼4.27% （$178.67）。晨報：因 CEO 獨立調查重挫超 4%、近七個月低點（晨報引用，未驗證調查細節）</p>
+<p class="note">TSM ADR 收 ▲3.51% （$388.62，Yahoo 補充）</p>
+<p class="note">SOX 收 ▲6.85% （10,033.93），半導體領漲（Yahoo 補充）</p>
+<p class="note">AI／設備 晨報：財報季尾聲，AI 基礎設施與半導體設備為重點—— 其後缺段</p>
+
+<section class="section decision card" id="s7">
+<span class="badge">晨報判斷</span>
+<h2><span class="no">7</span> Nan 觀點與策略</h2>
+<p class="note" style="color:#acd0f0">7 Nan 觀點與策略 晨報判斷</p>
+<div class="quote">情緒由恐慌轉修復，仍受 AI 監管與利率路徑制約</div>
 <ul>
-<li>市場情緒由恐慌轉向修復，風險偏好回升，但仍受AI監管與利率路徑制約。</li>
-<li>強勁非農後12月加息概率高企，CPI若偏熱將進一步鞏固鷹派預期。（利率路徑判斷）強勁非農後 12 月加息概率高企、CPI 將決定路徑等判斷</li>
-<li>伊朗／中東局勢緩和預期推動油價下跌等地緣敘事：為股市提供喘息，但中東風險仍存。<span class="chip warn">晨報引用，未驗證</span></li>
-<li>NVDA「CEO 獨立調查／治理疑慮」「已近七個月低點」等敘事屬晨報引用，未驗證。<span class="chip warn">晨報引用，未驗證</span></li>
+<li><span class="k">1</span> 晨報：油價暴跌緩解通膨擔憂，為 11/9 反彈主要催化</li>
+<li><span class="k">2</span> 晨報：強勁非農後利率路徑偏鷹，12 月加息機率高；本週 CPI 為關鍵</li>
+<li><span class="k">3</span> 晨報：AI 板塊受 NVDA CEO 調查與監管疑慮牽制，財報將檢驗需求</li>
+<p class="note" style="color:#acd0f0">1 晨報：油價暴跌緩解通膨擔憂，為 11/9 反彈主要催化</p>
+<p class="note" style="color:#acd0f0">2 晨報：強勁非農後利率路徑偏鷹，12 月加息機率高；本週 CPI 為關鍵</p>
+<p class="note" style="color:#acd0f0">3 晨報：AI 板塊受 NVDA CEO 調查與監管疑慮牽制，財報將檢驗需求</p>
 </ul>
 </section>
 
 <footer class="footer">
-<b>資料來源：Grok Nan美股晨報；Yahoo Finance 核對（數據截至美股 2026/11/09 收盤），僅供參考，非投資建議。</b><br>
-整理：小布｜判斷區標示 Buy side<br>
-本頁為自有摘要呈現，非原文全文轉載。FedWatch、廣度、NVDA CEO 調查敘事與地緣判斷已標「晨報引用，未驗證」。
+<b>來源：Nan 晨報；Yahoo Finance（Manny 核對）、Investing.com Fed Rate Monitor、Fed｜羅素2000 另以 Yahoo 核對</b><br>
+版面：小布（依小資 Nan 整理資訊圖）｜<b>僅供個人學習，非投資建議</b><br>
+本頁為自有摘要呈現，非原文全文轉載。未驗證項已標「晨報引用，未驗證」。
 </footer>
 </main>
 </body>
