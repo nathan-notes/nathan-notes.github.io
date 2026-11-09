@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f4f7fb">
+<title>ETF 均線監控｜2026-11-10</title>
+<style>
+:root{--ink:#10233f;--muted:#5b6b80;--line:#dfe7f1;--paper:#fff;--bg:#f4f7fb;--navy:#0d315e;--blue:#1f5d9c;--up:#c62828;--down:#087f5b;--amber:#b86100;--shadow:0 12px 36px rgba(16,35,63,.07)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.72;overflow-x:hidden}
+.page{width:min(1100px,100%);margin:auto;padding:24px 18px 56px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;box-shadow:0 7px 26px rgba(16,35,63,.045)}
+.up{color:var(--up)}.down{color:var(--down)}
+/* hero */
+.hero{padding:30px;background:linear-gradient(135deg,#fff 0%,#f5f8fc 65%,#e8f1fa 100%);position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.hero:after{content:"";position:absolute;width:350px;height:350px;border-radius:50%;right:-160px;top:-210px;background:radial-gradient(circle,rgba(198,40,40,.11),transparent 68%);pointer-events:none}
+.eyebrow{font-size:13px;color:var(--blue);font-weight:900;letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.14;letter-spacing:-.03em;margin:10px 0 6px}
+.date{color:var(--muted);font-size:15px;font-weight:750}.subtitle{margin:6px 0 0;font-size:16px;color:#33475f;font-weight:700}
+.thesis{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:19px;font-weight:850;line-height:1.6}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pill{display:inline-block;border-radius:999px;padding:6px 13px;font-weight:900;font-size:14px;border:1px solid var(--line);background:#fff;line-height:1.45}
+.pill.kgi{background:#eaf2fb;color:var(--blue);border-color:#cfe0f2}.pill.judge{background:#fff4e2;color:#8b4d06;border-color:#f0d8b6}
+/* nav */
+.nav{position:sticky;top:0;z-index:5;background:rgba(244,247,251,.94);backdrop-filter:blur(8px);margin:14px -18px 0;padding:10px 18px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line)}
+.nav::-webkit-scrollbar{display:none}.nav a{flex:none;font-size:14px;font-weight:800;color:var(--navy);text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+/* sections */
+.section{margin-top:30px;scroll-margin-top:64px}
+.head{display:flex;align-items:end;justify-content:space-between;gap:10px;margin:0 2px 12px}
+.head h2{margin:0;font-size:23px;line-height:1.3}.head span{font-size:14px;color:var(--muted);font-weight:700}
+.tag{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:2px 10px;margin-bottom:8px}
+.tag.fact{background:#eaf2fb;color:var(--blue)}.tag.judge{background:#fff1d9;color:#8b4d06}
+/* stat tiles */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.metric{padding:15px 14px;min-width:0}.metric small{display:block;font-size:14px;color:var(--muted);font-weight:850}
+.metric b{display:block;font-size:23px;line-height:1.25;margin-top:4px;font-variant-numeric:tabular-nums}
+.metric p{margin:5px 0 0;font-size:14px;color:#5b6b80;line-height:1.5}.metric p.up,.metric p.down{font-weight:800}
+/* list rows (MA / sectors) */
+.panel{padding:20px}.panel h3{margin:0 0 12px;font-size:19px}
+.rows{display:grid;gap:8px}.row{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;padding:11px 13px;border-radius:12px;background:#f8fafc;border:1px solid #edf1f6;font-size:16px}
+.row span:nth-child(2){font-variant-numeric:tabular-nums;font-weight:750}.row span:last-child{color:var(--muted);font-size:14px}
+.srow{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:17px}.srow:first-of-type{border-top:0}.srow b{font-variant-numeric:tabular-nums}
+/* boxes */
+.level,.caution{background:#fff8ed;border:1px solid #f0d8b6;border-radius:16px;padding:16px 18px;color:#664a2e;font-size:16px}
+.level{margin-top:12px}.caution h2{margin:0 0 8px;color:#8b4d06;font-size:21px}
+.caution ul,.plain ul{margin:0;padding-left:20px}.caution li,.plain li{margin:6px 0}
+.plain{padding:18px 18px}.plain p{margin:0}
+.theme{padding:18px}.theme h3{margin:0 0 6px;font-size:18px;color:var(--navy)}.theme p{margin:0;color:#33475f;font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.chip{border:1px solid var(--line);background:#f8fafc;border-radius:999px;padding:5px 11px;font-size:14px;font-weight:800;color:var(--blue)}
+.scenario{padding:20px}.scenario b{display:block;font-size:21px;margin-bottom:6px}.scenario p{font-size:16px;color:#33475f;margin:0}
+.scenario.s-down{border-top:5px solid var(--down)}.scenario.s-amber{border-top:5px solid var(--amber)}
+.event{padding:16px 18px}.event small{color:var(--muted);font-weight:850;font-size:14px}.event p{font-size:16px;color:#33475f;margin:4px 0 0}
+/* analyst judgment */
+.decision{padding:24px;background:linear-gradient(135deg,#0b2d56,#164c83);color:#fff;border:none}
+.decision h2{margin:0 0 4px;font-size:23px}.decision .badge{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:3px 11px;background:#ffd98a;color:#4a3000;margin-bottom:10px}
+.decision p{color:#e3edf8;font-size:16px;margin:0}.decision-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:15px}
+.decision-item{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);border-radius:14px;padding:15px}
+.decision-item small{display:block;color:#acd0f0;font-weight:900;font-size:14px;margin-bottom:3px}
+details.orig{margin-top:10px;font-size:15px;color:#33475f}details.orig summary{cursor:pointer;font-weight:800;color:var(--blue);font-size:14px}details.orig ul{padding-left:20px;margin:8px 0 0}details.orig li{margin:5px 0}
+.footer{margin-top:26px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:14px}
+@media(max-width:850px){.grid4{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:1fr}}
+@media(max-width:620px){.page{padding:12px 12px 42px}.nav{margin:12px -12px 0;padding:9px 12px}.hero{padding:22px 18px;border-radius:18px}.grid3,.decision-grid{grid-template-columns:1fr}.grid2,.grid4{gap:8px}.metric{padding:13px 12px}.metric b{font-size:21px}.panel,.scenario,.decision{padding:18px 16px}.head{align-items:start;flex-direction:column;gap:0}}
+.note{margin:10px 4px 0;font-size:15px;color:var(--muted)}
+@media(max-width:620px){.grid2.stack{grid-template-columns:1fr}}
+
+.stack3{display:grid;gap:12px}
+.metric b .up,.metric p .up,.metric b span.up{color:var(--up)}
+.metric b .down,.metric p .down,.metric b span.down{color:var(--down)}
+.metric p.up,.metric p.down{font-weight:800}
+.decision ul{margin:8px 0 0;padding-left:20px;color:#e3edf8;font-size:16.5px}
+.decision li{margin:10px 0;line-height:1.7}
+.decision p{color:#e3edf8;font-size:16.5px;line-height:1.7;margin:8px 0 0}
+.footer{font-size:15px;line-height:1.75}
+.amber{background:#fff8ed;border:1px solid #f0d8b6;border-radius:16px;padding:16px 18px;color:#664a2e;font-size:16px;margin-top:12px}
+.amber b{color:#8b4d06}
+.ewt{border:2px solid #f2b8b8;background:linear-gradient(135deg,#fff6f6,#fff);padding:20px 18px}
+.ewt h2{margin:0 0 8px;font-size:23px;color:var(--up)}
+.ewt p{margin:0;font-size:17px;color:#33475f;line-height:1.7}
+.theme p+p{margin-top:8px}
+.wraptable{width:100%;border-collapse:collapse;font-size:15.5px;margin-top:4px}
+.wraptable th,.wraptable td{border-bottom:1px solid var(--line);padding:10px 8px;text-align:left;vertical-align:top;word-break:break-word;overflow-wrap:anywhere}
+.wraptable th{font-size:13.5px;color:var(--muted);font-weight:800;white-space:nowrap}
+.wraptable td.sym{font-weight:900;color:var(--navy);white-space:nowrap}
+.wraptable .up{color:var(--up);font-weight:800}.wraptable .down{color:var(--down);font-weight:800}
+.etfcards{display:none;gap:10px;margin-top:8px}
+.etfcard{padding:14px 14px;border:1px solid var(--line);border-radius:16px;background:#fff}
+.etfcard.hot{border-color:#f2b8b8;background:#fff6f6}
+.etfcard .nm{font-size:20px;font-weight:900;color:var(--navy)}
+.etfcard .px{font-size:26px;font-weight:900;font-variant-numeric:tabular-nums;margin:2px 0 6px}
+.etfcard .grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 10px;font-size:14.5px}
+.etfcard .grid span{color:var(--muted);font-weight:700}
+.etfcard .grid b{font-variant-numeric:tabular-nums}
+.etfcard .st{margin-top:8px;font-size:15px;color:#33475f;line-height:1.5}
+@media(max-width:720px){
+  .tablewrap{display:none}
+  .etfcards{display:grid}
+}
+@media(min-width:721px){
+  .etfcards{display:none}
+  .tablewrap{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
+</style>
+</head>
+<body>
+<main class="page">
+
+<header class="hero card">
+  <div class="eyebrow">ETF Moving-Average Monitor</div>
+  <h1>ETF 均線監控｜2026-11-10</h1>
+  <div class="date">台北早上整理・資料日 2026-11-09 美股收盤</div>
+  <div class="thesis">今天有突破訊號，1 檔 ⚠️ 帶量（EWT）。</div>
+  <div class="pills">
+    <span class="pill kgi">事實｜均線與量比</span>
+    <span class="pill judge">Buy side 判斷另框</span>
+  </div>
+</header>
+<nav class="nav" aria-label="頁面導覽">
+  <a href="#ewt">⚠️ 帶量突破</a><a href="#thin">無量突破</a><a href="#table">簡表</a>
+  <a href="#bg">背景</a><a href="#buyside">Buy side 判斷</a>
+</nav>
+
+<section class="section" id="ewt">
+<article class="card ewt">
+  <h2>⚠️ 帶量突破</h2>
+  <p>EWT 收 95.65（+7.18%），向上突破 MA200（94.14，距 +1.61%），量比 1.81。仍在 MA20（103.40）之下 7.5%、MA50（108.81）之下 12.1%。</p>
+</article>
+</section>
+
+<section class="section" id="thin"><div class="head"><h2>無量突破</h2></div>
+<article class="theme card">
+<ul style="margin:0;padding-left:20px">
+<li>ACWI 收 156.35（+2.61%），突破 MA200，量比 1.28（未達 1.5）。</li>
+<li>IWM 收 282.51（+3.23%），同時突破 MA20、MA50、MA200，量比 1.12（未帶量）；距 MA50 僅 +0.29%。</li>
+</ul>
+</article>
+</section>
+
+<section class="section" id="table"><div class="head"><h2>簡表</h2><span>漲紅・跌綠</span></div>
+<div class="tablewrap card" style="padding:8px 10px">
+<table class="wraptable">
+<thead><tr><th>ETF</th><th>收盤</th><th>漲跌</th><th>距MA20</th><th>距MA50</th><th>距MA200</th><th>狀態</th></tr></thead>
+<tbody>
+<tr><td class="sym">SPY</td><td>752.69</td><td class="up">+2.37%</td><td class="down">-1.23%</td><td class="down">-1.59%</td><td class="up">+3.39%</td><td>站上200，跌破20、50</td></tr><tr><td class="sym">QQQ</td><td>679.35</td><td class="up">+3.54%</td><td class="down">-3.54%</td><td class="down">-5.65%</td><td class="down">-0.11%</td><td>三線之下，貼近MA200</td></tr><tr><td class="sym">SOXX</td><td>146.76</td><td class="up">+7.49%</td><td class="down">-8.87%</td><td class="down">-15.26%</td><td class="down">-8.04%</td><td>三線之下</td></tr><tr><td class="sym">ACWI</td><td>156.35</td><td class="up">+2.61%</td><td class="down">-0.69%</td><td class="down">-1.71%</td><td class="up">+2.25%</td><td>突破MA200，近MA20</td></tr><tr><td class="sym">EWT</td><td>95.65</td><td class="up">+7.18%</td><td class="down">-7.49%</td><td class="down">-12.09%</td><td class="up">+1.61%</td><td>⚠️帶量站上MA200（量比1.81）</td></tr><tr><td class="sym">IWM</td><td>282.51</td><td class="up">+3.23%</td><td class="up">+1.96%</td><td class="up">+0.29%</td><td class="up">+1.58%</td><td>三線之上</td></tr><tr><td class="sym">CWB</td><td>92.95</td><td class="up">+1.75%</td><td class="down">-2.20%</td><td class="down">-6.16%</td><td class="down">-6.73%</td><td>三線之下，量比0.83</td></tr>
+</tbody>
+</table>
+</div>
+<div class="etfcards">
+<article class="etfcard">
+  <div class="nm">SPY</div>
+  <div class="px">752.69 <span class="up">+2.37%</span></div>
+  <div class="grid">
+    <span>距MA20</span><b class="down">-1.23%</b>
+    <span>距MA50</span><b class="down">-1.59%</b>
+    <span>距MA200</span><b class="up">+3.39%</b>
+  </div>
+  <div class="st">站上200，跌破20、50</div>
+</article><article class="etfcard">
+  <div class="nm">QQQ</div>
+  <div class="px">679.35 <span class="up">+3.54%</span></div>
+  <div class="grid">
+    <span>距MA20</span><b class="down">-3.54%</b>
+    <span>距MA50</span><b class="down">-5.65%</b>
+    <span>距MA200</span><b class="down">-0.11%</b>
+  </div>
+  <div class="st">三線之下，貼近MA200</div>
+</article><article class="etfcard">
+  <div class="nm">SOXX</div>
+  <div class="px">146.76 <span class="up">+7.49%</span></div>
+  <div class="grid">
+    <span>距MA20</span><b class="down">-8.87%</b>
+    <span>距MA50</span><b class="down">-15.26%</b>
+    <span>距MA200</span><b class="down">-8.04%</b>
+  </div>
+  <div class="st">三線之下</div>
+</article><article class="etfcard">
+  <div class="nm">ACWI</div>
+  <div class="px">156.35 <span class="up">+2.61%</span></div>
+  <div class="grid">
+    <span>距MA20</span><b class="down">-0.69%</b>
+    <span>距MA50</span><b class="down">-1.71%</b>
+    <span>距MA200</span><b class="up">+2.25%</b>
+  </div>
+  <div class="st">突破MA200，近MA20</div>
+</article><article class="etfcard hot">
+  <div class="nm">EWT</div>
+  <div class="px">95.65 <span class="up">+7.18%</span></div>
+  <div class="grid">
+    <span>距MA20</span><b class="down">-7.49%</b>
+    <span>距MA50</span><b class="down">-12.09%</b>
+    <span>距MA200</span><b class="up">+1.61%</b>
+  </div>
+  <div class="st">⚠️帶量站上MA200（量比1.81）</div>
+</article><article class="etfcard">
+  <div class="nm">IWM</div>
+  <div class="px">282.51 <span class="up">+3.23%</span></div>
+  <div class="grid">
+    <span>距MA20</span><b class="up">+1.96%</b>
+    <span>距MA50</span><b class="up">+0.29%</b>
+    <span>距MA200</span><b class="up">+1.58%</b>
+  </div>
+  <div class="st">三線之上</div>
+</article><article class="etfcard">
+  <div class="nm">CWB</div>
+  <div class="px">92.95 <span class="up">+1.75%</span></div>
+  <div class="grid">
+    <span>距MA20</span><b class="down">-2.20%</b>
+    <span>距MA50</span><b class="down">-6.16%</b>
+    <span>距MA200</span><b class="down">-6.73%</b>
+  </div>
+  <div class="st">三線之下，量比0.83</div>
+</article>
+</div>
+<p style="margin:12px 2px 0;font-size:16px;color:#33475f">無 MA50/MA200 黃金交叉或死亡交叉。</p>
+</section>
+
+<section class="section" id="bg"><div class="head"><h2>背景</h2></div>
+<div class="grid2">
+  <article class="metric card"><small>VIX</small> <b>19.92</b><p>前日 25.64</p></article>
+  <article class="metric card"><small>MOVE</small> <b>85.98</b><p>前日 92.77</p></article>
+</div>
+<article class="theme card" style="margin-top:12px">
+<p>VIX 19.92（前日 25.64）；MOVE 85.98（前日 92.77）。</p>
+</article>
+</section>
+
+<section class="section decision card" id="buyside">
+<span class="badge">分析師觀點・非事實</span>
+<h2>Buy side 的判斷</h2>
+<p>昨日普漲屬急跌後反彈，多數標的仍在 MA20／MA50 之下，只有 IWM 完整收復三線，且量能普通（除 EWT），尚不足確認趨勢翻多。QQQ 貼著 MA200、SPY 離 MA20 約 1.2%，今明兩日能否站回是關鍵；EWT 帶量站上 MA200 值得關注，但需續站穩。VIX 與 MOVE 同步降溫，利於風險資產，建議維持分批、不追價。僅供建議，不下單。</p>
+</section>
+
+<footer class="footer">
+<b>資料來源：ETF 均線監控（資料日 2026-11-09 美股收盤），僅供參考，非投資建議。</b><br>
+整理與判斷：Buy side｜版面：小布<br>
+本頁為自有摘要呈現，非原文全文轉載。
+</footer>
+</main>
+</body>
+</html>
