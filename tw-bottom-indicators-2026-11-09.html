@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f4f7fb">
+<title>台股落底指標觀察｜2026/11/9</title>
+<style>
+:root{--ink:#10233f;--muted:#5b6b80;--line:#dfe7f1;--paper:#fff;--bg:#f4f7fb;--navy:#0d315e;--blue:#1f5d9c;--up:#c62828;--down:#087f5b;--amber:#b86100;--shadow:0 12px 36px rgba(16,35,63,.07)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.72;overflow-x:hidden}
+.page{width:min(1100px,100%);margin:auto;padding:24px 18px 56px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;box-shadow:0 7px 26px rgba(16,35,63,.045)}
+.up{color:var(--up)}.down{color:var(--down)}
+/* hero */
+.hero{padding:30px;background:linear-gradient(135deg,#fff 0%,#f5f8fc 65%,#e8f1fa 100%);position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.hero:after{content:"";position:absolute;width:350px;height:350px;border-radius:50%;right:-160px;top:-210px;background:radial-gradient(circle,rgba(198,40,40,.11),transparent 68%);pointer-events:none}
+.eyebrow{font-size:13px;color:var(--blue);font-weight:900;letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.14;letter-spacing:-.03em;margin:10px 0 6px}
+.date{color:var(--muted);font-size:15px;font-weight:750}.subtitle{margin:6px 0 0;font-size:16px;color:#33475f;font-weight:700}
+.thesis{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:19px;font-weight:850;line-height:1.6}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pill{display:inline-block;border-radius:999px;padding:6px 13px;font-weight:900;font-size:14px;border:1px solid var(--line);background:#fff;line-height:1.45}
+.pill.kgi{background:#eaf2fb;color:var(--blue);border-color:#cfe0f2}.pill.judge{background:#fff4e2;color:#8b4d06;border-color:#f0d8b6}
+/* nav */
+.nav{position:sticky;top:0;z-index:5;background:rgba(244,247,251,.94);backdrop-filter:blur(8px);margin:14px -18px 0;padding:10px 18px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line)}
+.nav::-webkit-scrollbar{display:none}.nav a{flex:none;font-size:14px;font-weight:800;color:var(--navy);text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+/* sections */
+.section{margin-top:30px;scroll-margin-top:64px}
+.head{display:flex;align-items:end;justify-content:space-between;gap:10px;margin:0 2px 12px}
+.head h2{margin:0;font-size:23px;line-height:1.3}.head span{font-size:14px;color:var(--muted);font-weight:700}
+.tag{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:2px 10px;margin-bottom:8px}
+.tag.fact{background:#eaf2fb;color:var(--blue)}.tag.judge{background:#fff1d9;color:#8b4d06}
+/* stat tiles */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.metric{padding:15px 14px;min-width:0}.metric small{display:block;font-size:14px;color:var(--muted);font-weight:850}
+.metric b{display:block;font-size:23px;line-height:1.25;margin-top:4px;font-variant-numeric:tabular-nums}
+.metric p{margin:5px 0 0;font-size:14px;color:#5b6b80;line-height:1.5}.metric p.up,.metric p.down{font-weight:800}
+/* list rows (MA / sectors) */
+.panel{padding:20px}.panel h3{margin:0 0 12px;font-size:19px}
+.rows{display:grid;gap:8px}.row{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;padding:11px 13px;border-radius:12px;background:#f8fafc;border:1px solid #edf1f6;font-size:16px}
+.row span:nth-child(2){font-variant-numeric:tabular-nums;font-weight:750}.row span:last-child{color:var(--muted);font-size:14px}
+.srow{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:17px}.srow:first-of-type{border-top:0}.srow b{font-variant-numeric:tabular-nums}
+/* boxes */
+.level,.caution{background:#fff8ed;border:1px solid #f0d8b6;border-radius:16px;padding:16px 18px;color:#664a2e;font-size:16px}
+.level{margin-top:12px}.caution h2{margin:0 0 8px;color:#8b4d06;font-size:21px}
+.caution ul,.plain ul{margin:0;padding-left:20px}.caution li,.plain li{margin:6px 0}
+.plain{padding:18px 18px}.plain p{margin:0}
+.theme{padding:18px}.theme h3{margin:0 0 6px;font-size:18px;color:var(--navy)}.theme p{margin:0;color:#33475f;font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.chip{border:1px solid var(--line);background:#f8fafc;border-radius:999px;padding:5px 11px;font-size:14px;font-weight:800;color:var(--blue)}
+.scenario{padding:20px}.scenario b{display:block;font-size:21px;margin-bottom:6px}.scenario p{font-size:16px;color:#33475f;margin:0}
+.scenario.s-down{border-top:5px solid var(--down)}.scenario.s-amber{border-top:5px solid var(--amber)}
+.event{padding:16px 18px}.event small{color:var(--muted);font-weight:850;font-size:14px}.event p{font-size:16px;color:#33475f;margin:4px 0 0}
+/* analyst judgment */
+.decision{padding:24px;background:linear-gradient(135deg,#0b2d56,#164c83);color:#fff;border:none}
+.decision h2{margin:0 0 4px;font-size:23px}.decision .badge{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:3px 11px;background:#ffd98a;color:#4a3000;margin-bottom:10px}
+.decision p{color:#e3edf8;font-size:16px;margin:0}.decision-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:15px}
+.decision-item{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);border-radius:14px;padding:15px}
+.decision-item small{display:block;color:#acd0f0;font-weight:900;font-size:14px;margin-bottom:3px}
+details.orig{margin-top:10px;font-size:15px;color:#33475f}details.orig summary{cursor:pointer;font-weight:800;color:var(--blue);font-size:14px}details.orig ul{padding-left:20px;margin:8px 0 0}details.orig li{margin:5px 0}
+.footer{margin-top:26px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:14px}
+@media(max-width:850px){.grid4{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:1fr}}
+@media(max-width:620px){.page{padding:12px 12px 42px}.nav{margin:12px -12px 0;padding:9px 12px}.hero{padding:22px 18px;border-radius:18px}.grid3,.decision-grid{grid-template-columns:1fr}.grid2,.grid4{gap:8px}.metric{padding:13px 12px}.metric b{font-size:21px}.panel,.scenario,.decision{padding:18px 16px}.head{align-items:start;flex-direction:column;gap:0}}
+.note{margin:10px 4px 0;font-size:15px;color:var(--muted)}
+@media(max-width:620px){.grid2.stack{grid-template-columns:1fr}}
+
+.stack3{display:grid;gap:12px}
+.metric b .up,.metric p .up,.metric b span.up{color:var(--up)}
+.metric b .down,.metric p .down,.metric b span.down{color:var(--down)}
+.metric p.up,.metric p.down{font-weight:800}
+.decision ol,.decision ul{margin:8px 0 0;padding-left:22px;color:#e3edf8;font-size:16.5px}
+.decision li{margin:10px 0;line-height:1.7}
+.decision p{color:#e3edf8;font-size:16.5px;line-height:1.7;margin:6px 0 0}
+.decision .quote{font-size:20px;font-weight:900;color:#fff;margin:4px 0 10px;line-height:1.45}
+.footer{font-size:15px;line-height:1.75}
+.amber{background:#fff8ed;border:1px solid #f0d8b6;border-radius:16px;padding:16px 18px;color:#664a2e;font-size:16px;margin-top:12px}
+.amber b{color:#8b4d06}
+.theme p+p{margin-top:8px}
+.src{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:3px 10px;background:#eaf2fb;color:var(--blue);margin-bottom:8px}
+.src.off{background:#fde3e3;color:var(--up)}
+.src.mm{background:#fff1d9;color:#8b4d06}
+.wraptable{width:100%;border-collapse:collapse;font-size:15.5px}
+.wraptable th,.wraptable td{border-bottom:1px solid var(--line);padding:10px 8px;text-align:left;vertical-align:top;word-break:break-word;overflow-wrap:anywhere}
+.wraptable th{font-size:13.5px;color:var(--muted);font-weight:800}
+.wraptable td.num,.wraptable th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.wraptable .up{color:var(--up);font-weight:800}.wraptable .down{color:var(--down);font-weight:800}
+.chk{display:grid;gap:10px}
+.chkitem{padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.chkitem .cond{font-weight:800;color:var(--navy);font-size:16.5px;margin-bottom:4px}
+.chkitem .st{font-size:15.5px;color:#33475f;line-height:1.6}
+.badge-ok{color:var(--down);font-weight:900}.badge-no{color:var(--up);font-weight:900}.badge-wait{color:var(--amber);font-weight:900}
+.cal{padding:14px 16px}
+.cal .row{display:grid;grid-template-columns:140px 1fr;gap:10px;padding:9px 0;border-top:1px solid var(--line);font-size:16px}
+.cal .row:first-of-type{border-top:0}
+.cal .row b{color:var(--blue);font-weight:900}
+@media(max-width:620px){
+  .cal .row{grid-template-columns:1fr}
+  .wraptable th,.wraptable td{font-size:14.5px;padding:9px 6px}
+}
+.sepbox{border:2px solid var(--line);border-radius:18px;padding:4px;background:#f8fafc}
+.sepbox.mm{border-color:#f0d8b6;background:#fffdf8}
+.sepbox.off{border-color:#f2b8b8;background:#fff8f8}
+</style>
+</head>
+<body>
+<main class="page">
+
+<header class="hero card">
+  <div class="eyebrow">TW Bottom Indicators · Nan 整理</div>
+  <h1>台股落底指標觀察</h1>
+  <div class="date">2026/11/10（二）｜截至 11/9（一）收盤｜Nan 整理</div>
+  <div class="thesis">指數反彈 × 融資小幅回升 × 落底尚待確認</div>
+  <div class="pills">
+    <span class="pill kgi">事實｜①–⑥</span>
+    <span class="pill judge">初步判斷｜⑦</span>
+  </div>
+</header>
+<nav class="nav" aria-label="頁面導覽">
+  <a href="#s1">① 指數</a><a href="#s2">② M平方維持率</a><a href="#s3">③ 融資餘額</a>
+  <a href="#s4">④ 官方整戶</a><a href="#s5">⑤ 清單</a><a href="#s6">⑥ 觀察</a>
+  <a href="#s7">⑦ 初步判斷</a>
+</nav>
+
+<section class="section" id="s1"><div class="head"><h2>① 加權指數與市場位置</h2><span>漲紅・跌綠</span></div>
+<div class="grid2">
+  <article class="metric card"><small>加權指數 11/9 收盤</small> <b>41,661.70</b><p class="up">漲 1,960.06 點</p></article>
+  <article class="metric card"><small>11/6 收盤（前低參考）</small> <b>39,701.64</b></article>
+  <article class="metric card"><small>10 月最高收盤（10/6）</small> <b>49,822.55</b></article>
+  <article class="metric card"><small>10/6 盤中高點</small> <b>49,968.92</b></article>
+  <article class="metric card"><small>從最高收盤算的跌幅</small> <b class="down">16.38%</b></article>
+  <article class="metric card"><small>從盤中高點算的跌幅</small> <b class="down">16.62%</b></article>
+</div>
+<article class="theme card" style="margin-top:12px"><span class="tag fact">盤勢</span>
+<p>11/9 自 11/6 低點反彈 1,960.06 點，收復 4 萬點；相對 10/6 高點的跌幅由 20.31% 收斂至 16.38%。</p>
+<p>單日反彈不能等同落底確認，仍需觀察能否守住 11/6 低點、以及後續量能與外資動向。</p>
+</article>
+</section>
+
+<section class="section" id="s2"><div class="head"><h2>② 大盤融資維持率</h2><span>觀察是否低於 140%</span></div>
+<div class="sepbox mm" style="padding:14px">
+<span class="src mm">來源：M平方「台灣-大盤融資維持率」（含 ETF）｜140% 門檻只適用本區</span>
+<div class="grid3" style="margin-top:10px">
+  <article class="metric card"><small>上市櫃合計｜11/6 → 11/9</small> <b>149.98% → <span class="up">160.68%</span></b><p class="up">+10.70 個百分點</p></article>
+  <article class="metric card"><small>上市｜11/6 → 11/9</small> <b>151.92% → <span class="up">162.45%</span></b><p class="up">+10.53 個百分點</p></article>
+  <article class="metric card"><small>上櫃｜11/6 → 11/9</small> <b>143.86% → <span class="up">155.08%</span></b><p class="up">+11.22 個百分點</p></article>
+</div>
+<article class="theme card" style="margin-top:12px">
+<ul style="margin:0;padding-left:20px">
+<li>M平方合計維持率<strong>沒有跌破 140%</strong>，11/6 低點為 149.98%，11/9 回升至 160.68%。估算維持率的高點在 10/5。（指數與融資餘額的基準日是 10/6，兩者是不同序列各自的高點。）</li>
+<li>愛玩股同口徑對照：11/6 合計 150.07%、上櫃 144.24%，11/9 合計 160.68%，與 M平方略有差異（11/6 上櫃差 0.38 個百分點）；本報以 M平方為準。</li>
+<li>這是融資市值 ÷ 融資金額的估算口徑（含 ETF），不能和第④區官方整戶擔保維持率互相比較。</li>
+</ul>
+</article>
+</div>
+</section>
+
+<section class="section" id="s3"><div class="head"><h2>③ 融資餘額：11/9 小幅回升</h2><span>證交所、櫃買中心原始數據自行計算</span></div>
+<div class="card" style="padding:8px 10px;overflow:auto">
+<table class="wraptable">
+<thead>
+<tr><th>市場</th><th class="num">10/6 餘額</th><th class="num">11/6 定案</th><th class="num">11/9 餘額</th><th class="num">相對 11/6</th><th class="num">變化幅度</th><th class="num">10/6 以來減幅</th></tr>
+</thead>
+<tbody>
+<tr><td>上市</td><td class="num">6,376.57 億</td><td class="num">5,340.53 億</td><td class="num"><b>5,399.16 億</b></td><td class="num up"><b>+58.63 億</b></td><td class="num up">+1.10%</td><td class="num">15.33%</td></tr>
+<tr><td>上櫃</td><td class="num">2,261.51 億</td><td class="num">1,699.90 億</td><td class="num"><b>1,701.54 億</b></td><td class="num up"><b>+1.64 億</b></td><td class="num up">+0.10%</td><td class="num"><b>24.76%</b></td></tr>
+<tr><td><b>合計</b></td><td class="num"><b>8,638.08 億</b></td><td class="num"><b>7,040.43 億</b></td><td class="num"><b>7,100.70 億</b></td><td class="num up"><b>+60.27 億</b></td><td class="num up"><b>+0.86%</b></td><td class="num"><b>17.80%</b></td></tr>
+</tbody>
+</table>
+</div>
+<article class="theme card" style="margin-top:12px">
+<ul style="margin:0;padding-left:20px">
+<li><strong>合計減幅還沒超過 22%</strong>（目前 17.80%）。照 11/9 餘額推算，大約還要再減少 <strong>362.99 億</strong> 才到 10/6×78% 的水位。這個推算沒有算進之後新增的融資。</li>
+<li>只有上櫃減幅超過 22%（24.76%），且仍大於目前指數自高點收盤的跌幅（16.38%）。合計與上市的減幅都還小於該指數跌幅。</li>
+<li>11/9 合計融資<strong>增加</strong> 60.27 億（依原始仟元：710,069,539 − 704,042,566），單日去槓桿暫歇，與 11/6 單日大減形成對照。</li>
+<li><strong>11/6 定案說明：</strong> 以 11/9 公布的「前日餘額」為定案值。上市 534,052,749 仟元（較先前暫定 534,052,632 多 117 仟元，億元位幾乎不變）；上櫃 169,989,817 仟元（較暫定 169,974,100 多 15,717 仟元，約多 0.16 億）。合計定案 <strong>7,040.43 億</strong>，較先前暫定 <strong>7,040.27 億</strong> 多約 0.16 億；以定案值重算，10/6 以來減幅仍約 <strong>18.50%</strong>，距 22% 尚需約 <strong>302.72 億</strong>（當時水位）。</li>
+<li><strong>11/9 的餘額是暫定值，要到 11/10 才定案</strong>，數字可能會小幅變動。</li>
+<li>總數仍看不出哪些是投資人自己還款、哪些是被斷頭。</li>
+</ul>
+</article>
+</section>
+
+<section class="section" id="s4"><div class="head"><h2>④ 證交所官方：整戶擔保維持率</h2></div>
+<div class="sepbox off" style="padding:14px">
+<span class="src off">來源：證交所信用交易儀表板（整戶擔保維持率）｜不可與第②區估算值比較</span>
+<div class="grid2" style="margin-top:10px">
+  <article class="metric card"><small>全市場擔保維持率｜11/6 → 11/9</small> <b>158.05% → <span class="up">168.44%</span></b><p>明顯回升（+10.39 個百分點）</p></article>
+  <article class="metric card"><small>追繳戶數｜11/6 → 11/9</small> <b>3,382 戶 → <span class="down">1,197 戶</span></b><p>壓力減輕</p></article>
+  <article class="metric card"><small>追繳金額｜11/6 → 11/9</small> <b>38.06 億 → <span class="down">0.15 億</span></b><p>壓力減輕</p></article>
+  <article class="metric card"><small>處分戶數｜11/6 → 11/9</small> <b>171 戶 → <span class="down">81 戶</span></b><p>處分減少</p></article>
+  <article class="metric card"><small>處分金額｜11/6 → 11/9</small> <b>5.17 億 → <span class="down">0.61 億</span></b><p>處分減少</p></article>
+</div>
+<article class="theme card" style="margin-top:12px">
+<ul style="margin:0;padding-left:20px">
+<li>這是官方的整戶口徑，融資和融券合併計算，不能和第②區的估算值互相比較。</li>
+<li>11/9 追繳與處分同步下降，是落底清單裡少數已改善的項目。</li>
+</ul>
+</article>
+</div>
+</section>
+
+<section class="section" id="s5"><div class="head"><h2>⑤ 落底確認清單</h2></div>
+<div class="chk">
+<article class="chkitem"><div class="cond"><span class="badge-no">❌</span> 合計維持率跌到 140% 附近後止跌回升</div><div class="st">未跌近 140%（M平方 11/6 低點 149.98%，11/9 回升至 160.68%）</div></article>
+<article class="chkitem"><div class="cond"><span class="badge-ok">✅</span> 官方追繳戶數和金額不再增加</div><div class="st">11/9 已明顯減少（1,197 戶／0.15 億）</div></article>
+<article class="chkitem"><div class="cond"><span class="badge-no">❌</span> 融資減幅收斂，合計減幅超過 22%</div><div class="st">11/9 融資回升（單日減幅暫收斂），但合計僅 17.80% 未逾 22%</div></article>
+<article class="chkitem"><div class="cond"><span class="badge-wait">⏳</span> 指數守住急跌的低點</div><div class="st">11/9 自 11/6 低點反彈，尚待確認是否守住</div></article>
+<article class="chkitem"><div class="cond"><span class="badge-no">❌</span> 外資賣超收斂、新台幣止貶</div><div class="st">11/9 外資仍賣超 900.56 億；新台幣收 32.882，較 11/6 的 32.768 貶 1.14 角（0.35%），10/6 以來貶 3.46%</div></article>
+</div>
+<div class="amber" style="margin-top:12px"><b>合計：5 個條件中 1 個改善、3 個尚未、1 個待確認。</b></div>
+</section>
+
+<section class="section" id="s6"><div class="head"><h2>⑥ 近期觀察重點</h2><span>台灣時間</span></div>
+<article class="card cal">
+<div class="row"><b>11/10 前</b><span>上市櫃公司公布 10 月營收</span></div>
+<div class="row"><b>11/10（二）21:30</b><span>美國 10 月 CPI</span></div>
+<div class="row"><b>11/10（二）</b><span>11/9 融資餘額定案；估算維持率是否更新</span></div>
+<div class="row"><b>每個交易日晚上</b><span>融資維持率、融資餘額、追繳變化</span></div>
+<div class="row"><b>11/18（三）</b><span>台指期結算</span></div>
+<div class="row"><b>11/19（四）清晨</b><span>NVIDIA 財報（美東 11/18 盤後）</span></div>
+</article>
+</section>
+
+<section class="section decision card" id="s7">
+<span class="badge">策略觀點・非事實</span>
+<h2>⑦ 初步判斷</h2>
+<div class="quote">反彈與官方壓力緩解，但進場條件仍未齊</div>
+<ol>
+<li>1. <b>初步判斷：</b> 11/9 比較像急跌後的技術反彈與追繳壓力緩解，還不是完整落底訊號。官方整戶維持率回升、追繳大減是正向；但合計融資自高點只減 17.80%、M平方合計維持率低點 149.98% 未跌近 140% 即回升，且外資單日仍大賣超、新台幣續貶至 32.882。</li>
+<li>2. <b>進場前提：</b> 合計估算維持率接近或跌破 140% 後要先止跌回升，再搭配追繳不再上升、合計融資減幅超過 22% 且減幅開始收斂、指數守住低點、外資賣超收斂與新台幣止貶。</li>
+<li>3. <b>條件成立時：</b> 先投入原定部位的 10% 到 20% 試單，跌破指數低點就撤退。</li>
+<li>4. <b>條件成立前：</b> 不接刀，暫時避開上櫃的高槓桿個股。</li>
+</ol>
+</section>
+
+<footer class="footer">
+<b>來源：</b><br>
+融資餘額：證交所 MI_MARGN、櫃買中心融資融券餘額，自行以仟元原始數據計算。10/6 與 11/6 採定案值（次一交易日「前日餘額」）；11/9 為暫定值，要到 11/10 定案。<br>
+指數：證交所 FMTQIK（盤中高點沿用既有 MI_5MINS_HIST 紀錄 49,968.92）。<br>
+官方整戶維持率／追繳／處分：證交所信用交易儀表板（BFIJ3U）。<br>
+估算維持率：MacroMicro 財經M平方「台灣-大盤融資維持率-含ETF」（上市與上櫃、上市、上櫃）；愛玩股為對照。估算值不等於官方的整戶擔保維持率。<br>
+三大法人：證交所 BFI82U（11/9 外資及陸資不含外資自營商賣超 90,056,371,911 元）。<br>
+USD/TWD：中央銀行公布之新臺幣/美元銀行間收盤匯率（資料來源台北外匯經紀公司）：11/9 32.882、11/6 32.768、10/6 31.781。<br>
+140% 是觀察門檻，沒有經過回測。<br><br>
+<b>僅為策略建議，非下單指示。</b><br>
+版面：小布｜本頁為自有摘要呈現，非原文全文轉載。第②區（M平方估算）與第④區（證交所官方整戶）分開呈現，不可互相比較。
+</footer>
+</main>
+</body>
+</html>
