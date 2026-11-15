@@ -65,16 +65,58 @@ details.orig{margin-top:10px;font-size:15px;color:#33475f}details.orig summary{c
 @media(max-width:620px){.grid2.stack{grid-template-columns:1fr}}
 
 
-.nav{flex-wrap:wrap;overflow-x:hidden;justify-content:flex-start}
-.warn{margin-top:12px;background:#fff8ed;border:2px solid #f0b45a;border-left:7px solid #e08a00;border-radius:14px;padding:14px 16px;color:#5c3b00;font-size:16.5px;line-height:1.7;font-weight:750}
-.warn .wtag{display:inline-block;font-size:13.5px;font-weight:900;border-radius:999px;padding:2px 10px;background:#ffe2b0;color:#6b3d00;margin-bottom:8px}
+.nav, .page .nav{
+  position:static;
+  top:auto;
+  z-index:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+  margin:12px 0 16px;
+  padding:0;
+  background:transparent;
+  backdrop-filter:none;
+  border-bottom:0;
+  overflow:visible;
+  flex-wrap:unset;
+}
+.nav a, .page .nav a{
+  display:block;
+  width:100%;
+  box-sizing:border-box;
+  flex:none;
+  font-size:13px;
+  font-weight:800;
+  color:var(--navy);
+  text-decoration:none;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:6px 10px;
+  text-align:center;
+  line-height:1.35;
+  overflow-wrap:anywhere;
+}
+.warn{
+  display:block;
+  width:100%;
+  box-sizing:border-box;
+  margin:10px 0 0;
+  background:#fff8ed;
+  border:2px solid #f0b45a;
+  border-left:7px solid #e08a00;
+  border-radius:14px;
+  padding:12px 14px;
+  color:#5c3b00;
+  font-size:16.5px;
+  line-height:1.7;
+  font-weight:750;
+}
+.theme li .warn{margin-top:10px}
 .triggers{display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px}
 .trigger{padding:18px 16px;border-radius:18px;border:2px solid var(--line);background:#fff;min-width:0}
 .trigger.upside{border-color:#b9e2d3;background:#f2fbf7}
 .trigger.downside{border-color:#f2b8b8;background:#fff6f6}
-.trigger .lab{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:2px 10px;margin-bottom:8px}
-.trigger.upside .lab{background:#d3f4e6;color:var(--down)}
-.trigger.downside .lab{background:#fde3e3;color:var(--up)}
 .trigger p{margin:0;font-size:17px;line-height:1.7;color:#33475f;font-weight:750}
 .theme p+p{margin-top:8px}
 .theme ul{margin:8px 0 0;padding-left:22px}
@@ -82,9 +124,11 @@ details.orig{margin-top:10px;font-size:15px;color:#33475f}details.orig summary{c
 .footer{font-size:15px;line-height:1.75}
 .head h2{overflow-wrap:anywhere;max-width:100%}
 .thesis b{font-weight:900}
+.section{scroll-margin-top:12px}
 *{overflow-wrap:anywhere}
 @media(max-width:620px){
   .grid2,.grid3,.grid4{grid-template-columns:1fr}
+  .nav, .page .nav{margin:12px 0 16px;padding:0}
 }
 
 </style>
@@ -126,8 +170,9 @@ details.orig{margin-top:10px;font-size:15px;color:#33475f}details.orig summary{c
   <div class="head"><h2>一、上週盤勢</h2></div>
   <article class="theme card">
     <p>標普500收7,561.67，週漲▲2.51%；Nasdaq▲2.27%、道瓊▲2.07%、費半▲8.05%。等權重RSP▲2.37%，十一產業皆上漲，能源、工業及通訊領先；小型股仍落後。</p>
-    <p>VIX降至19.30，但MOVE上升。10年美債殖利率升29bp至5.15%，實質殖利率升28bp至2.91%，顯示折現率壓力加大。<span class="warn" style="display:block">HY利差截至11/12收斂至320bp，尚不能確認週五信用表現。</span></p>
+    <p>VIX降至19.30，但MOVE上升。10年美債殖利率升29bp至5.15%，實質殖利率升28bp至2.91%，顯示折現率壓力加大。</p>
   </article>
+  <div class="warn">HY利差截至11/12收斂至320bp，尚不能確認週五信用表現。</div>
   <div class="warn">上期復盤：上期任務二正式原文無法取得，本期不判對錯；同週試閱不算上一期。</div>
 </section>
 
@@ -153,11 +198,14 @@ details.orig{margin-top:10px;font-size:15px;color:#33475f}details.orig summary{c
       <li>11/17 21:30零售銷售：檢查消費量、價格與前值修正。</li>
       <li>11/18 05:20 NVDA財報：驗證管理交接後的財測、毛利、交付與現金流；另看HD、Target及Walmart消費訊號。</li>
       <li>11/19 03:00 Fed紀要：搭配長債、TIPS標售，觀察政策與承接。</li>
-      <li>選擇權到期及Anthropic IPO：後者預定美東11/18定價、11/19交易，<span class="warn" style="display:inline">仍有條件，不能視為已上市。</span></li>
+      <li>選擇權到期及Anthropic IPO：後者預定美東11/18定價、11/19交易，
+        <div class="warn">仍有條件，不能視為已上市。</div>
+      </li>
     </ul>
   </article>
   <article class="theme card" style="margin-top:12px">
-    <p>週末航空調度仍受中斷影響；<span class="warn" style="display:block">伊朗消息僅稱可能附條件暫緩攻擊，非停戰，也不能倒推解釋週五行情。</span></p>
+    <p>週末航空調度仍受中斷影響；</p>
+    <div class="warn">伊朗消息僅稱可能附條件暫緩攻擊，非停戰，也不能倒推解釋週五行情。</div>
   </article>
 </section>
 
@@ -168,8 +216,9 @@ details.orig{margin-top:10px;font-size:15px;color:#33475f}details.orig summary{c
     <article class="metric card"><small>下方敏感區</small> <b>7,550、7,520–7,500</b></article>
   </div>
   <article class="theme card" style="margin-top:12px">
-    <p>反壓觀察 7,593–7,600；下方敏感區 7,550、7,520–7,500。<span class="warn" style="display:block">第三方Gamma模型未獨立重算，負Gamma可能放大雙向波動，不能保證支撐；週一須更新。</span></p>
+    <p>反壓觀察 7,593–7,600；下方敏感區 7,550、7,520–7,500。</p>
   </article>
+  <div class="warn">第三方Gamma模型未獨立重算，負Gamma可能放大雙向波動，不能保證支撐；週一須更新。</div>
   <div class="triggers">
     <article class="trigger upside">
       <p>站回7,600、次日回測守住且廣度與信用配合，才增加戰術部位；</p>
