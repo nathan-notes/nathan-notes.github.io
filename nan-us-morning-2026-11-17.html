@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f4f7fb">
+<title>美股投資晨報｜2026/11/17</title>
+<style>
+
+
+
+
+:root{--ink:#10233f;--muted:#5b6b80;--line:#dfe7f1;--paper:#fff;--bg:#f4f7fb;--navy:#0d315e;--blue:#1f5d9c;--up:#c62828;--down:#087f5b;--amber:#b86100;--shadow:0 12px 36px rgba(16,35,63,.07)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.72;overflow-x:hidden}
+.page{width:min(1100px,100%);margin:auto;padding:24px 18px 56px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;box-shadow:0 7px 26px rgba(16,35,63,.045)}
+.up{color:var(--up)}.down{color:var(--down)}
+/* hero */
+.hero{padding:30px;background:linear-gradient(135deg,#fff 0%,#f5f8fc 65%,#e8f1fa 100%);position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.hero:after{content:"";position:absolute;width:350px;height:350px;border-radius:50%;right:-160px;top:-210px;background:radial-gradient(circle,rgba(198,40,40,.11),transparent 68%);pointer-events:none}
+.eyebrow{font-size:13px;color:var(--blue);font-weight:900;letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.14;letter-spacing:-.03em;margin:10px 0 6px}
+.date{color:var(--muted);font-size:15px;font-weight:750}.subtitle{margin:6px 0 0;font-size:16px;color:#33475f;font-weight:700}
+.thesis{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:19px;font-weight:850;line-height:1.6}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pill{display:inline-block;border-radius:999px;padding:6px 13px;font-weight:900;font-size:14px;border:1px solid var(--line);background:#fff;line-height:1.45}
+.pill.kgi{background:#eaf2fb;color:var(--blue);border-color:#cfe0f2}.pill.judge{background:#fff4e2;color:#8b4d06;border-color:#f0d8b6}
+/* nav */
+.nav{position:sticky;top:0;z-index:5;background:rgba(244,247,251,.94);backdrop-filter:blur(8px);margin:14px -18px 0;padding:10px 18px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line)}
+.nav::-webkit-scrollbar{display:none}.nav a{flex:none;font-size:14px;font-weight:800;color:var(--navy);text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+/* sections */
+.section{margin-top:30px;scroll-margin-top:64px}
+.head{display:flex;align-items:end;justify-content:space-between;gap:10px;margin:0 2px 12px}
+.head h2{margin:0;font-size:23px;line-height:1.3}.head span{font-size:14px;color:var(--muted);font-weight:700}
+.tag{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:2px 10px;margin-bottom:8px}
+.tag.fact{background:#eaf2fb;color:var(--blue)}.tag.judge{background:#fff1d9;color:#8b4d06}
+/* stat tiles */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.metric{padding:15px 14px;min-width:0}.metric small{display:block;font-size:14px;color:var(--muted);font-weight:850}
+.metric b{display:block;font-size:23px;line-height:1.25;margin-top:4px;font-variant-numeric:tabular-nums}
+.metric p{margin:5px 0 0;font-size:14px;color:#5b6b80;line-height:1.5}.metric p.up,.metric p.down{font-weight:800}
+/* list rows (MA / sectors) */
+.panel{padding:20px}.panel h3{margin:0 0 12px;font-size:19px}
+.rows{display:grid;gap:8px}.row{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;padding:11px 13px;border-radius:12px;background:#f8fafc;border:1px solid #edf1f6;font-size:16px}
+.row span:nth-child(2){font-variant-numeric:tabular-nums;font-weight:750}.row span:last-child{color:var(--muted);font-size:14px}
+.srow{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:17px}.srow:first-of-type{border-top:0}.srow b{font-variant-numeric:tabular-nums}
+/* boxes */
+.level,.caution{background:#fff8ed;border:1px solid #f0d8b6;border-radius:16px;padding:16px 18px;color:#664a2e;font-size:16px}
+.level{margin-top:12px}.caution h2{margin:0 0 8px;color:#8b4d06;font-size:21px}
+.caution ul,.plain ul{margin:0;padding-left:20px}.caution li,.plain li{margin:6px 0}
+.plain{padding:18px 18px}.plain p{margin:0}
+.theme{padding:18px}.theme h3{margin:0 0 6px;font-size:18px;color:var(--navy)}.theme p{margin:0;color:#33475f;font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.chip{border:1px solid var(--line);background:#f8fafc;border-radius:999px;padding:5px 11px;font-size:14px;font-weight:800;color:var(--blue)}
+.scenario{padding:20px}.scenario b{display:block;font-size:21px;margin-bottom:6px}.scenario p{font-size:16px;color:#33475f;margin:0}
+.scenario.s-down{border-top:5px solid var(--down)}.scenario.s-amber{border-top:5px solid var(--amber)}
+.event{padding:16px 18px}.event small{color:var(--muted);font-weight:850;font-size:14px}.event p{font-size:16px;color:#33475f;margin:4px 0 0}
+/* analyst judgment */
+.decision{padding:24px;background:linear-gradient(135deg,#0b2d56,#164c83);color:#fff;border:none}
+.decision h2{margin:0 0 4px;font-size:23px}.decision .badge{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:3px 11px;background:#ffd98a;color:#4a3000;margin-bottom:10px}
+.decision p{color:#e3edf8;font-size:16px;margin:0}.decision-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:15px}
+.decision-item{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);border-radius:14px;padding:15px}
+.decision-item small{display:block;color:#acd0f0;font-weight:900;font-size:14px;margin-bottom:3px}
+details.orig{margin-top:10px;font-size:15px;color:#33475f}details.orig summary{cursor:pointer;font-weight:800;color:var(--blue);font-size:14px}details.orig ul{padding-left:20px;margin:8px 0 0}details.orig li{margin:5px 0}
+.footer{margin-top:26px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:14px}
+@media(max-width:850px){.grid4{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:1fr}}
+@media(max-width:620px){.page{padding:12px 12px 42px}.nav{margin:12px -12px 0;padding:9px 12px}.hero{padding:22px 18px;border-radius:18px}.grid3,.decision-grid{grid-template-columns:1fr}.grid2,.grid4{gap:8px}.metric{padding:13px 12px}.metric b{font-size:21px}.panel,.scenario,.decision{padding:18px 16px}.head{align-items:start;flex-direction:column;gap:0}}
+.note{margin:10px 4px 0;font-size:15px;color:var(--muted)}
+@media(max-width:620px){.grid2.stack{grid-template-columns:1fr}}
+
+.keylv{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}
+.kl{padding:16px 14px;border-radius:18px;border:2px solid var(--line);background:#fff;min-width:0}
+.kl small{display:block;font-size:14px;font-weight:900;color:var(--muted)}
+.kl b{display:block;font-size:28px;line-height:1.2;margin:4px 0 2px;font-variant-numeric:tabular-nums;color:var(--navy)}
+.kl p{margin:0;font-size:14.5px;color:#33475f;line-height:1.5}
+.kl .lab{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:2px 10px;margin-bottom:6px}
+.kl.res{border-color:#f2b8b8;background:#fff6f6}.kl.res .lab{background:#fde3e3;color:var(--up)}
+.kl.ma{border-color:#f0d8b6;background:#fff8ed}.kl.ma .lab{background:#fff1d9;color:#8b4d06}
+.kl.sup{border-color:#b9e2d3;background:#f2fbf7}.kl.sup .lab{background:#dcf3ea;color:var(--down)}
+.kl.mid{border-color:#cfe0f2;background:#f5f9fd}.kl.mid .lab{background:#eaf2fb;color:var(--blue)}
+.keybox{padding:18px;margin-top:14px;border:2px solid #f0d8b6;background:#fffdf8}
+.keybox h2{margin:0 0 4px;font-size:21px;color:var(--navy)}
+.theme p+p,.theme ul{margin-top:8px}.theme .tag{margin-bottom:6px}
+.theme ul{margin:8px 0 0;padding-left:22px}.theme li{margin:7px 0;line-height:1.7}
+.stack3{display:grid;gap:12px}
+.decision ul{margin:8px 0 0;padding-left:20px;color:#e3edf8;font-size:16.5px}.decision li{margin:10px 0;line-height:1.7}
+.footer{font-size:15px;line-height:1.75}
+.metric b .up{color:var(--up)}.metric b .down{color:var(--down)}
+.metric p.down,.row span.down{color:var(--down);font-weight:800}.metric p.up,.row span.up{color:var(--up);font-weight:800}
+.amber{background:#fff8ed;border:1px solid #f0d8b6;border-radius:16px;padding:16px 18px;color:#664a2e;font-size:16px;margin-top:12px}
+.amber b{color:#8b4d06}
+.amber ul{margin:8px 0 0;padding-left:20px}
+.amber li{margin:6px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.chip{border:1px solid var(--line);background:#f8fafc;border-radius:999px;padding:5px 11px;font-size:14px;font-weight:800;color:var(--blue)}
+.warn{margin-top:12px;background:#fff8ed;border:2px solid #f0b45a;border-left:7px solid #e08a00;border-radius:14px;padding:14px 16px}
+.warn h2{margin:4px 0 8px;font-size:20px;color:#6b3d00}
+.warn ul{margin:8px 0 0;padding-left:22px;color:#5c3b00;font-size:16.5px;line-height:1.7}
+.warn li{margin:8px 0}
+.warn .wtag{display:inline-block;font-size:13.5px;font-weight:900;border-radius:999px;padding:2px 10px;background:#ffe2b0;color:#6b3d00;margin-bottom:6px}
+.tbl{max-width:100%;overflow-x:hidden;border-radius:16px;border:1px solid var(--line);background:#fff;margin-top:6px}
+.tbl table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:16px;line-height:1.6}
+.tbl th{background:var(--navy);color:#fff;text-align:left;font-weight:900;padding:10px 10px;font-size:14px}
+.tbl td{padding:11px 10px;border-top:1px solid var(--line);vertical-align:top;color:#33475f;overflow-wrap:anywhere;word-break:break-word}
+.tbl td:first-child{font-weight:850;color:var(--ink)}
+.tbl tr:nth-child(even) td{background:#f8fafc}
+.mcards{display:none;gap:10px;margin-top:10px}
+.fincard{padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.fincard h3{margin:0 0 8px;font-size:17px;color:var(--navy)}
+.fincard .kv{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-top:1px solid var(--line);font-size:15.5px}
+.fincard .kv:first-of-type{border-top:0}
+.fincard .kv span:last-child{font-variant-numeric:tabular-nums;font-weight:750;text-align:right}
+.head h2{overflow-wrap:anywhere;max-width:100%}
+.subtitle{margin:6px 0 0;font-size:18px;color:#33475f;font-weight:800;line-height:1.5}
+*{overflow-wrap:anywhere}
+@media(max-width:620px){
+  .keylv{grid-template-columns:1fr}.kl b{font-size:30px}
+  .mtable{display:none !important}
+  .mcards{display:grid}
+}
+
+
+.claim{display:inline-block;background:#fff1d9;color:#6b3d00;border:1px solid #f0d8b6;border-radius:999px;padding:3px 10px;font-size:13.5px;font-weight:900;line-height:1.5;margin:4px 0}
+.claim-block{background:#fff8ed;border:2px solid #f0b45a;border-left:7px solid #e08a00;border-radius:14px;padding:10px 14px;margin:10px 0 0;color:#6b3d00;font-size:15.5px;font-weight:800;line-height:1.65}
+.warn{margin-top:12px;background:#fff8ed;border:2px solid #f0b45a;border-left:7px solid #e08a00;border-radius:14px;padding:14px 16px}
+.warn .wtag{display:inline-block;font-size:13.5px;font-weight:900;border-radius:999px;padding:2px 10px;background:#ffe2b0;color:#6b3d00;margin-bottom:6px}
+.warn h2{margin:4px 0 8px;font-size:20px;color:#6b3d00}
+.warn ul{margin:8px 0 0;padding-left:22px;color:#5c3b00;font-size:16.5px;line-height:1.7}
+.warn li{margin:8px 0}
+
+
+
+.nav{flex-wrap:wrap;overflow-x:hidden;justify-content:flex-start}
+*{overflow-wrap:anywhere}
+
+
+
+.nav, .page .nav{
+  position:static;
+  top:auto;
+  z-index:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+  margin:12px 0 16px;
+  padding:0;
+  background:transparent;
+  backdrop-filter:none;
+  border-bottom:0;
+  overflow:visible;
+  flex-wrap:unset;
+}
+.nav a, .page .nav a{
+  display:block;
+  width:100%;
+  box-sizing:border-box;
+  flex:none;
+  font-size:13px;
+  font-weight:800;
+  color:var(--navy);
+  text-decoration:none;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:6px 10px;
+  text-align:center;
+  line-height:1.35;
+  overflow-wrap:anywhere;
+}
+.warn, .note{
+  display:block;
+  width:100%;
+  box-sizing:border-box;
+  margin:10px 0 0;
+  border-radius:14px;
+  padding:12px 14px;
+  font-size:16.5px;
+  line-height:1.7;
+  font-weight:750;
+}
+.warn{
+  background:#fff8ed;
+  border:2px solid #f0b45a;
+  border-left:7px solid #e08a00;
+  color:#5c3b00;
+}
+.note{
+  background:#eef5fb;
+  border:2px solid #c5d8ee;
+  border-left:7px solid var(--blue);
+  color:#1e3a5f;
+}
+.triggers{display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px}
+.trigger{padding:18px 16px;border-radius:18px;border:2px solid var(--line);background:#fff;min-width:0}
+.trigger.sup{border-color:#b9e2d3;background:#f2fbf7}
+.trigger.res{border-color:#f2b8b8;background:#fff6f6}
+.trigger p{margin:0;font-size:17px;line-height:1.7;color:#33475f;font-weight:750}
+.theme p+p{margin-top:8px}
+.theme ul,.decision ul{margin:8px 0 0;padding-left:22px}
+.theme li{margin:8px 0;line-height:1.7;font-size:16.5px;color:#33475f}
+.decision{padding:22px 20px}
+.decision p,.decision li{color:#e3edf8}
+.decision li{margin:10px 0;line-height:1.7}
+.decision .badge{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:3px 11px;background:#ffd98a;color:#4a3000;margin-bottom:10px}
+.footer{font-size:15px;line-height:1.75}
+.head h2{overflow-wrap:anywhere;max-width:100%}
+.section{scroll-margin-top:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chip{border:1px solid var(--line);background:#f8fafc;border-radius:999px;padding:5px 11px;font-size:14px;font-weight:800;color:var(--blue)}
+*{overflow-wrap:anywhere}
+.tbl{max-width:100%;overflow-x:hidden}
+.mcards{display:none;gap:10px;margin-top:10px}
+@media(max-width:720px){
+  .mtable{display:none !important}
+  .mcards{display:grid}
+  .fincard .kv{flex-direction:column;gap:2px}
+  .fincard .kv span:first-child{flex:none}
+  .fincard .kv span:last-child{text-align:left}
+}
+@media(max-width:620px){
+  .grid2,.grid3,.grid4,.keylv{grid-template-columns:1fr}
+  .nav, .page .nav{margin:12px 0 16px;padding:0}
+}
+
+
+
+.fwbar{display:flex;height:36px;border-radius:8px;overflow:hidden;margin:6px 0;font-weight:900;font-size:15px;color:#fff}
+.fwbar > div{display:flex;align-items:center;justify-content:center;min-width:0;padding:0 4px;text-align:center;line-height:1.2}
+.fwlab{font-size:16px;font-weight:900;color:var(--navy);margin-top:10px}
+.fwsub{font-size:14.5px;color:var(--muted);font-weight:700}
+.fwnote{font-size:14.5px;color:var(--muted);font-weight:700;margin:0 0 6px}
+.trk{display:grid;gap:10px;margin-top:8px}
+.trkrow{display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:start;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:#f8fafc}
+.tkb{font-weight:900;font-size:18px;color:var(--navy);text-align:center;padding:8px 6px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.tkb.k{border:2px solid var(--navy)}
+.decision .k{display:inline-flex;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.2);color:#fff;font-weight:900;align-items:center;justify-content:center;font-size:14px;margin-right:8px}
+.decision .quote{font-size:20px;font-weight:900;color:#fff;margin:6px 0 10px;line-height:1.45}
+.decision + .decision{margin-top:16px}
+.infobox{padding:12px;overflow:hidden}
+.infobox img{width:100%;height:auto;display:block;border-radius:16px}
+.infobox .cap{margin:10px 4px 0;font-size:14px;color:var(--muted);font-weight:700;line-height:1.6}
+.theme{padding:18px}
+.theme h3{margin:0 0 6px;font-size:18px;color:var(--navy)}
+.theme p{margin:0;color:#33475f;font-size:16.5px;line-height:1.75}
+.stack3{display:grid;gap:12px}
+.prose{margin:12px 0 0;padding:16px 18px;font-size:16.5px;color:#33475f;line-height:1.75}
+.prose p{margin:0}
+.prose p+p{margin-top:10px}
+.event{padding:16px 18px}
+.event p{margin:0;font-size:16.5px;color:#33475f;line-height:1.75}
+.bullet-card{padding:14px 16px}
+.bullet-card p{margin:0;font-size:16.5px;color:#33475f;line-height:1.75}
+.grid-bullets{display:grid;gap:10px}
+.metric .full{display:block;font-size:15.5px;font-weight:750;color:#33475f;line-height:1.55;margin-top:2px}
+.metric .full b{display:inline;font-size:inherit}
+.src-list{margin:8px 0 0;padding-left:20px;color:var(--muted);font-size:15px;line-height:1.75}
+.src-list li{margin:6px 0}
+@media(max-width:620px){
+  .trkrow{grid-template-columns:1fr}
+  .tkb{text-align:left;width:fit-content}
+}
+
+</style>
+</head>
+<body>
+<main class="page">
+
+<header class="hero card">
+  <div class="eyebrow">Nan 整理｜美股投資晨報 2026/11/17（二）</div>
+  <h1>美股投資晨報｜2026/11/17（二）</h1>
+  <div class="date">數據截至美股 2026/11/16（一）收盤。</div>
+  <div class="subtitle">副標：科技調整未止 × 關注利率與防禦輪動</div>
+  <div class="thesis">科技調整未止，關注利率與防禦輪動。</div>
+  <div class="pills">
+    <span class="pill kgi">事實｜Yahoo／財政部／官方核對</span>
+    <span class="pill judge">⑦ 晨報判斷｜Buy side 深色框</span>
+  </div>
+</header>
+<nav class="nav" aria-label="頁面導覽">
+  <a href="#s1">① 指數</a>
+  <a href="#s2">② 焦點</a>
+  <a href="#s3">③ 債匯油金</a>
+  <a href="#s4">④ FedWatch</a>
+  <a href="#s5">⑤ 日程</a>
+  <a href="#s6">⑥ 企業</a>
+  <a href="#s7">⑦ 晨報判斷</a>
+  <a href="#corr">查證修正</a>
+  <a href="#chart">資訊圖</a>
+  <a href="#src">來源</a>
+</nav>
+
+<div class="note">原文錯字已在交辦檔列出，圖上使用修正後用詞：道瓊斯／道瓊、偏向、通膨黏滯、升息（原文「加息」，非降息）、盎司、辭職事件。</div>
+
+<section class="section" id="s1">
+  <div class="head"><h2>① 主要指數與市場情緒</h2><span>11/16 收盤｜日漲跌｜Yahoo 核對</span></div>
+  <div class="grid2">
+    <article class="metric card"><small>S&amp;P 500：</small><b>7,416.59</b><p class="down">（▼1.92%）</p></article>
+    <article class="metric card"><small>道瓊：</small><b>51,608.17</b><p class="down">（▼1.41%）</p></article>
+    <article class="metric card"><small>那斯達克：</small><b>24,509.76</b><p class="down">（▼2.49%）</p></article>
+    <article class="metric card"><small>羅素 2000：</small><b>2,742.94</b><p class="down">（▼1.70%）</p></article>
+    <article class="metric card"><small>SOX 半導體：</small><b>9,610.65</b><p class="down">（▼5.28%）</p></article>
+    <article class="metric card"><small>VIX：</small><b>22.91</b><p><span class="up">（▲18.70%</span>；晨報約 22.9）</p></article>
+    <article class="metric card"><small>MOVE：</small><b>101.28</b><p><span class="up">（▲2.52%</span>；前日 98.79）</p></article>
+  </div>
+  <article class="prose card">
+    <p>市場偏向風險迴避。週一三大指數齊跌，科技與費半明顯承壓（XLK <span class="down">▼3.24%</span>、費半 <span class="down">▼5.28%</span>）。防禦類股相對抗跌：必需消費 XLP <span class="up">▲0.27%</span>、公用事業 XLU <span class="up">▲0.18%</span>（醫療 XLV <span class="down">▼0.51%</span> 未同步）。主因 Nvidia 領導權動盪與 AI 情緒轉弱。VIX 大幅上升至 22.91。</p>
+  </article>
+</section>
+
+<section class="section" id="s2">
+  <div class="head"><h2>② 本週四大焦點</h2><span>辭職與任命已證實｜IPO 區間已核對官方｜其餘附來源</span></div>
+  <div class="stack3">
+    <article class="theme card" style="border-top:5px solid var(--up)">
+      <h3>Nvidia 領導與財報　已證實辭職與任命｜156.14（<span class="down">▼4.12%</span>）</h3>
+      <p>黃仁勳辭職已證實（因個人／治理相關因素）。Kress 任臨時／代理 CEO，Harvey C. Jones 任董事長（NVIDIA／SEC）。本週二美東盤後（台灣 11/18 清晨）公布財報，關注財測與資本支出。費半 <span class="down">▼5.28%</span>、TSM <span class="down">▼6.34%</span>。</p>
+    </article>
+    <article class="theme card" style="border-top:5px solid var(--blue)">
+      <h3>Anthropic IPO　區間 $70–78｜代號 ANT｜估值約 1.4 兆</h3>
+      <p>825 百萬股 Class A，區間 70–78 美元、申請那斯達克掛牌代號 ANT（Anthropic 官方 11/10）。高檔完全稀釋估值約 1.40–1.41 兆。預計週三定價、週四掛牌為媒體預期（CNBC），公司尚未宣布最終定價。</p>
+    </article>
+    <article class="theme card" style="border-top:5px solid var(--amber)">
+      <h3>Fed 路徑與通膨黏滯　12/9 升 25bp 查證 97.9%｜升 50bp 2.1%</h3>
+      <p>維持不變近乎零（Investing.com，見 ④）。晨報「25bp 約 93–95%、50bp 約 5–7%」已改用查證值。部分官員偏鷹為晨報引用，未驗證。通膨黏滯為晨報敘事。</p>
+      <div class="warn">晨報「25bp 約 93–95%、50bp 約 5–7%」已改用查證值。部分官員偏鷹為晨報引用，未驗證。通膨黏滯為晨報敘事。</div>
+    </article>
+    <article class="theme card" style="border-top:5px solid var(--navy)">
+      <h3>零售財報週　HD 347.51（<span class="down">▼0.34%</span>）｜DIS 118.70（<span class="down">▼0.23%</span>）｜WMT 128.41（<span class="up">▲0.25%</span>）</h3>
+      <p>Home Depot、Disney 為美東 11/17 盤前（台灣今晚）；Walmart 為 11/19。數字為 11/16 收盤，財報尚未公布。配合今夜 21:30 零售銷售（Census）。</p>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="s3">
+  <div class="head"><h2>③ 債・匯・油・金</h2><span>11/16｜油／金用結算價｜Yahoo／財政部</span></div>
+  <div class="grid-bullets">
+    <article class="bullet-card card"><p>美 10Y／2Y：10Y <b>5.12%</b>（前日 5.15%，<span class="down">▼3 bp</span>）；2Y <b>4.83%</b>（前日 4.88%，<span class="down">▼5 bp</span>）。財政部曲線；Yahoo ^TNX 5.121。</p></article>
+    <article class="bullet-card card"><p>美元指數 DXY：<b>103.56</b>（日 <span class="up">▲0.15%</span>；前日 103.41；晨報約 103.5）</p></article>
+    <article class="bullet-card card"><p>WTI 原油（結算）：<b>$85.72</b>（日 <span class="down">▼3.21%</span>，<span class="down">−$2.84</span>；前日結算 88.56）。Brent 結算 <b>$92.44</b>（<span class="down">▼3.55%</span>）。11/16 日K 為薄量新盤（WTI 量約 351），改用 previousClose／官方結算，不用 85.25。</p>
+      <div class="warn">11/16 日K 為薄量新盤（WTI 量約 351），改用 previousClose／官方結算，不用 85.25。晨報「近日跌約 4%」為約數。</div>
+    </article>
+    <article class="bullet-card card"><p>黃金 COMEX（結算）：<b>$3,853.0</b>（日 <span class="down">▼0.86%</span>，Yahoo previousClose；前日 3,886.3）。落在晨報 3,830–3,860 區間。近一年低點為晨報敘事。另：Morningstar／Dow Jones Data Talk 報結算 3,847.40，圖上採 Yahoo previousClose。</p>
+      <div class="note">近一年低點為晨報敘事。另：Morningstar／Dow Jones Data Talk 報結算 3,847.40，圖上採 Yahoo previousClose。</div>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="s4">
+  <div class="head"><h2>④ FedWatch</h2><span>Investing.com Fed Rate Monitor｜讀取台灣時間 2026/11/17 07:12</span></div>
+  <article class="theme card">
+    <p class="fwnote">頁面 Updated：Nov 16, 2026 05:55PM EST（= 台灣 11/17 06:55）</p>
+    <p class="fwnote">現行目標區間 3.75–4.00%（Fed 10/28）</p>
+    <div class="fwlab">12/9 會議</div>
+    <div class="fwbar">
+      <div style="width:97.9%;background:#c62828">升 25bp 97.9%</div>
+      <div style="width:2.1%;background:#7a0b1c"></div>
+    </div>
+    <p class="fwsub">12/9 會議：維持 0%｜升 25bp <b>97.9%</b>｜升 50bp <b>2.1%</b>（前日升一碼 91.3%）</p>
+    <div class="fwlab">1/27 會議（累計）</div>
+    <div class="fwbar" style="height:32px;font-size:14px">
+      <div style="width:25.5%;background:#c62828">+25bp 25.5%</div>
+      <div style="width:72.9%;background:#7a0b1c">+50bp 72.9%</div>
+      <div style="width:1.5%;background:#4a0610"></div>
+    </div>
+    <p class="fwsub">1/27 會議（累計）：維持 0%｜+25bp 25.5%｜+50bp 72.9%｜+75bp 1.5%</p>
+    <div class="warn">晨報「25bp 約 93–95%、50bp 約 5–7%」已改用查證值。</div>
+  </article>
+</section>
+
+<section class="section" id="s5">
+  <div class="head"><h2>⑤ 本週重磅日程</h2><span>台灣時間＝美東＋13 小時。注意日期差一天。</span></div>
+  <div class="grid-bullets">
+    <article class="event card"><p>11/17（二）晚間 HD／DIS 財報（美東盤前）；<b>21:30</b> 10 月零售銷售（Census 官方行程）</p></article>
+    <article class="event card"><p>11/18（三）<b>06:00</b> NVDA 法說（盤後財報，14:00 PT，NVIDIA 官方）；<b>21:30</b> 新屋開工／營建許可（Census，美東 08:30）</p></article>
+    <article class="event card"><p>11/19（四）<b>03:00</b> FOMC 會議紀錄（美東 11/18 14:00，Fed「決策後三週」慣例；官網尚未標出發布日）；<b>20:00</b> Walmart 財報（美中 06:00，公司公告）；<b>21:30</b> 初領失業金（勞工部週四 08:30 ET 慣例）；ANT 預計掛牌（定價為 11/18 美東盤後＝台灣 11/19 清晨，CNBC 預期）</p></article>
+    <article class="event card"><p>11/20（五）BJ's Wholesale 等：晨報引用，未驗證時點</p>
+      <div class="warn">晨報引用，未驗證時點</div>
+    </article>
+  </div>
+  <div class="warn">更正：晨報把 FOMC 會議紀錄寫在「11/18 凌晨 3:00」，正確台灣時間是 <b>11/19（四）03:00</b>。</div>
+</section>
+
+<section class="section" id="s6">
+  <div class="head"><h2>⑥ 焦點企業與產業追蹤</h2><span>價位為 11/16 收盤（Yahoo）。預估附來源。</span></div>
+  <div class="trk">
+    <div class="trkrow"><span class="tkb k">NVDA</span><span>NVDA：收 <b class="down">▼4.12%</b>（$156.14）。辭職與任命已證實。市場預估 EPS 約 2.47、營收約 1,087 億（多家預覽；晨報寫 2.47–2.49、約 1,085 億）</span></div>
+    <div class="trkrow"><span class="tkb k">TSM</span><span>TSM：ADR 收 <b class="down">▼6.34%</b>（$373.45）</span></div>
+    <div class="trkrow"><span class="tkb k">HD／DIS</span><span>HD／DIS：HD <b class="down">▼0.34%</b>（$347.51）、DIS <b class="down">▼0.23%</b>（$118.70）；今晚美東盤前財報</span></div>
+    <div class="trkrow"><span class="tkb k">WMT</span><span>WMT：收 <b class="up">▲0.25%</b>（$128.41）；11/19 美中 06:00 公布財報（公司公告）＝台灣 20:00</span></div>
+  </div>
+</section>
+
+<section class="section decision card" id="s7">
+  <span class="badge">晨報判斷</span>
+  <h2>⑦ Nan 觀點與策略</h2>
+  <p>晨報判斷（原文保留，<b>未截斷</b>）。</p>
+  <div class="quote">科技調整未止，關注利率與防禦輪動。</div>
+  <ul>
+    <li><span class="k">1</span> 適度降低高波動科技倉位，等 Nvidia 財報與財測明朗後再評估。</li>
+    <li><span class="k">2</span> 增持必需消費與公用事業等防禦配置，對沖利率不確定性。</li>
+    <li><span class="k">3</span> 密切追蹤美債殖利率與美元指數，避免過度加碼長天期債券。</li>
+  </ul>
+</section>
+
+<section class="section decision card" id="buyside">
+  <span class="badge">判斷，非事實</span>
+  <h2>Buy side 的判斷（判斷，非事實）</h2>
+  <p>週一風險迴避、VIX 跳升。FedWatch 12/9 升一碼 97.9%（高於晨報 93–95%）。WTI 用結算 85.72（<span class="down" style="color:#b8f0d8">−3.21%</span>），「近日跌約 4%」為約數。FOMC 會議紀錄台灣時間是 11/19 03:00，不是 11/18 凌晨。今晚零售銷售、明日清晨 NVDA 財報為近端風險點。</p>
+</section>
+
+<section class="section" id="corr">
+  <div class="head"><h2>查證與修正清單</h2><span>小資已核對，本頁採用查證後數字</span></div>
+  <div class="warn">查證與修正清單如下。標「改用查證值」「日期差一天，已改正」「晨報引用，未驗證」「晨報敘事」者請一併參閱。</div>
+  <div class="tbl card mtable"><table><thead><tr><th> 項目 </th><th> 晨報 </th><th> 查證值 </th><th> 結果與來源 </th></tr></thead><tbody><tr><td> S&amp;P 500 </td><td> 7,416.59／<span class="down">−1.92%</span> </td><td> 7,416.59／<span class="down">−1.92%</span>（<span class="down">−145.08</span>） </td><td> 一致。Yahoo ^GSPC </td></tr><tr><td> 道瓊 </td><td> 51,608.17／<span class="down">−1.41%</span> </td><td> 51,608.17／<span class="down">−1.41%</span>（<span class="down">−739.38</span>） </td><td> 一致。Yahoo ^DJI </td></tr><tr><td> Nasdaq </td><td> 24,509.76／<span class="down">−2.49%</span> </td><td> 24,509.76／<span class="down">−2.49%</span>（<span class="down">−626.51</span>） </td><td> 一致。Yahoo ^IXIC </td></tr><tr><td> 羅素 2000 </td><td> 2,742.94／<span class="down">−1.70%</span> </td><td> 2,742.94／<span class="down">−1.70%</span> </td><td> 一致。Yahoo ^RUT </td></tr><tr><td> VIX </td><td> 約 22.9（大幅上升） </td><td> <b>22.91／<span class="up">▲18.70%</b>（前日</span> 19.30） </td><td> 圖用精確值。Yahoo ^VIX </td></tr><tr><td> MOVE </td><td> 未提 </td><td> <b>101.28／<span class="up">▲2.52%</b>（前日</span> 98.79） </td><td> 補充。Yahoo ^MOVE </td></tr><tr><td> 費半 ^SOX </td><td> 未提 </td><td> <b>9,610.65／<span class="down">−5.28%</span></b> </td><td> 補充。Yahoo ^SOX </td></tr><tr><td> 10Y </td><td> 約 5.12% </td><td> 財政部曲線 <b>5.12%</b>（前日 5.15%，<span class="down">▼3</span> bp）；Yahoo ^TNX 5.121 </td><td> 一致。Treasury.gov </td></tr><tr><td> 2Y </td><td> 未提 </td><td> 財政部 <b>4.83%</b>（前日 4.88%，<span class="down">▼5</span> bp） </td><td> 補充。Treasury.gov </td></tr><tr><td> DXY </td><td> 約 103.5 </td><td> <b>103.56／<span class="up">▲0.15%</b>（前日</span> 103.41） </td><td> 大致一致，圖用 103.56。Yahoo DX-Y.NYB </td></tr><tr><td> WTI </td><td> 約 85；近日跌約 4% </td><td> 官方／Yahoo previousClose 結算 <b>$85.72（<span class="down">▼3.21%</span>，<span class="down">−$2.84</span>）</b>；前日結算 88.56。日K 量約 351 為薄量新盤，不用 85.25 </td><td> 圖用結算價。新華社／FinancialJuice／Newsquawk：NYMEX Dec 結算 85.72。晨報「近日跌約 4%」為約數 </td></tr><tr><td> Brent </td><td> 未提 </td><td> 結算 <b>$92.44（<span class="down">▼3.55%</span>，<span class="down">−$3.40</span>）</b> </td><td> 補充。Yahoo previousClose；新華社 </td></tr><tr><td> 黃金 </td><td> 約 3,830–3,860；近一年低點 </td><td> Yahoo previousClose <b>$3,853.0（<span class="down">▼0.86%</span>）</b>，落在區間。Morningstar Data Talk 另報 3,847.40 </td><td> 圖用 previousClose。近一年低點為晨報敘事 </td></tr><tr><td> NVDA </td><td> 未提收盤；預估 EPS 2.47–2.49、營收約 1,085 億 </td><td> 收盤 <b>156.14（<span class="down">−4.12%</span>）</b>。多家預覽 EPS 約 2.47、營收約 1,087–1,088 億（TipRanks／Theta 等） </td><td> 價位補充；預估為約數，圖註來源 </td></tr><tr><td> TSM </td><td> 未提 </td><td> <b>373.45（<span class="down">−6.34%</span>）</b> </td><td> 補充。Yahoo TSM </td></tr><tr><td> HD／DIS／WMT </td><td> 未提價 </td><td> HD 347.51（<span class="down">−0.34%</span>）、DIS 118.70（<span class="down">−0.23%</span>）、WMT 128.41（<span class="up">+0.25%</span>） </td><td> 補充。Yahoo </td></tr><tr><td> FedWatch 12/9 </td><td> 升 25bp 約 93–95%；50bp 約 5–7%；維持近乎零 </td><td> 升 25bp <b>97.9%</b>、50bp <b>2.1%</b>、維持 0%（前日 91.3%／8.7%） </td><td> <b>改用查證值</b>。Investing.com，台灣 11/17 07:12 讀取；頁面 Updated Nov 16 05:55PM EST </td></tr><tr><td> Nvidia 領導層 </td><td> 辭職事件持續發酵；Kress 暫代 CEO </td><td> 辭職與 Kress 臨時 CEO、Jones 董事長 </td><td> <b>已證實</b>（NVIDIA／SEC）。原因寫「因個人／治理相關因素」 </td></tr><tr><td> Anthropic IPO </td><td> 週三定價、週四 ANT 掛牌；70–78 美元；估值約 1.4 兆 </td><td> 區間、825 百萬股、代號 ANT 為 Anthropic 官方 11/10 公告；高檔估值約 1.40–1.41 兆大致相符。定價／掛牌日為 CNBC 等媒體預期，尚未見公司最終定價公告 </td><td> 區間與代號已核對；時程標媒體預期 </td></tr><tr><td> FOMC 會議紀錄台灣時間 </td><td> 寫在 11/18 凌晨 3:00 </td><td> 美東 11/18 14:00＝<b>台灣 11/19 03:00</b> </td><td> <b>日期差一天，已改正</b> </td></tr><tr><td> 新屋開工／營建許可 </td><td> 寫在 11/18，未寫鐘點 </td><td> 美東 11/18 08:30＝台灣 <b>11/18 21:30</b>（Census） </td><td> 已補台灣時間 </td></tr><tr><td> 初領失業金 </td><td> 寫在 11/19，未寫鐘點 </td><td> 勞工部週四慣例 08:30 ET＝台灣 <b>11/19 21:30</b> </td><td> 已補時間（慣例） </td></tr><tr><td> Walmart 財報 </td><td> 11/19 </td><td> 公司公告：11/19 美中 06:00 公布＝台灣 <b>20:00</b> </td><td> 已核對 </td></tr><tr><td> NVDA 財報 </td><td> 美東盤後＝台北 11/18 清晨 </td><td> 法說 14:00 PT＝台灣 <b>11/18 06:00</b>（NVIDIA 官方） </td><td> 一致，已補鐘點 </td></tr><tr><td> 部分官員偏鷹 </td><td> 有 </td><td> — </td><td> <b>晨報引用，未驗證</b> </td></tr><tr><td> 通膨黏滯 </td><td> 有 </td><td> 敘事，非新數據 </td><td> 標為晨報敘事 </td></tr><tr><td> 黃金近一年低點 </td><td> 有 </td><td> 敘事 </td><td> 標為晨報敘事 </td></tr><tr><td> BJ's Wholesale 等 11/20 </td><td> 有 </td><td> 時點未核到官方 </td><td> <b>晨報引用，未驗證</b>時點 </td></tr></tbody></table></div><div class="mcards"><article class="fincard"><h3> S&amp;P 500 </h3><div class="kv"><span> 晨報 </span><span class=""> 7,416.59／<span class="down">−1.92%</span> </span></div><div class="kv"><span> 查證值 </span><span class=""> 7,416.59／<span class="down">−1.92%</span>（<span class="down">−145.08</span>） </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 一致。Yahoo ^GSPC </span></div></article><article class="fincard"><h3> 道瓊 </h3><div class="kv"><span> 晨報 </span><span class=""> 51,608.17／<span class="down">−1.41%</span> </span></div><div class="kv"><span> 查證值 </span><span class=""> 51,608.17／<span class="down">−1.41%</span>（<span class="down">−739.38</span>） </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 一致。Yahoo ^DJI </span></div></article><article class="fincard"><h3> Nasdaq </h3><div class="kv"><span> 晨報 </span><span class=""> 24,509.76／<span class="down">−2.49%</span> </span></div><div class="kv"><span> 查證值 </span><span class=""> 24,509.76／<span class="down">−2.49%</span>（<span class="down">−626.51</span>） </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 一致。Yahoo ^IXIC </span></div></article><article class="fincard"><h3> 羅素 2000 </h3><div class="kv"><span> 晨報 </span><span class=""> 2,742.94／<span class="down">−1.70%</span> </span></div><div class="kv"><span> 查證值 </span><span class=""> 2,742.94／<span class="down">−1.70%</span> </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 一致。Yahoo ^RUT </span></div></article><article class="fincard"><h3> VIX </h3><div class="kv"><span> 晨報 </span><span class=""> 約 22.9（大幅上升） </span></div><div class="kv"><span> 查證值 </span><span class=""> <b>22.91／<span class="up">▲18.70%</b>（前日</span> 19.30） </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 圖用精確值。Yahoo ^VIX </span></div></article><article class="fincard"><h3> MOVE </h3><div class="kv"><span> 晨報 </span><span class=""> 未提 </span></div><div class="kv"><span> 查證值 </span><span class=""> <b>101.28／<span class="up">▲2.52%</b>（前日</span> 98.79） </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 補充。Yahoo ^MOVE </span></div></article><article class="fincard"><h3> 費半 ^SOX </h3><div class="kv"><span> 晨報 </span><span class=""> 未提 </span></div><div class="kv"><span> 查證值 </span><span class=""> <b>9,610.65／<span class="down">−5.28%</span></b> </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 補充。Yahoo ^SOX </span></div></article><article class="fincard"><h3> 10Y </h3><div class="kv"><span> 晨報 </span><span class=""> 約 5.12% </span></div><div class="kv"><span> 查證值 </span><span class=""> 財政部曲線 <b>5.12%</b>（前日 5.15%，<span class="down">▼3</span> bp）；Yahoo ^TNX 5.121 </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 一致。Treasury.gov </span></div></article><article class="fincard"><h3> 2Y </h3><div class="kv"><span> 晨報 </span><span class=""> 未提 </span></div><div class="kv"><span> 查證值 </span><span class=""> 財政部 <b>4.83%</b>（前日 4.88%，<span class="down">▼5</span> bp） </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 補充。Treasury.gov </span></div></article><article class="fincard"><h3> DXY </h3><div class="kv"><span> 晨報 </span><span class=""> 約 103.5 </span></div><div class="kv"><span> 查證值 </span><span class=""> <b>103.56／<span class="up">▲0.15%</b>（前日</span> 103.41） </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 大致一致，圖用 103.56。Yahoo DX-Y.NYB </span></div></article><article class="fincard"><h3> WTI </h3><div class="kv"><span> 晨報 </span><span class=""> 約 85；近日跌約 4% </span></div><div class="kv"><span> 查證值 </span><span class=""> 官方／Yahoo previousClose 結算 <b>$85.72（<span class="down">▼3.21%</span>，<span class="down">−$2.84</span>）</b>；前日結算 88.56。日K 量約 351 為薄量新盤，不用 85.25 </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 圖用結算價。新華社／FinancialJuice／Newsquawk：NYMEX Dec 結算 85.72。晨報「近日跌約 4%」為約數 </span></div></article><article class="fincard"><h3> Brent </h3><div class="kv"><span> 晨報 </span><span class=""> 未提 </span></div><div class="kv"><span> 查證值 </span><span class=""> 結算 <b>$92.44（<span class="down">▼3.55%</span>，<span class="down">−$3.40</span>）</b> </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 補充。Yahoo previousClose；新華社 </span></div></article><article class="fincard"><h3> 黃金 </h3><div class="kv"><span> 晨報 </span><span class=""> 約 3,830–3,860；近一年低點 </span></div><div class="kv"><span> 查證值 </span><span class=""> Yahoo previousClose <b>$3,853.0（<span class="down">▼0.86%</span>）</b>，落在區間。Morningstar Data Talk 另報 3,847.40 </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 圖用 previousClose。近一年低點為晨報敘事 </span></div></article><article class="fincard"><h3> NVDA </h3><div class="kv"><span> 晨報 </span><span class=""> 未提收盤；預估 EPS 2.47–2.49、營收約 1,085 億 </span></div><div class="kv"><span> 查證值 </span><span class=""> 收盤 <b>156.14（<span class="down">−4.12%</span>）</b>。多家預覽 EPS 約 2.47、營收約 1,087–1,088 億（TipRanks／Theta 等） </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 價位補充；預估為約數，圖註來源 </span></div></article><article class="fincard"><h3> TSM </h3><div class="kv"><span> 晨報 </span><span class=""> 未提 </span></div><div class="kv"><span> 查證值 </span><span class=""> <b>373.45（<span class="down">−6.34%</span>）</b> </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 補充。Yahoo TSM </span></div></article><article class="fincard"><h3> HD／DIS／WMT </h3><div class="kv"><span> 晨報 </span><span class=""> 未提價 </span></div><div class="kv"><span> 查證值 </span><span class=""> HD 347.51（<span class="down">−0.34%</span>）、DIS 118.70（<span class="down">−0.23%</span>）、WMT 128.41（<span class="up">+0.25%</span>） </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 補充。Yahoo </span></div></article><article class="fincard"><h3> FedWatch 12/9 </h3><div class="kv"><span> 晨報 </span><span class=""> 升 25bp 約 93–95%；50bp 約 5–7%；維持近乎零 </span></div><div class="kv"><span> 查證值 </span><span class=""> 升 25bp <b>97.9%</b>、50bp <b>2.1%</b>、維持 0%（前日 91.3%／8.7%） </span></div><div class="kv"><span> 結果與來源 </span><span class=""> <b>改用查證值</b>。Investing.com，台灣 11/17 07:12 讀取；頁面 Updated Nov 16 05:55PM EST </span></div></article><article class="fincard"><h3> Nvidia 領導層 </h3><div class="kv"><span> 晨報 </span><span class=""> 辭職事件持續發酵；Kress 暫代 CEO </span></div><div class="kv"><span> 查證值 </span><span class=""> 辭職與 Kress 臨時 CEO、Jones 董事長 </span></div><div class="kv"><span> 結果與來源 </span><span class=""> <b>已證實</b>（NVIDIA／SEC）。原因寫「因個人／治理相關因素」 </span></div></article><article class="fincard"><h3> Anthropic IPO </h3><div class="kv"><span> 晨報 </span><span class=""> 週三定價、週四 ANT 掛牌；70–78 美元；估值約 1.4 兆 </span></div><div class="kv"><span> 查證值 </span><span class=""> 區間、825 百萬股、代號 ANT 為 Anthropic 官方 11/10 公告；高檔估值約 1.40–1.41 兆大致相符。定價／掛牌日為 CNBC 等媒體預期，尚未見公司最終定價公告 </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 區間與代號已核對；時程標媒體預期 </span></div></article><article class="fincard"><h3> FOMC 會議紀錄台灣時間 </h3><div class="kv"><span> 晨報 </span><span class=""> 寫在 11/18 凌晨 3:00 </span></div><div class="kv"><span> 查證值 </span><span class=""> 美東 11/18 14:00＝<b>台灣 11/19 03:00</b> </span></div><div class="kv"><span> 結果與來源 </span><span class=""> <b>日期差一天，已改正</b> </span></div></article><article class="fincard"><h3> 新屋開工／營建許可 </h3><div class="kv"><span> 晨報 </span><span class=""> 寫在 11/18，未寫鐘點 </span></div><div class="kv"><span> 查證值 </span><span class=""> 美東 11/18 08:30＝台灣 <b>11/18 21:30</b>（Census） </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 已補台灣時間 </span></div></article><article class="fincard"><h3> 初領失業金 </h3><div class="kv"><span> 晨報 </span><span class=""> 寫在 11/19，未寫鐘點 </span></div><div class="kv"><span> 查證值 </span><span class=""> 勞工部週四慣例 08:30 ET＝台灣 <b>11/19 21:30</b> </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 已補時間（慣例） </span></div></article><article class="fincard"><h3> Walmart 財報 </h3><div class="kv"><span> 晨報 </span><span class=""> 11/19 </span></div><div class="kv"><span> 查證值 </span><span class=""> 公司公告：11/19 美中 06:00 公布＝台灣 <b>20:00</b> </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 已核對 </span></div></article><article class="fincard"><h3> NVDA 財報 </h3><div class="kv"><span> 晨報 </span><span class=""> 美東盤後＝台北 11/18 清晨 </span></div><div class="kv"><span> 查證值 </span><span class=""> 法說 14:00 PT＝台灣 <b>11/18 06:00</b>（NVIDIA 官方） </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 一致，已補鐘點 </span></div></article><article class="fincard"><h3> 部分官員偏鷹 </h3><div class="kv"><span> 晨報 </span><span class=""> 有 </span></div><div class="kv"><span> 查證值 </span><span class=""> — </span></div><div class="kv"><span> 結果與來源 </span><span class=""> <b>晨報引用，未驗證</b> </span></div></article><article class="fincard"><h3> 通膨黏滯 </h3><div class="kv"><span> 晨報 </span><span class=""> 有 </span></div><div class="kv"><span> 查證值 </span><span class=""> 敘事，非新數據 </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 標為晨報敘事 </span></div></article><article class="fincard"><h3> 黃金近一年低點 </h3><div class="kv"><span> 晨報 </span><span class=""> 有 </span></div><div class="kv"><span> 查證值 </span><span class=""> 敘事 </span></div><div class="kv"><span> 結果與來源 </span><span class=""> 標為晨報敘事 </span></div></article><article class="fincard"><h3> BJ's Wholesale 等 11/20 </h3><div class="kv"><span> 晨報 </span><span class=""> 有 </span></div><div class="kv"><span> 查證值 </span><span class=""> 時點未核到官方 </span></div><div class="kv"><span> 結果與來源 </span><span class=""> <b>晨報引用，未驗證</b>時點 </span></div></article></div>
+</section>
+
+<section class="section" id="chart">
+  <div class="head"><h2>資訊圖</h2><span>美股投資晨報 2026/11/17</span></div>
+  <article class="infobox card">
+    <img src="nan-us-morning-2026-11-17.png" alt="美股投資晨報資訊圖 2026/11/17（二）科技調整未止，關注利率與防禦輪動" width="1080" height="1920">
+    <p class="cap">美股投資晨報資訊圖｜2026/11/17（二）</p>
+  </article>
+</section>
+
+<section class="section" id="src">
+  <div class="head"><h2>來源</h2></div>
+  <article class="theme card">
+    <ul class="src-list">
+      <li>Nan 美股晨報（台北 11/17 06:39）</li>
+      <li>Yahoo Finance／yfinance（指數、VIX、MOVE、DXY、個股、板塊 ETF）；油／金結算用 previousClose</li>
+      <li>美國財政部 Treasury.gov 日線殖利率曲線（10Y 5.12%、2Y 4.83%；2026/11/16）</li>
+      <li>Investing.com Fed Rate Monitor（12/9、1/27；讀取台灣 2026/11/17 07:12）</li>
+      <li>普查局 Census：零售銷售 11/17 08:30 ET；新屋開工／營建許可 11/18 08:30 ET</li>
+      <li>NVIDIA 官方／SEC：辭職與任命；Q3 FY2027 財報 11/17 盤後、法說 14:00 PT</li>
+      <li>Anthropic 官方路演公告（2026/11/10）：區間、股數、代號 ANT</li>
+      <li>Walmart 公司公告：11/19 美中 06:00 公布財報</li>
+      <li>新華社／FinancialJuice／Newsquawk：WTI 結算 85.72、Brent 92.44</li>
+      <li>CNBC：Anthropic 預計定價／掛牌時程</li>
+      <li>多家財報預覽（TipRanks、Theta 等）：NVDA 共識約數</li>
+    </ul>
+  </article>
+</section>
+
+<footer class="footer">
+<b>來源：</b>Nan 美股晨報（台北 11/17 06:39）；Yahoo Finance／yfinance（指數、VIX、MOVE、DXY、個股、板塊 ETF）；油／金結算用 previousClose；美國財政部 Treasury.gov 日線殖利率曲線（10Y 5.12%、2Y 4.83%；2026/11/16）；Investing.com Fed Rate Monitor（12/9、1/27；讀取台灣 2026/11/17 07:12）；普查局 Census：零售銷售 11/17 08:30 ET；新屋開工／營建許可 11/18 08:30 ET；NVIDIA 官方／SEC：辭職與任命；Q3 FY2027 財報 11/17 盤後、法說 14:00 PT；Anthropic 官方路演公告（2026/11/10）：區間、股數、代號 ANT；Walmart 公司公告：11/19 美中 06:00 公布財報；新華社／FinancialJuice／Newsquawk：WTI 結算 85.72、Brent 92.44；CNBC：Anthropic 預計定價／掛牌時程；多家財報預覽（TipRanks、Theta 等）：NVDA 共識約數。<br>
+版面：小布（依小資 Nan 整理資訊圖）｜<b>僅供個人學習，非投資建議</b>
+</footer>
+</main>
+</body>
+</html>
