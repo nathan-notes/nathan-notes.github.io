@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f4f7fb">
+<title>凱基盤後分析 11/17｜台股上沖下洗，靜待輝達財報力守 40K</title>
+<style>
+
+
+
+
+:root{--ink:#10233f;--muted:#5b6b80;--line:#dfe7f1;--paper:#fff;--bg:#f4f7fb;--navy:#0d315e;--blue:#1f5d9c;--up:#c62828;--down:#087f5b;--amber:#b86100;--shadow:0 12px 36px rgba(16,35,63,.07)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.72;overflow-x:hidden}
+.page{width:min(1100px,100%);margin:auto;padding:24px 18px 56px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;box-shadow:0 7px 26px rgba(16,35,63,.045)}
+.up{color:var(--up)}.down{color:var(--down)}
+/* hero */
+.hero{padding:30px;background:linear-gradient(135deg,#fff 0%,#f5f8fc 65%,#e8f1fa 100%);position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.hero:after{content:"";position:absolute;width:350px;height:350px;border-radius:50%;right:-160px;top:-210px;background:radial-gradient(circle,rgba(198,40,40,.11),transparent 68%);pointer-events:none}
+.eyebrow{font-size:13px;color:var(--blue);font-weight:900;letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.14;letter-spacing:-.03em;margin:10px 0 6px}
+.date{color:var(--muted);font-size:15px;font-weight:750}.subtitle{margin:6px 0 0;font-size:16px;color:#33475f;font-weight:700}
+.thesis{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:19px;font-weight:850;line-height:1.6}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pill{display:inline-block;border-radius:999px;padding:6px 13px;font-weight:900;font-size:14px;border:1px solid var(--line);background:#fff;line-height:1.45}
+.pill.kgi{background:#eaf2fb;color:var(--blue);border-color:#cfe0f2}.pill.judge{background:#fff4e2;color:#8b4d06;border-color:#f0d8b6}
+/* nav */
+.nav{position:sticky;top:0;z-index:5;background:rgba(244,247,251,.94);backdrop-filter:blur(8px);margin:14px -18px 0;padding:10px 18px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line)}
+.nav::-webkit-scrollbar{display:none}.nav a{flex:none;font-size:14px;font-weight:800;color:var(--navy);text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+/* sections */
+.section{margin-top:30px;scroll-margin-top:64px}
+.head{display:flex;align-items:end;justify-content:space-between;gap:10px;margin:0 2px 12px}
+.head h2{margin:0;font-size:23px;line-height:1.3}.head span{font-size:14px;color:var(--muted);font-weight:700}
+.tag{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:2px 10px;margin-bottom:8px}
+.tag.fact{background:#eaf2fb;color:var(--blue)}.tag.judge{background:#fff1d9;color:#8b4d06}
+/* stat tiles */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.metric{padding:15px 14px;min-width:0}.metric small{display:block;font-size:14px;color:var(--muted);font-weight:850}
+.metric b{display:block;font-size:23px;line-height:1.25;margin-top:4px;font-variant-numeric:tabular-nums}
+.metric p{margin:5px 0 0;font-size:14px;color:#5b6b80;line-height:1.5}.metric p.up,.metric p.down{font-weight:800}
+/* list rows (MA / sectors) */
+.panel{padding:20px}.panel h3{margin:0 0 12px;font-size:19px}
+.rows{display:grid;gap:8px}.row{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;padding:11px 13px;border-radius:12px;background:#f8fafc;border:1px solid #edf1f6;font-size:16px}
+.row span:nth-child(2){font-variant-numeric:tabular-nums;font-weight:750}.row span:last-child{color:var(--muted);font-size:14px}
+.srow{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:17px}.srow:first-of-type{border-top:0}.srow b{font-variant-numeric:tabular-nums}
+/* boxes */
+.level,.caution{background:#fff8ed;border:1px solid #f0d8b6;border-radius:16px;padding:16px 18px;color:#664a2e;font-size:16px}
+.level{margin-top:12px}.caution h2{margin:0 0 8px;color:#8b4d06;font-size:21px}
+.caution ul,.plain ul{margin:0;padding-left:20px}.caution li,.plain li{margin:6px 0}
+.plain{padding:18px 18px}.plain p{margin:0}
+.theme{padding:18px}.theme h3{margin:0 0 6px;font-size:18px;color:var(--navy)}.theme p{margin:0;color:#33475f;font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.chip{border:1px solid var(--line);background:#f8fafc;border-radius:999px;padding:5px 11px;font-size:14px;font-weight:800;color:var(--blue)}
+.scenario{padding:20px}.scenario b{display:block;font-size:21px;margin-bottom:6px}.scenario p{font-size:16px;color:#33475f;margin:0}
+.scenario.s-down{border-top:5px solid var(--down)}.scenario.s-amber{border-top:5px solid var(--amber)}
+.event{padding:16px 18px}.event small{color:var(--muted);font-weight:850;font-size:14px}.event p{font-size:16px;color:#33475f;margin:4px 0 0}
+/* analyst judgment */
+.decision{padding:24px;background:linear-gradient(135deg,#0b2d56,#164c83);color:#fff;border:none}
+.decision h2{margin:0 0 4px;font-size:23px}.decision .badge{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:3px 11px;background:#ffd98a;color:#4a3000;margin-bottom:10px}
+.decision p{color:#e3edf8;font-size:16px;margin:0}.decision-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:15px}
+.decision-item{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);border-radius:14px;padding:15px}
+.decision-item small{display:block;color:#acd0f0;font-weight:900;font-size:14px;margin-bottom:3px}
+details.orig{margin-top:10px;font-size:15px;color:#33475f}details.orig summary{cursor:pointer;font-weight:800;color:var(--blue);font-size:14px}details.orig ul{padding-left:20px;margin:8px 0 0}details.orig li{margin:5px 0}
+.footer{margin-top:26px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:14px}
+@media(max-width:850px){.grid4{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:1fr}}
+@media(max-width:620px){.page{padding:12px 12px 42px}.nav{margin:12px -12px 0;padding:9px 12px}.hero{padding:22px 18px;border-radius:18px}.grid3,.decision-grid{grid-template-columns:1fr}.grid2,.grid4{gap:8px}.metric{padding:13px 12px}.metric b{font-size:21px}.panel,.scenario,.decision{padding:18px 16px}.head{align-items:start;flex-direction:column;gap:0}}
+.note{margin:10px 4px 0;font-size:15px;color:var(--muted)}
+@media(max-width:620px){.grid2.stack{grid-template-columns:1fr}}
+
+.keylv{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}
+.kl{padding:16px 14px;border-radius:18px;border:2px solid var(--line);background:#fff;min-width:0}
+.kl small{display:block;font-size:14px;font-weight:900;color:var(--muted)}
+.kl b{display:block;font-size:28px;line-height:1.2;margin:4px 0 2px;font-variant-numeric:tabular-nums;color:var(--navy)}
+.kl p{margin:0;font-size:14.5px;color:#33475f;line-height:1.5}
+.kl .lab{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:2px 10px;margin-bottom:6px}
+.kl.res{border-color:#f2b8b8;background:#fff6f6}.kl.res .lab{background:#fde3e3;color:var(--up)}
+.kl.ma{border-color:#f0d8b6;background:#fff8ed}.kl.ma .lab{background:#fff1d9;color:#8b4d06}
+.kl.sup{border-color:#b9e2d3;background:#f2fbf7}.kl.sup .lab{background:#dcf3ea;color:var(--down)}
+.kl.mid{border-color:#cfe0f2;background:#f5f9fd}.kl.mid .lab{background:#eaf2fb;color:var(--blue)}
+.keybox{padding:18px;margin-top:14px;border:2px solid #f0d8b6;background:#fffdf8}
+.keybox h2{margin:0 0 4px;font-size:21px;color:var(--navy)}
+.theme p+p,.theme ul{margin-top:8px}.theme .tag{margin-bottom:6px}
+.theme ul{margin:8px 0 0;padding-left:22px}.theme li{margin:7px 0;line-height:1.7}
+.stack3{display:grid;gap:12px}
+.decision ul{margin:8px 0 0;padding-left:20px;color:#e3edf8;font-size:16.5px}.decision li{margin:10px 0;line-height:1.7}
+.footer{font-size:15px;line-height:1.75}
+.metric b .up{color:var(--up)}.metric b .down{color:var(--down)}
+.metric p.down,.row span.down{color:var(--down);font-weight:800}.metric p.up,.row span.up{color:var(--up);font-weight:800}
+.amber{background:#fff8ed;border:1px solid #f0d8b6;border-radius:16px;padding:16px 18px;color:#664a2e;font-size:16px;margin-top:12px}
+.amber b{color:#8b4d06}
+.amber ul{margin:8px 0 0;padding-left:20px}
+.amber li{margin:6px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.chip{border:1px solid var(--line);background:#f8fafc;border-radius:999px;padding:5px 11px;font-size:14px;font-weight:800;color:var(--blue)}
+.warn{margin-top:12px;background:#fff8ed;border:2px solid #f0b45a;border-left:7px solid #e08a00;border-radius:14px;padding:14px 16px}
+.warn h2{margin:4px 0 8px;font-size:20px;color:#6b3d00}
+.warn ul{margin:8px 0 0;padding-left:22px;color:#5c3b00;font-size:16.5px;line-height:1.7}
+.warn li{margin:8px 0}
+.warn .wtag{display:inline-block;font-size:13.5px;font-weight:900;border-radius:999px;padding:2px 10px;background:#ffe2b0;color:#6b3d00;margin-bottom:6px}
+.tbl{max-width:100%;overflow-x:hidden;border-radius:16px;border:1px solid var(--line);background:#fff;margin-top:6px}
+.tbl table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:16px;line-height:1.6}
+.tbl th{background:var(--navy);color:#fff;text-align:left;font-weight:900;padding:10px 10px;font-size:14px}
+.tbl td{padding:11px 10px;border-top:1px solid var(--line);vertical-align:top;color:#33475f;overflow-wrap:anywhere;word-break:break-word}
+.tbl td:first-child{font-weight:850;color:var(--ink)}
+.tbl tr:nth-child(even) td{background:#f8fafc}
+.mcards{display:none;gap:10px;margin-top:10px}
+.fincard{padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.fincard h3{margin:0 0 8px;font-size:17px;color:var(--navy)}
+.fincard .kv{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-top:1px solid var(--line);font-size:15.5px}
+.fincard .kv:first-of-type{border-top:0}
+.fincard .kv span:last-child{font-variant-numeric:tabular-nums;font-weight:750;text-align:right}
+.head h2{overflow-wrap:anywhere;max-width:100%}
+.subtitle{margin:6px 0 0;font-size:18px;color:#33475f;font-weight:800;line-height:1.5}
+*{overflow-wrap:anywhere}
+@media(max-width:620px){
+  .keylv{grid-template-columns:1fr}.kl b{font-size:30px}
+  .mtable{display:none !important}
+  .mcards{display:grid}
+}
+
+
+.claim{display:inline-block;background:#fff1d9;color:#6b3d00;border:1px solid #f0d8b6;border-radius:999px;padding:3px 10px;font-size:13.5px;font-weight:900;line-height:1.5;margin:4px 0}
+.claim-block{background:#fff8ed;border:2px solid #f0b45a;border-left:7px solid #e08a00;border-radius:14px;padding:10px 14px;margin:10px 0 0;color:#6b3d00;font-size:15.5px;font-weight:800;line-height:1.65}
+.warn{margin-top:12px;background:#fff8ed;border:2px solid #f0b45a;border-left:7px solid #e08a00;border-radius:14px;padding:14px 16px}
+.warn .wtag{display:inline-block;font-size:13.5px;font-weight:900;border-radius:999px;padding:2px 10px;background:#ffe2b0;color:#6b3d00;margin-bottom:6px}
+.warn h2{margin:4px 0 8px;font-size:20px;color:#6b3d00}
+.warn ul{margin:8px 0 0;padding-left:22px;color:#5c3b00;font-size:16.5px;line-height:1.7}
+.warn li{margin:8px 0}
+
+
+
+.nav{flex-wrap:wrap;overflow-x:hidden;justify-content:flex-start}
+*{overflow-wrap:anywhere}
+
+
+
+.nav, .page .nav{
+  position:static;
+  top:auto;
+  z-index:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+  margin:12px 0 16px;
+  padding:0;
+  background:transparent;
+  backdrop-filter:none;
+  border-bottom:0;
+  overflow:visible;
+  flex-wrap:unset;
+}
+.nav a, .page .nav a{
+  display:block;
+  width:100%;
+  box-sizing:border-box;
+  flex:none;
+  font-size:13px;
+  font-weight:800;
+  color:var(--navy);
+  text-decoration:none;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:6px 10px;
+  text-align:center;
+  line-height:1.35;
+  overflow-wrap:anywhere;
+}
+.warn, .note{
+  display:block;
+  width:100%;
+  box-sizing:border-box;
+  margin:10px 0 0;
+  border-radius:14px;
+  padding:12px 14px;
+  font-size:16.5px;
+  line-height:1.7;
+  font-weight:750;
+}
+.warn{
+  background:#fff8ed;
+  border:2px solid #f0b45a;
+  border-left:7px solid #e08a00;
+  color:#5c3b00;
+}
+.note{
+  background:#eef5fb;
+  border:2px solid #c5d8ee;
+  border-left:7px solid var(--blue);
+  color:#1e3a5f;
+}
+.triggers{display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px}
+.trigger{padding:18px 16px;border-radius:18px;border:2px solid var(--line);background:#fff;min-width:0}
+.trigger.sup{border-color:#b9e2d3;background:#f2fbf7}
+.trigger.res{border-color:#f2b8b8;background:#fff6f6}
+.trigger p{margin:0;font-size:17px;line-height:1.7;color:#33475f;font-weight:750}
+.theme p+p{margin-top:8px}
+.theme ul,.decision ul{margin:8px 0 0;padding-left:22px}
+.theme li{margin:8px 0;line-height:1.7;font-size:16.5px;color:#33475f}
+.decision{padding:22px 20px}
+.decision p,.decision li{color:#e3edf8}
+.decision li{margin:10px 0;line-height:1.7}
+.decision .badge{display:inline-block;font-size:13px;font-weight:900;border-radius:999px;padding:3px 11px;background:#ffd98a;color:#4a3000;margin-bottom:10px}
+.footer{font-size:15px;line-height:1.75}
+.head h2{overflow-wrap:anywhere;max-width:100%}
+.section{scroll-margin-top:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chip{border:1px solid var(--line);background:#f8fafc;border-radius:999px;padding:5px 11px;font-size:14px;font-weight:800;color:var(--blue)}
+*{overflow-wrap:anywhere}
+.tbl{max-width:100%;overflow-x:hidden}
+.mcards{display:none;gap:10px;margin-top:10px}
+@media(max-width:720px){
+  .mtable{display:none !important}
+  .mcards{display:grid}
+  .fincard .kv{flex-direction:column;gap:2px}
+  .fincard .kv span:first-child{flex:none}
+  .fincard .kv span:last-child{text-align:left}
+}
+@media(max-width:620px){
+  .grid2,.grid3,.grid4,.keylv{grid-template-columns:1fr}
+  .nav, .page .nav{margin:12px 0 16px;padding:0}
+}
+
+
+</style>
+</head>
+<body>
+<main class="page">
+
+<header class="hero card">
+  <h1>凱基盤後分析 11/17｜台股上沖下洗，靜待輝達財報力守 40K</h1>
+  <div class="thesis"><b>一句話結論</b><br>週一費半和台積電 ADR 都重挫超過 5%。今天台股盤中震幅近 1,800 點，收盤大跌近千點，勉強守住 4 萬點。凱基認為趨勢仍偏空，也還沒看到止跌訊號，下檔支撐先看年線。AI 供應鏈仍是重災區，營造、成衣、航空等傳產和金融股相對強勢。</div>
+  <div class="grid2" style="margin-top:16px">
+    <article class="metric card"><small>加權指數</small> <b>40,092.11</b><p class="down">−947.97 點</p></article>
+    <article class="metric card"><small>盤中區間</small> <b>39,786／41,533</b><p> 震幅近 1,800 點</p></article>
+    <article class="metric card"><small>成交量</small> <b>9,617.95 億</b><p> 增加</p></article>
+    <article class="metric card"><small>櫃買指數</small> <b>306.61</b><p class="down">−12.51 點（−3.92%）</p><p> 留下向下跳空缺口</p></article>
+    <article class="metric card"><small>櫃買成交</small> <b>1,786.89 億</b><p> 略增</p></article>
+  </div>
+</header>
+<nav class="nav" aria-label="頁面導覽">
+  <a href="#market">一、台股盤勢重點</a>
+  <a href="#stocks">二、個股與產業重點</a>
+  <a href="#intl">三、國際盤</a>
+  <a href="#watch">四、明日觀察重點與風險</a>
+  <a href="#buyside">Buy side 的判斷</a>
+</nav>
+
+<section class="section" id="market">
+  <div class="head"><h2>一、台股盤勢重點</h2></div>
+  <div class="tbl card mtable"><table><thead><tr><th> 項目 </th><th> 數據 </th></tr></thead><tbody><tr><td> 加權指數 </td><td> 40,092.11，<span class="down">−947.97</span> 點 </td></tr><tr><td> 盤中區間 </td><td> 低 39,786／高 41,533（震幅近 1,800 點） </td></tr><tr><td> 成交量 </td><td> 9,617.95 億（增加） </td></tr><tr><td> 櫃買指數 </td><td> 306.61，<span class="down">−12.51</span> 點（<span class="down">−3.92%</span>），留下向下跳空缺口 </td></tr><tr><td> 櫃買成交 </td><td> 1,786.89 億（略增） </td></tr></tbody></table></div><div class="mcards"><article class="fincard"><h3> 加權指數 </h3><div class="kv"><span> 數據 </span><span class=""> 40,092.11，<span class="down">−947.97</span> 點 </span></div></article><article class="fincard"><h3> 盤中區間 </h3><div class="kv"><span> 數據 </span><span class=""> 低 39,786／高 41,533（震幅近 1,800 點） </span></div></article><article class="fincard"><h3> 成交量 </h3><div class="kv"><span> 數據 </span><span class=""> 9,617.95 億（增加） </span></div></article><article class="fincard"><h3> 櫃買指數 </h3><div class="kv"><span> 數據 </span><span class=""> 306.61，<span class="down">−12.51</span> 點（<span class="down">−3.92%</span>），留下向下跳空缺口 </span></div></article><article class="fincard"><h3> 櫃買成交 </h3><div class="kv"><span> 數據 </span><span class=""> 1,786.89 億（略增） </span></div></article></div>
+  <article class="theme card" style="margin-top:12px">
+  <ul>
+    <li>走勢：開低後一度跌破 4 萬點，隨後翻紅，但買盤沒有延續，午後賣壓湧出。</li>
+    <li>強勢類股：食品 <span class="up">+0.48%</span>、建材營造 <span class="up">+0.23%</span>。</li>
+    <li>弱勢類股：玻璃陶瓷 <span class="down">−9.34%</span>、電機機械 <span class="down">−3.17%</span>、塑膠 <span class="down">−2.93%</span>。</li>
+    <li>技術面：短期均線、月線、季線和半年線都已下彎，KD 也出現死亡交叉，上方均線壓力重。支撐先看年線，報告沒有寫出具體點位。</li>
+    <li>報告沒有提供三大法人買賣超，也沒有台指期和選擇權的籌碼數據。</li>
+  </ul>
+  </article>
+</section>
+
+<section class="section" id="stocks">
+  <div class="head"><h2>二、個股與產業重點</h2></div>
+  <article class="theme card">
+  <p><b>電子權值股：都在 5 日線之下，不利指數反彈</b></p>
+  <ul>
+    <li>台積電 2330：碰到 10 日線壓力，留下長上影線。</li>
+    <li>鴻海 2317：11/6 和 11/16 都出現約 8 萬張的大量。今天（11/17）逆勢上漲，守住大量 K 棒的低點，短線有機會止跌。</li>
+    <li>聯發科 2454：守住 10 日線，但在月線遇壓留下上影線。要站回所有均線，才有機會打出雙底的第二隻腳。</li>
+    <li>日月光投控 3711、台達電 2308：都留下向下跳空缺口，表現最弱。</li>
+  </ul>
+  <p><b>金融</b></p>
+  <ul>
+    <li>金融保險指數在季線附近帶量收長下影線，短線支撐先看今天（11/17）低點。</li>
+    <li>中信金 2891、兆豐金 2886 最強，站在所有均線之上，有機會沿著 5 日線走高。</li>
+  </ul>
+  <p><b>強勢傳產：都在所有均線之上，電子股回穩前還有上漲空間</b></p>
+  <ul>
+    <li>中鼎 9933、儒鴻 1476、聚陽 1477、長榮航 2618、華航 2610。</li>
+  </ul>
+  <p><b>有反彈機會的電子股：帶量收紅，且沒有向下跳空缺口</b></p>
+  <ul>
+    <li>合勤控 3704、啟碁 6285、原相 3227、巨有科技 8227、萊德光電-KY 7717、世芯-KY 3661、眾達-KY 4977、群聯 8299。</li>
+  </ul>
+  <p><b>建議暫時避開：受黃仁勳事件影響的 AI 供應鏈，只要跌破前低或出現向下跳空缺口就避開</b></p>
+  <ul>
+    <li>銅箔基板、PCB、IC 基板、砷化鎵、探針卡、散熱。</li>
+  </ul>
+  </article>
+</section>
+
+<section class="section" id="intl">
+  <div class="head"><h2>三、國際盤</h2></div>
+  <article class="theme card">
+  <ul>
+    <li>報告只提到週一費半與台積電 ADR 跌幅超過 5%，以及輝達即將公布財報，沒有另外分析日股或美股。</li>
+  </ul>
+  </article>
+</section>
+
+<section class="section" id="watch">
+  <div class="head"><h2>四、明日觀察重點與風險</h2></div>
+  <article class="theme card">
+  <ul>
+    <li>短線最大的事件風險是輝達財報，結果會決定 AI 供應鏈能不能止血。</li>
+    <li>4 萬點整數關卡和年線支撐守不守得住。</li>
+    <li>櫃買的向下缺口會不會回補，以及 AI 供應鏈會不會再跌破前低。</li>
+    <li>金融股能不能守住今天的低點。</li>
+  </ul>
+  </article>
+</section>
+
+<section class="section decision card" id="buyside">
+  <h2>Buy side 的判斷（觀點，非凱基報告內容）</h2>
+  <ul>
+    <li>指數盤中跌破 4 萬點後拉高約 1,750 點，又被賣回來，代表買方還不願意在財報前承擔風險。輝達財報前，不建議追價，也不建議逢低攤平電子股。可以先把資金放在中信金、兆豐金和強勢傳產避險，持股水位保守一點。</li>
+    <li>櫃買跌 3.92% 還留下缺口，明顯比加權指數弱，中小型 AI 供應鏈的去槓桿可能還沒結束。就算財報符合預期，也要先確認缺口有回補，再考慮把部位加回來。</li>
+    <li>凱基這份沒有法人和期貨籌碼，明天要另外確認外資期貨空單和現貨賣超有沒有擴大，再判斷年線支撐靠不靠得住。</li>
+  </ul>
+</section>
+
+<footer class="footer">
+資料來源：凱基盤後分析 2026/11/17，僅供參考，不構成投資建議。
+</footer>
+</main>
+</body>
+</html>
