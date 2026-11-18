@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#10233f">
+<title>凱基盤後分析｜2026/11/18（週三）大幅震盪力守年線　台股醞釀跌深反彈</title>
+<style>
+/* chatgpt-site-style v2
+   Learned from neocloud-buyside-20261117 (chatgpt.site) typography and palette.
+   Original v1 left untouched at chatgpt-site-style.css.
+
+   Adopted: cool page bg, dark navy hero, soft status tints, fact/inference
+   callouts, stronger section grouping, slightly wider page, amber with
+   better contrast (#9a6700 on #fff8e6).
+
+   Kept: our usual up/down price colors (do not switch to the reference
+   status red/green). Body 17px for phone readability (reference was
+   implicit 16px, with 14px / 12px secondary). Non-sticky 2-column nav.
+   Full-width block amber boxes. Tables as cards at ≤720px, no page-level
+   sideways scroll. Labels stay ≥15px. Footer matches body at 17px, color #334155.
+*/
+:root{
+  --ink:#172033;
+  --muted:#64748b;
+  --muted-strong:#475569;
+  --line:#dce4ee;
+  --paper:#fff;
+  --bg:#eef3f8;
+  --navy:#11233f;
+  --blue:#2457a6;
+  --up:#c62828;
+  --down:#087f5b;
+  --amber:#9a6700;
+  --soft-red:#fff1f0;
+  --soft-amber:#fff8e6;
+  --soft-blue:#edf5ff;
+  --soft-green:#edf9f2;
+  --hero-1:#10233f;
+  --hero-2:#1f4f87;
+  --hero-accent:#77b5ff;
+  --card-tint:#fbfdff;
+  --shadow:0 8px 24px rgba(31,54,86,.06);
+  --shadow-hero:0 18px 45px rgba(17,35,63,.18);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",Arial,sans-serif;font-size:17px;line-height:1.7;overflow-x:hidden}
+.page{width:min(1180px,100%);margin:auto;padding:28px 20px 54px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+.up{color:var(--up)}.down{color:var(--down)}
+
+/* hero: dark navy, white type, translucent thesis rail */
+.hero{padding:34px 36px;background:linear-gradient(135deg,var(--hero-1) 0%,var(--hero-2) 100%);color:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow-hero);border:none;border-radius:22px}
+.hero:after{content:"";position:absolute;width:330px;height:330px;border-radius:50%;right:-90px;top:-110px;background:rgba(255,255,255,.07);pointer-events:none}
+.eyebrow,.kicker{position:relative;z-index:1;font-size:15px;color:#fff;font-weight:700;letter-spacing:.13em;text-transform:uppercase;opacity:.78}
+h1{position:relative;z-index:1;font-size:clamp(28px,4vw,44px);line-height:1.15;letter-spacing:-.02em;margin:8px 0 14px;color:#fff}
+.hero h1{color:#fff}
+.date,.meta{position:relative;z-index:1;color:#fff;font-size:15px;font-weight:650;opacity:.9}
+.subtitle{position:relative;z-index:1;margin:6px 0 0;font-size:16px;color:#fff;font-weight:700;opacity:.92;line-height:1.5}
+.thesis{position:relative;z-index:1;margin-top:18px;padding:13px 16px;border-left:4px solid var(--hero-accent);background:rgba(255,255,255,.1);border-radius:8px;font-size:18px;font-weight:700;line-height:1.65;color:#fff}
+.pills{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pill{display:inline-block;border-radius:999px;padding:6px 13px;font-weight:800;font-size:15px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.12);color:#fff;line-height:1.45}
+.pill.kgi{background:rgba(237,245,255,.18);color:#fff;border-color:rgba(119,181,255,.45)}
+.pill.judge{background:rgba(255,248,230,.16);color:#fff;border-color:rgba(255,217,138,.4)}
+
+/* nav: non-sticky, compact 2-column pills */
+.nav, .page .nav{
+  position:static;
+  top:auto;
+  z-index:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+  margin:14px 0 8px;
+  padding:0;
+  background:transparent;
+  backdrop-filter:none;
+  border-bottom:0;
+  overflow:visible;
+  flex-wrap:unset;
+}
+.nav a, .page .nav a{
+  display:block;
+  width:100%;
+  box-sizing:border-box;
+  flex:none;
+  font-size:15px;
+  font-weight:800;
+  color:var(--navy);
+  text-decoration:none;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:7px 10px;
+  text-align:center;
+  line-height:1.35;
+  overflow-wrap:anywhere;
+}
+
+/* sections */
+.section{margin-top:22px;scroll-margin-top:12px}
+.head{display:flex;align-items:end;justify-content:space-between;gap:10px;margin:0 2px 12px}
+.head h2{margin:0;font-size:22px;line-height:1.3;color:var(--navy);overflow-wrap:anywhere;max-width:100%}
+.head span{font-size:15px;color:var(--muted);font-weight:700}
+h2{margin:0 0 16px;color:var(--navy);font-size:22px}
+h3{margin:0 0 8px;font-size:18px;color:var(--navy)}
+.tag{display:inline-block;font-size:15px;font-weight:800;border-radius:999px;padding:3px 10px;margin-bottom:8px}
+.tag.fact{background:var(--soft-blue);color:var(--blue)}
+.tag.judge{background:var(--soft-amber);color:var(--amber)}
+
+/* status flags (minimum 15px) */
+.flag{display:inline-block;margin-bottom:8px;padding:4px 9px;border-radius:999px;font-size:15px;font-weight:800;line-height:1.4}
+.flag.bad{background:var(--soft-red);color:var(--up)}
+.flag.watch{background:var(--soft-amber);color:var(--amber)}
+.flag.better{background:var(--soft-green);color:var(--down)}
+
+/* stat tiles */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.metric{padding:16px 16px;min-width:0;background:var(--card-tint)}
+.metric small{display:block;font-size:15px;color:var(--muted);font-weight:800}
+.metric b{display:block;font-size:23px;line-height:1.25;margin-top:4px;font-variant-numeric:tabular-nums;color:var(--navy)}
+.metric p{margin:5px 0 0;font-size:15px;color:var(--muted);line-height:1.5}
+.metric p.up,.metric p.down,.metric p .up,.metric p .down{font-weight:800}
+.metric p.up,.metric p .up{color:var(--up)}
+.metric p.down,.metric p .down{color:var(--down)}
+
+/* list rows */
+.panel{padding:20px;background:var(--card-tint)}
+.panel h3{margin:0 0 12px;font-size:19px}
+.rows{display:grid;gap:8px}
+.row{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;padding:11px 13px;border-radius:12px;background:#f8fafc;border:1px solid var(--line);font-size:16px}
+.row span:nth-child(2){font-variant-numeric:tabular-nums;font-weight:750}
+.row span:last-child{color:var(--muted);font-size:15px}
+.srow{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:17px}
+.srow:first-of-type{border-top:0}
+.srow b{font-variant-numeric:tabular-nums}
+
+/* cards / themes / events */
+.theme{padding:18px;background:var(--card-tint)}
+.theme h3{margin:0 0 6px;font-size:18px;color:var(--navy)}
+.theme p{margin:0;color:#334155;font-size:16.5px;line-height:1.7}
+.theme p+p{margin-top:8px}
+.theme ul{margin:8px 0 0;padding-left:22px}
+.theme li{margin:8px 0;line-height:1.7;font-size:16.5px;color:#334155}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chip{border:1px solid var(--line);background:#f8fafc;border-radius:999px;padding:5px 11px;font-size:15px;font-weight:800;color:var(--blue)}
+.scenario{padding:18px;background:var(--card-tint)}
+.scenario b{display:block;font-size:20px;margin-bottom:6px;color:var(--navy)}
+.scenario p{font-size:16px;color:#334155;margin:0;line-height:1.7}
+.scenario.s-down{border-top:5px solid var(--down)}
+.scenario.s-amber{border-top:5px solid var(--amber)}
+.scenario.s-up{border-top:5px solid var(--up)}
+.event{padding:16px 18px}
+.event small{color:var(--muted);font-weight:800;font-size:15px}
+.event p{font-size:16.5px;color:#334155;margin:4px 0 0;line-height:1.7}
+
+/* fact / inference callouts (full-width blocks, never inline) */
+.callout, .callout-fact, .callout-infer, .warn, .note{
+  display:block;
+  width:100%;
+  box-sizing:border-box;
+  margin:10px 0 0;
+  border-radius:12px;
+  padding:12px 14px;
+  font-size:16px;
+  line-height:1.7;
+  font-weight:650;
+}
+.callout-fact, .callout.fact{background:var(--soft-blue);border:1px solid #d7e6f8;color:var(--navy)}
+.callout-infer, .callout.infer{background:#f6f7f9;border:1px solid var(--line);color:#334155}
+
+/* amber caution: full-width block, higher-contrast amber than v1 */
+.warn, .caution, .level{
+  display:block;
+  width:100%;
+  box-sizing:border-box;
+  background:var(--soft-amber);
+  border:2px solid #ecd7a3;
+  border-left:7px solid var(--amber);
+  border-radius:14px;
+  padding:14px 16px;
+  color:#5c3b00;
+  font-size:16.5px;
+  line-height:1.7;
+  font-weight:750;
+  margin:10px 0 0;
+}
+.caution h2,.warn h2{margin:0 0 8px;color:var(--amber);font-size:20px}
+.caution ul,.warn ul,.plain ul{margin:8px 0 0;padding-left:22px}
+.caution li,.warn li,.plain li{margin:8px 0}
+.plain{padding:18px}.plain p{margin:0}
+.note{background:var(--soft-blue);border:1px solid #d7e6f8;border-left:7px solid var(--blue);color:#1e3a5f;font-weight:650}
+
+/* judgment box: same navy family as the hero, not a second palette */
+.decision{padding:24px 22px;background:linear-gradient(135deg,var(--hero-1),var(--hero-2));color:#fff;border:none;box-shadow:var(--shadow-hero)}
+.decision h2{margin:0 0 8px;font-size:22px;color:#fff}
+.decision .badge{display:inline-block;font-size:15px;font-weight:800;border-radius:999px;padding:3px 11px;background:#ffd98a;color:#4a3000;margin-bottom:10px}
+.decision p,.decision li{color:#e8eef6;font-size:16.5px;margin:0;line-height:1.7}
+.decision ul{margin:8px 0 0;padding-left:22px;color:#e8eef6}
+.decision li{margin:10px 0}
+.decision-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:15px}
+.decision-item{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);border-radius:14px;padding:15px}
+.decision-item small{display:block;color:#acd0f0;font-weight:800;font-size:15px;margin-bottom:3px}
+
+details.orig{margin-top:10px;font-size:15px;color:#334155}
+details.orig summary{cursor:pointer;font-weight:800;color:var(--blue);font-size:15px}
+details.orig ul{padding-left:20px;margin:8px 0 0}
+details.orig li{margin:5px 0}
+
+.footer{margin-top:26px;border-top:1px solid var(--line);padding-top:16px;color:#334155;font-size:17px;line-height:1.7}
+
+/* tables: desktop table + mobile cards; never min-width that forces page scroll */
+.tbl{max-width:100%;overflow-x:hidden}
+.tbl table{width:100%;border-collapse:collapse;font-size:15.5px}
+.tbl th{background:var(--navy);color:#fff;text-align:left;padding:11px 13px;font-weight:800}
+.tbl td{padding:11px 13px;border-bottom:1px solid var(--line);vertical-align:top;color:#334155;overflow-wrap:anywhere;word-break:break-word}
+.tbl tr:nth-child(even) td{background:#f8fafc}
+.tbl td:first-child{font-weight:750;color:var(--ink)}
+.mcards{display:none;gap:10px;margin-top:10px}
+.fincard{padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.fincard h3{margin:0 0 8px;font-size:17px;color:var(--navy)}
+.fincard .kv{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-top:1px solid var(--line);font-size:15.5px}
+.fincard .kv:first-of-type{border-top:0}
+.fincard .kv span:last-child{font-variant-numeric:tabular-nums;font-weight:750;text-align:right}
+
+*{overflow-wrap:anywhere}
+
+@media(max-width:850px){
+  .grid4{grid-template-columns:repeat(2,1fr)}
+  .grid3{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .mtable{display:none !important}
+  .mcards{display:grid}
+  .fincard .kv{flex-direction:column;gap:2px}
+  .fincard .kv span:first-child{flex:none}
+  .fincard .kv span:last-child{text-align:left}
+}
+@media(max-width:620px){
+  .page{padding:18px 12px 38px}
+  .hero{padding:26px 20px;border-radius:20px}
+  h1,.hero h1{font-size:clamp(26px,8vw,34px)}
+  .grid2,.grid3,.grid4,.decision-grid{grid-template-columns:1fr}
+  .grid2,.grid4{gap:10px}
+  .metric{padding:14px 14px}
+  .metric b{font-size:21px}
+  .panel,.scenario,.decision{padding:18px 16px}
+  .head{align-items:start;flex-direction:column;gap:0}
+  .nav, .page .nav{margin:14px 0 8px;padding:0}
+}
+
+</style>
+</head>
+<body>
+<main class="page">
+
+<header class="hero card">
+  <h1>凱基盤後分析｜2026/11/18（週三）大幅震盪力守年線　台股醞釀跌深反彈</h1>
+  <div class="thesis"><b>一句話結論</b><br>輝達財報帶動開高 846 點後翻黑，盤中最多跌 831 點，收盤小漲 102.80 點並守住年線；但外資賣超 765.64 億元，利多出來還在賣。凱基認為年線附近有機會短線止跌反彈，上檔壓力在 5／10 日均線。</div>
+  <div class="grid2" style="margin-top:16px">
+    <article class="metric card"><small>加權指數</small> <b>40,194.91</b><p class="up">+102.80（+0.26%）</p></article>
+    <article class="metric card"><small>盤中區間</small> <b>40,938／39,260</b><p> 最高 40,938、最低 39,260</p></article>
+    <article class="metric card"><small>成交金額</small> <b>1.03 兆元</b></article>
+    <article class="metric card"><small>櫃買指數</small> <b>307.55</b><p class="up">+0.94（+0.31%）</p><p> 成交金額 2,175.60 億元</p></article>
+    <article class="metric card"><small>台指期</small> <b>40,025</b><p class="up">+14</p></article>
+    <article class="metric card"><small>240 日（年線）</small> <b>39,322.41</b><p> ↑</p></article>
+  </div>
+</header>
+<nav class="nav" aria-label="頁面導覽">
+  <a href="#market">盤勢與籌碼</a>
+  <a href="#futures">期貨近月</a>
+  <a href="#inst">三大法人</a>
+  <a href="#tech">技術指標</a>
+  <a href="#stocks">個股／族群</a>
+  <a href="#intl">日股／美股</a>
+  <a href="#watch">明日觀察</a>
+  <a href="#buyside">Buy side 的判斷</a>
+</nav>
+
+<section class="section" id="market">
+  <div class="head"><h2>盤勢與籌碼（PDF 表頭數據）</h2></div>
+  <div class="tbl card mtable"><table><thead><tr><th> 項目 </th><th> 數據 </th></tr></thead><tbody><tr><td> 加權指數 </td><td> 40,194.91，<span class="up">+102.80</span>（<span class="up">+0.26%</span>） </td></tr><tr><td> 盤中區間 </td><td> 最高 40,938、最低 39,260 </td></tr><tr><td> 成交金額 </td><td> 1.03 兆元 </td></tr><tr><td> 櫃買指數 </td><td> 307.55，<span class="up">+0.94</span>（<span class="up">+0.31%</span>） </td></tr><tr><td> 櫃買成交 </td><td> 2,175.60 億元 </td></tr></tbody></table></div><div class="mcards"><article class="fincard"><h3> 加權指數 </h3><div class="kv"><span> 數據 </span><span class=""> 40,194.91，<span class="up">+102.80</span>（<span class="up">+0.26%</span>） </span></div></article><article class="fincard"><h3> 盤中區間 </h3><div class="kv"><span> 數據 </span><span class=""> 最高 40,938、最低 39,260 </span></div></article><article class="fincard"><h3> 成交金額 </h3><div class="kv"><span> 數據 </span><span class=""> 1.03 兆元 </span></div></article><article class="fincard"><h3> 櫃買指數 </h3><div class="kv"><span> 數據 </span><span class=""> 307.55，<span class="up">+0.94</span>（<span class="up">+0.31%</span>） </span></div></article><article class="fincard"><h3> 櫃買成交 </h3><div class="kv"><span> 數據 </span><span class=""> 2,175.60 億元 </span></div></article></div>
+  <article class="theme card" style="margin-top:12px">
+    <ul>
+      <li>加權指數：40,194.91，<span class="up">+102.80</span>（<span class="up">+0.26%</span>）；盤中最高 40,938、最低 39,260；成交金額 1.03 兆元</li>
+      <li>櫃買指數：307.55，<span class="up">+0.94</span>（<span class="up">+0.31%</span>）；成交金額 2,175.60 億元</li>
+    </ul>
+    <div class="callout-fact">強勢類股：汽車 <span class="up">+1.14%</span>、電子 <span class="up">+0.88%</span>、鋼鐵 <span class="up">+0.45%</span>；弱勢：玻璃陶瓷 <span class="down">−5.27%</span>、塑膠 <span class="down">−3.26%</span>、金融保險 <span class="down">−3.22%</span></div>
+    <p>連兩天放量大幅震盪：週三盤中逾 1,600 點、週二逾 1,700 點</p>
+  </article>
+</section>
+
+<section class="section" id="futures">
+  <div class="head"><h2>期貨近月（報告列示漲跌）</h2></div>
+  <article class="theme card" style="margin-bottom:12px">
+    <p>期貨近月（報告列示漲跌）：台指期 40,025（<span class="up">+14</span>）、電子期 2,453.8（<span class="up">+13.75</span>）、金融期 3,488.9（<span class="down">−116.15</span>）、富台指 3,444.5（<span class="up">+24.5</span>）</p>
+  </article>
+  <div class="tbl card mtable"><table><thead><tr><th> 商品 </th><th> 收盤 </th><th> 漲跌 </th></tr></thead><tbody><tr><td> 台指期 </td><td> 40,025 </td><td class="up"> <span class="up">+14</span> </td></tr><tr><td> 電子期 </td><td> 2,453.8 </td><td class="up"> <span class="up">+13.75</span> </td></tr><tr><td> 金融期 </td><td> 3,488.9 </td><td class="down"> <span class="down">−116.15</span> </td></tr><tr><td> 富台指 </td><td> 3,444.5 </td><td class="up"> <span class="up">+24.5</span> </td></tr></tbody></table></div><div class="mcards"><article class="fincard"><h3> 台指期 </h3><div class="kv"><span> 收盤 </span><span class=""> 40,025 </span></div><div class="kv"><span> 漲跌 </span><span class="up"> <span class="up">+14</span> </span></div></article><article class="fincard"><h3> 電子期 </h3><div class="kv"><span> 收盤 </span><span class=""> 2,453.8 </span></div><div class="kv"><span> 漲跌 </span><span class="up"> <span class="up">+13.75</span> </span></div></article><article class="fincard"><h3> 金融期 </h3><div class="kv"><span> 收盤 </span><span class=""> 3,488.9 </span></div><div class="kv"><span> 漲跌 </span><span class="down"> <span class="down">−116.15</span> </span></div></article><article class="fincard"><h3> 富台指 </h3><div class="kv"><span> 收盤 </span><span class=""> 3,444.5 </span></div><div class="kv"><span> 漲跌 </span><span class="up"> <span class="up">+24.5</span> </span></div></article></div>
+</section>
+
+<section class="section" id="inst">
+  <div class="head"><h2>三大法人</h2></div>
+  <article class="theme card" style="margin-bottom:12px">
+    <p>三大法人：外資 <span class="down">−765.64</span> 億元、投信 <span class="up">+175.58</span> 億元、自營商 <span class="down">−42.02</span> 億元；合計約 <span class="down">−632.08</span> 億元（自行加總；不含盤後及鉅額）</p>
+  </article>
+  <div class="tbl card mtable"><table><thead><tr><th> 法人 </th><th> 金額 </th></tr></thead><tbody><tr><td> 外資 </td><td class="down"> <span class="down">−765.64</span> 億元 </td></tr><tr><td> 投信 </td><td class="up"> <span class="up">+175.58</span> 億元 </td></tr><tr><td> 自營商 </td><td class="down"> <span class="down">−42.02</span> 億元 </td></tr><tr><td> 合計 </td><td class="down"> 約 <span class="down">−632.08</span> 億元（自行加總；不含盤後及鉅額） </td></tr></tbody></table></div><div class="mcards"><article class="fincard"><h3> 外資 </h3><div class="kv"><span> 金額 </span><span class="down"> <span class="down">−765.64</span> 億元 </span></div></article><article class="fincard"><h3> 投信 </h3><div class="kv"><span> 金額 </span><span class="up"> <span class="up">+175.58</span> 億元 </span></div></article><article class="fincard"><h3> 自營商 </h3><div class="kv"><span> 金額 </span><span class="down"> <span class="down">−42.02</span> 億元 </span></div></article><article class="fincard"><h3> 合計 </h3><div class="kv"><span> 金額 </span><span class="down"> 約 <span class="down">−632.08</span> 億元（自行加總；不含盤後及鉅額） </span></div></article></div>
+</section>
+
+<section class="section" id="tech">
+  <div class="head"><h2>技術指標</h2></div>
+  <article class="theme card" style="margin-bottom:12px">
+    <ul>
+      <li>KD：K 45.88、D 49.86（K &lt; D）</li>
+      <li>RSI：5 日 30.45、10 日 33.53</li>
+      <li>MACD：DIF <span class="down">−1,507.64</span>、MACD <span class="down">−1,261.11</span>、柱狀體 <span class="down">−246.53</span>（前一日 <span class="down">−194.57</span>）</li>
+      <li>均線：5 日 41,618.82↓、10 日 41,800.12↓、20 日 43,655.60↓、60 日 45,972.55↓、120 日 45,392.26↓、240 日（年線）39,322.41↑</li>
+      <li>成交比重：電子 74.53%、塑膠 3.74%、金融保險 3.25%</li>
+    </ul>
+  </article>
+  <div class="tbl card mtable"><table><thead><tr><th> 指標 </th><th> 數值 </th></tr></thead><tbody><tr><td> KD </td><td> K 45.88、D 49.86（K &lt; D） </td></tr><tr><td> RSI </td><td> 5 日 30.45、10 日 33.53 </td></tr><tr><td> MACD </td><td> DIF <span class="down">−1,507.64</span>、MACD <span class="down">−1,261.11</span>、柱狀體 <span class="down">−246.53</span>（前一日 <span class="down">−194.57</span>） </td></tr></tbody></table></div><div class="mcards"><article class="fincard"><h3> KD </h3><div class="kv"><span> 數值 </span><span class=""> K 45.88、D 49.86（K &lt; D） </span></div></article><article class="fincard"><h3> RSI </h3><div class="kv"><span> 數值 </span><span class=""> 5 日 30.45、10 日 33.53 </span></div></article><article class="fincard"><h3> MACD </h3><div class="kv"><span> 數值 </span><span class=""> DIF <span class="down">−1,507.64</span>、MACD <span class="down">−1,261.11</span>、柱狀體 <span class="down">−246.53</span>（前一日 <span class="down">−194.57</span>） </span></div></article></div>
+  <div style="margin-top:12px"><div class="tbl card mtable"><table><thead><tr><th> 均線 </th><th> 點位 </th><th> 方向 </th></tr></thead><tbody><tr><td> 5 日 </td><td> 41,618.82 </td><td> ↓ </td></tr><tr><td> 10 日 </td><td> 41,800.12 </td><td> ↓ </td></tr><tr><td> 20 日 </td><td> 43,655.60 </td><td> ↓ </td></tr><tr><td> 60 日 </td><td> 45,972.55 </td><td> ↓ </td></tr><tr><td> 120 日 </td><td> 45,392.26 </td><td> ↓ </td></tr><tr><td> 240 日（年線） </td><td> 39,322.41 </td><td> ↑ </td></tr></tbody></table></div><div class="mcards"><article class="fincard"><h3> 5 日 </h3><div class="kv"><span> 點位 </span><span class=""> 41,618.82 </span></div><div class="kv"><span> 方向 </span><span class=""> ↓ </span></div></article><article class="fincard"><h3> 10 日 </h3><div class="kv"><span> 點位 </span><span class=""> 41,800.12 </span></div><div class="kv"><span> 方向 </span><span class=""> ↓ </span></div></article><article class="fincard"><h3> 20 日 </h3><div class="kv"><span> 點位 </span><span class=""> 43,655.60 </span></div><div class="kv"><span> 方向 </span><span class=""> ↓ </span></div></article><article class="fincard"><h3> 60 日 </h3><div class="kv"><span> 點位 </span><span class=""> 45,972.55 </span></div><div class="kv"><span> 方向 </span><span class=""> ↓ </span></div></article><article class="fincard"><h3> 120 日 </h3><div class="kv"><span> 點位 </span><span class=""> 45,392.26 </span></div><div class="kv"><span> 方向 </span><span class=""> ↓ </span></div></article><article class="fincard"><h3> 240 日（年線） </h3><div class="kv"><span> 點位 </span><span class=""> 39,322.41 </span></div><div class="kv"><span> 方向 </span><span class=""> ↑ </span></div></article></div></div>
+</section>
+
+<section class="section" id="stocks">
+  <div class="head"><h2>個股／族群（報告未給目標價或進出場價位）</h2></div>
+  <div class="grid2">
+    <article class="scenario card s-amber">
+      <span class="flag watch">AI 概念股跌深反彈</span>
+      <b>AI 概念股跌深反彈</b>
+      <ul>
+        <li>AI 概念股跌深反彈：測試介面、玻纖布、銅箔基板、載板、散熱；旺矽(6223)、富喬(1815)、欣興(3037)、景碩(3189)、健策(3653)、奇鋐(3017) 收紅；景碩、健策在年線附近帶大量收下影紅 K。報告也說賣壓仍然沈重。</li>
+      </ul>
+    </article>
+    <article class="scenario card s-amber">
+      <span class="flag watch">權值護盤</span>
+      <b>權值護盤</b>
+      <ul>
+        <li>權值護盤：台積電(2330)、聯發科(2454)、日月光投控(3711)，看能否守住平盤。</li>
+      </ul>
+    </article>
+    <article class="scenario card s-down">
+      <span class="flag better">相對強勢</span>
+      <b>相對強勢</b>
+      <ul>
+        <li>相對強勢：設計 IP、高階 PCB、工業電腦——世芯-KY(3661)、智原(3035)、定穎投控(3715)、健鼎(3044)、研華(2395)、研揚(6579)。</li>
+      </ul>
+    </article>
+    <article class="scenario card s-amber">
+      <span class="flag watch">金融股區間操作</span>
+      <b>金融股區間操作</b>
+      <ul>
+        <li>金融股區間操作：富邦金(2881)、國泰金(2882)、中信金(2891)。</li>
+      </ul>
+    </article>
+  </div>
+  <article class="scenario card s-down" style="margin-top:12px">
+    <span class="flag better">貨櫃股抗跌</span>
+    <b>貨櫃股抗跌</b>
+    <ul>
+      <li>貨櫃股抗跌：長榮(2603)、陽明(2609)、萬海(2615)。</li>
+    </ul>
+  </article>
+</section>
+
+<section class="section" id="intl">
+  <div class="head"><h2>日股／美股</h2></div>
+  <article class="theme card">
+    <div class="callout-fact">報告只提到輝達財報優於預期、盤後上漲，沒有其他日股、美股內容。</div>
+  </article>
+</section>
+
+<section class="section" id="watch">
+  <div class="head"><h2>明日觀察</h2></div>
+  <article class="theme card">
+  <ul>
+    <li>年線約 39,322 能否守住（今天盤中低點 39,260 曾短暫跌破）</li>
+    <li>能否站回 5／10 日均線（41,600–41,800）</li>
+    <li>外資賣超是否收斂</li>
+    <li>台積電、聯發科、日月光投控能否守住平盤</li>
+  </ul>
+  </article>
+</section>
+
+<section class="section decision card" id="buyside">
+  <h2>Buy side 的判斷</h2>
+  <ul>
+    <li>籌碼比盤面更值得注意：輝達利多當天外資賣超 765 億元，是前一天 381 億元的兩倍；金融期大跌 116 點，對得上金融股 <span class="down">−3.22%</span>。投信逆勢買超 176 億元比較像作帳或護盤，不足以抵銷外資。</li>
+    <li>守年線是必要條件但不夠：要外資賣超收斂，而且放量站回 41,800（10 日線）才算止跌；MACD 柱狀體還在擴大，不像 V 型反轉。</li>
+    <li>跌深反彈只適合小部位短線，停損參考年線 39,322，不追高；設計 IP、高階 PCB 等拉回分批；金融股短期不加碼，貨櫃股可當防禦部位。僅為建議，不下單。</li>
+  </ul>
+</section>
+
+<footer class="footer">
+資料來源：凱基盤後分析 2026/11/18（含 PDF 附件），僅供參考，非投資建議。
+</footer>
+</main>
+</body>
+</html>
