@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#10233f">
+<title>11/19 M平方上櫃融資維持率跌到 139.59%</title>
+<style>
+/* chatgpt-site-style v2
+   Learned from neocloud-buyside-20261117 (chatgpt.site) typography and palette.
+   Original v1 left untouched at chatgpt-site-style.css.
+
+   Adopted: cool page bg, dark navy hero, soft status tints, fact/inference
+   callouts, stronger section grouping, slightly wider page, amber with
+   better contrast (#9a6700 on #fff8e6).
+
+   Kept: our usual up/down price colors (do not switch to the reference
+   status red/green). Body 17px for phone readability (reference was
+   implicit 16px, with 14px / 12px secondary). Non-sticky 2-column nav.
+   Full-width block amber boxes. Tables as cards at ≤720px, no page-level
+   sideways scroll. Labels stay ≥15px. Footer matches body at 17px, color #334155.
+*/
+:root{
+  --ink:#172033;
+  --muted:#64748b;
+  --muted-strong:#475569;
+  --line:#dce4ee;
+  --paper:#fff;
+  --bg:#eef3f8;
+  --navy:#11233f;
+  --blue:#2457a6;
+  --up:#c62828;
+  --down:#087f5b;
+  --amber:#9a6700;
+  --soft-red:#fff1f0;
+  --soft-amber:#fff8e6;
+  --soft-blue:#edf5ff;
+  --soft-green:#edf9f2;
+  --hero-1:#10233f;
+  --hero-2:#1f4f87;
+  --hero-accent:#77b5ff;
+  --card-tint:#fbfdff;
+  --shadow:0 8px 24px rgba(31,54,86,.06);
+  --shadow-hero:0 18px 45px rgba(17,35,63,.18);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",Arial,sans-serif;font-size:17px;line-height:1.7;overflow-x:hidden}
+.page{width:min(1180px,100%);margin:auto;padding:28px 20px 54px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+.up{color:var(--up)}.down{color:var(--down)}
+
+/* hero: dark navy, white type, translucent thesis rail */
+.hero{padding:34px 36px;background:linear-gradient(135deg,var(--hero-1) 0%,var(--hero-2) 100%);color:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow-hero);border:none;border-radius:22px}
+.hero:after{content:"";position:absolute;width:330px;height:330px;border-radius:50%;right:-90px;top:-110px;background:rgba(255,255,255,.07);pointer-events:none}
+.eyebrow,.kicker{position:relative;z-index:1;font-size:15px;color:#fff;font-weight:700;letter-spacing:.13em;text-transform:uppercase;opacity:.78}
+h1{position:relative;z-index:1;font-size:clamp(28px,4vw,44px);line-height:1.15;letter-spacing:-.02em;margin:8px 0 14px;color:#fff}
+.hero h1{color:#fff}
+.date,.meta{position:relative;z-index:1;color:#fff;font-size:15px;font-weight:650;opacity:.9}
+.subtitle{position:relative;z-index:1;margin:6px 0 0;font-size:16px;color:#fff;font-weight:700;opacity:.92;line-height:1.5}
+.thesis{position:relative;z-index:1;margin-top:18px;padding:13px 16px;border-left:4px solid var(--hero-accent);background:rgba(255,255,255,.1);border-radius:8px;font-size:18px;font-weight:700;line-height:1.65;color:#fff}
+.pills{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pill{display:inline-block;border-radius:999px;padding:6px 13px;font-weight:800;font-size:15px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.12);color:#fff;line-height:1.45}
+.pill.kgi{background:rgba(237,245,255,.18);color:#fff;border-color:rgba(119,181,255,.45)}
+.pill.judge{background:rgba(255,248,230,.16);color:#fff;border-color:rgba(255,217,138,.4)}
+
+/* nav: non-sticky, compact 2-column pills */
+.nav, .page .nav{
+  position:static;
+  top:auto;
+  z-index:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+  margin:14px 0 8px;
+  padding:0;
+  background:transparent;
+  backdrop-filter:none;
+  border-bottom:0;
+  overflow:visible;
+  flex-wrap:unset;
+}
+.nav a, .page .nav a{
+  display:block;
+  width:100%;
+  box-sizing:border-box;
+  flex:none;
+  font-size:15px;
+  font-weight:800;
+  color:var(--navy);
+  text-decoration:none;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:7px 10px;
+  text-align:center;
+  line-height:1.35;
+  overflow-wrap:anywhere;
+}
+
+/* sections */
+.section{margin-top:22px;scroll-margin-top:12px}
+.head{display:flex;align-items:end;justify-content:space-between;gap:10px;margin:0 2px 12px}
+.head h2{margin:0;font-size:22px;line-height:1.3;color:var(--navy);overflow-wrap:anywhere;max-width:100%}
+.head span{font-size:15px;color:var(--muted);font-weight:700}
+h2{margin:0 0 16px;color:var(--navy);font-size:22px}
+h3{margin:0 0 8px;font-size:18px;color:var(--navy)}
+.tag{display:inline-block;font-size:15px;font-weight:800;border-radius:999px;padding:3px 10px;margin-bottom:8px}
+.tag.fact{background:var(--soft-blue);color:var(--blue)}
+.tag.judge{background:var(--soft-amber);color:var(--amber)}
+
+/* status flags (minimum 15px) */
+.flag{display:inline-block;margin-bottom:8px;padding:4px 9px;border-radius:999px;font-size:15px;font-weight:800;line-height:1.4}
+.flag.bad{background:var(--soft-red);color:var(--up)}
+.flag.watch{background:var(--soft-amber);color:var(--amber)}
+.flag.better{background:var(--soft-green);color:var(--down)}
+
+/* stat tiles */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.metric{padding:16px 16px;min-width:0;background:var(--card-tint)}
+.metric small{display:block;font-size:15px;color:var(--muted);font-weight:800}
+.metric b{display:block;font-size:23px;line-height:1.25;margin-top:4px;font-variant-numeric:tabular-nums;color:var(--navy)}
+.metric p{margin:5px 0 0;font-size:15px;color:var(--muted);line-height:1.5}
+.metric p.up,.metric p.down,.metric p .up,.metric p .down{font-weight:800}
+.metric p.up,.metric p .up{color:var(--up)}
+.metric p.down,.metric p .down{color:var(--down)}
+
+/* list rows */
+.panel{padding:20px;background:var(--card-tint)}
+.panel h3{margin:0 0 12px;font-size:19px}
+.rows{display:grid;gap:8px}
+.row{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;padding:11px 13px;border-radius:12px;background:#f8fafc;border:1px solid var(--line);font-size:16px}
+.row span:nth-child(2){font-variant-numeric:tabular-nums;font-weight:750}
+.row span:last-child{color:var(--muted);font-size:15px}
+.srow{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--line);font-size:17px}
+.srow:first-of-type{border-top:0}
+.srow b{font-variant-numeric:tabular-nums}
+
+/* cards / themes / events */
+.theme{padding:18px;background:var(--card-tint)}
+.theme h3{margin:0 0 6px;font-size:18px;color:var(--navy)}
+.theme p{margin:0;color:#334155;font-size:16.5px;line-height:1.7}
+.theme p+p{margin-top:8px}
+.theme ul{margin:8px 0 0;padding-left:22px}
+.theme li{margin:8px 0;line-height:1.7;font-size:16.5px;color:#334155}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chip{border:1px solid var(--line);background:#f8fafc;border-radius:999px;padding:5px 11px;font-size:15px;font-weight:800;color:var(--blue)}
+.scenario{padding:18px;background:var(--card-tint)}
+.scenario b{display:block;font-size:20px;margin-bottom:6px;color:var(--navy)}
+.scenario p{font-size:16px;color:#334155;margin:0;line-height:1.7}
+.scenario.s-down{border-top:5px solid var(--down)}
+.scenario.s-amber{border-top:5px solid var(--amber)}
+.scenario.s-up{border-top:5px solid var(--up)}
+.event{padding:16px 18px}
+.event small{color:var(--muted);font-weight:800;font-size:15px}
+.event p{font-size:16.5px;color:#334155;margin:4px 0 0;line-height:1.7}
+
+/* fact / inference callouts (full-width blocks, never inline) */
+.callout, .callout-fact, .callout-infer, .warn, .note{
+  display:block;
+  width:100%;
+  box-sizing:border-box;
+  margin:10px 0 0;
+  border-radius:12px;
+  padding:12px 14px;
+  font-size:16px;
+  line-height:1.7;
+  font-weight:650;
+}
+.callout-fact, .callout.fact{background:var(--soft-blue);border:1px solid #d7e6f8;color:var(--navy)}
+.callout-infer, .callout.infer{background:#f6f7f9;border:1px solid var(--line);color:#334155}
+
+/* amber caution: full-width block, higher-contrast amber than v1 */
+.warn, .caution, .level{
+  display:block;
+  width:100%;
+  box-sizing:border-box;
+  background:var(--soft-amber);
+  border:2px solid #ecd7a3;
+  border-left:7px solid var(--amber);
+  border-radius:14px;
+  padding:14px 16px;
+  color:#5c3b00;
+  font-size:16.5px;
+  line-height:1.7;
+  font-weight:750;
+  margin:10px 0 0;
+}
+.caution h2,.warn h2{margin:0 0 8px;color:var(--amber);font-size:20px}
+.caution ul,.warn ul,.plain ul{margin:8px 0 0;padding-left:22px}
+.caution li,.warn li,.plain li{margin:8px 0}
+.plain{padding:18px}.plain p{margin:0}
+.note{background:var(--soft-blue);border:1px solid #d7e6f8;border-left:7px solid var(--blue);color:#1e3a5f;font-weight:650}
+
+/* judgment box: same navy family as the hero, not a second palette */
+.decision{padding:24px 22px;background:linear-gradient(135deg,var(--hero-1),var(--hero-2));color:#fff;border:none;box-shadow:var(--shadow-hero)}
+.decision h2{margin:0 0 8px;font-size:22px;color:#fff}
+.decision .badge{display:inline-block;font-size:15px;font-weight:800;border-radius:999px;padding:3px 11px;background:#ffd98a;color:#4a3000;margin-bottom:10px}
+.decision p,.decision li{color:#e8eef6;font-size:16.5px;margin:0;line-height:1.7}
+.decision ul{margin:8px 0 0;padding-left:22px;color:#e8eef6}
+.decision li{margin:10px 0}
+.decision-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:15px}
+.decision-item{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);border-radius:14px;padding:15px}
+.decision-item small{display:block;color:#acd0f0;font-weight:800;font-size:15px;margin-bottom:3px}
+
+details.orig{margin-top:10px;font-size:15px;color:#334155}
+details.orig summary{cursor:pointer;font-weight:800;color:var(--blue);font-size:15px}
+details.orig ul{padding-left:20px;margin:8px 0 0}
+details.orig li{margin:5px 0}
+
+.footer{margin-top:26px;border-top:1px solid var(--line);padding-top:16px;color:#334155;font-size:17px;line-height:1.7}
+
+/* tables: desktop table + mobile cards; never min-width that forces page scroll */
+.tbl{max-width:100%;overflow-x:hidden}
+.tbl table{width:100%;border-collapse:collapse;font-size:15.5px}
+.tbl th{background:var(--navy);color:#fff;text-align:left;padding:11px 13px;font-weight:800}
+.tbl td{padding:11px 13px;border-bottom:1px solid var(--line);vertical-align:top;color:#334155;overflow-wrap:anywhere;word-break:break-word}
+.tbl tr:nth-child(even) td{background:#f8fafc}
+.tbl td:first-child{font-weight:750;color:var(--ink)}
+.mcards{display:none;gap:10px;margin-top:10px}
+.fincard{padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.fincard h3{margin:0 0 8px;font-size:17px;color:var(--navy)}
+.fincard .kv{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-top:1px solid var(--line);font-size:15.5px}
+.fincard .kv:first-of-type{border-top:0}
+.fincard .kv span:last-child{font-variant-numeric:tabular-nums;font-weight:750;text-align:right}
+
+*{overflow-wrap:anywhere}
+
+@media(max-width:850px){
+  .grid4{grid-template-columns:repeat(2,1fr)}
+  .grid3{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .mtable{display:none !important}
+  .mcards{display:grid}
+  .fincard .kv{flex-direction:column;gap:2px}
+  .fincard .kv span:first-child{flex:none}
+  .fincard .kv span:last-child{text-align:left}
+}
+@media(max-width:620px){
+  .page{padding:18px 12px 38px}
+  .hero{padding:26px 20px;border-radius:20px}
+  h1,.hero h1{font-size:clamp(26px,8vw,34px)}
+  .grid2,.grid3,.grid4,.decision-grid{grid-template-columns:1fr}
+  .grid2,.grid4{gap:10px}
+  .metric{padding:14px 14px}
+  .metric b{font-size:21px}
+  .panel,.scenario,.decision{padding:18px 16px}
+  .head{align-items:start;flex-direction:column;gap:0}
+  .nav, .page .nav{margin:14px 0 8px;padding:0}
+}
+
+
+.alert-red{
+  border:2px solid var(--up);
+  background:var(--soft-red);
+  border-radius:16px;
+  padding:16px 16px 14px;
+  animation:alert-pulse 1.8s ease-in-out infinite;
+}
+.alert-red .alert-kicker{
+  display:block;font-size:15px;font-weight:800;color:var(--up);margin-bottom:6px;
+}
+.alert-orange{
+  border:2px solid #c05621;
+  background:#fff4e8;
+  border-radius:16px;
+  padding:16px 16px 14px;
+}
+.alert-orange .alert-kicker{
+  display:block;font-size:15px;font-weight:800;color:#9a4e14;margin-bottom:6px;
+}
+.alert-neutral{
+  border:1px solid var(--line);
+  background:var(--paper);
+  border-radius:16px;
+  padding:16px 16px 14px;
+}
+@keyframes alert-pulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(198,40,40,.4)}
+  50%{box-shadow:0 0 0 8px rgba(198,40,40,0)}
+}
+@media (prefers-reduced-motion:reduce){
+  .alert-red{animation:none}
+}
+.gauge{margin-top:12px}
+.gauge-track{
+  position:relative;height:18px;border-radius:999px;
+  background:#e8eef4;overflow:visible;max-width:100%;
+}
+.gauge-fill{
+  height:100%;border-radius:999px;min-width:0;
+}
+.gauge-fill.is-below{background:var(--up)}
+.gauge-fill.is-watch{background:#c05621}
+.gauge-fill.is-ok{background:#3d6ea8}
+.gauge-threshold{
+  position:absolute;top:-5px;bottom:-5px;width:2px;background:#111827;
+  transform:translateX(-1px);
+}
+.gauge-threshold>span{
+  position:absolute;left:50%;top:100%;transform:translate(-50%,4px);
+  font-size:15px;font-weight:800;color:#111827;white-space:nowrap;
+}
+.note-split{
+  margin:14px 0;padding:14px 16px;border-radius:14px;
+  background:var(--soft-blue);border:1px solid #d7e6f8;
+  font-size:16px;line-height:1.7;color:#1e3a5f;font-weight:650;
+}
+.srclink{font-size:15px;line-height:1.7;overflow-wrap:anywhere;word-break:break-word}
+.srclink a{color:var(--blue);font-weight:700}
+.footer a{color:var(--blue);font-weight:700;overflow-wrap:anywhere;word-break:break-word}
+
+</style>
+</head>
+<body>
+<main class="page">
+
+<header class="hero card">
+  <h1>11/19 M平方上櫃融資維持率跌到 139.59%</h1>
+  <div class="thesis"><b>標題：</b><br>11/19 M平方上櫃融資維持率跌到 139.59%，是這波第一次跌破 140%。不過 140% 門檻看的是上市櫃合計，合計值是 145.96%，還沒跌破。證交所官方維持率是 156.18%，比 11/18 少 6.98 個百分點。</div>
+  <div class="grid3" style="margin-top:16px">
+    <article class="metric card alert-red"><small>M平方 上櫃</small> <b style="color:var(--up)">139.59%</b><p style="color:var(--up)">已低於 140%</p></article>
+    <article class="metric card alert-orange"><small>M平方 上市櫃合計</small> <b>145.96%</b><p>還沒跌破 140%</p></article>
+    <article class="metric card"><small>證交所官方 全市場</small> <b>156.18%</b><p>比 11/18 少 6.98 個百分點</p></article>
+  </div>
+</header>
+<nav class="nav" aria-label="頁面導覽">
+  <a href="#official">官方版</a>
+  <a href="#mm">M平方版</a>
+  <a href="#view">小台的初步判斷</a>
+</nav>
+
+<div class="note-split">兩個版本計算方式不同，分開列示，不互相比較。</div>
+
+<section class="section" id="official">
+  <div class="head"><h2>官方版</h2></div>
+  <article class="theme card">
+    <p>官方版（證交所全市場擔保維持率，整戶、融資融券合併，資料日 11/19，來源 <span class="srclink"><a href="https://wwwc.twse.com.tw/dashboard/zh/credit/margin.html">https://wwwc.twse.com.tw/dashboard/zh/credit/margin.html</a></span>）</p>
+    <ul>
+      <li>全市場：156.18%，前一交易日是 163.16%。</li>
+      <li>追繳：2,947 戶、29.64 億元，前一日是 719 戶、1.07 億元。</li>
+      <li>處分：520 戶、9.18 億元，前一日是 72 戶、2.20 億元。</li>
+      <li>個人是否被追繳，以券商通知為準。</li>
+    </ul>
+  </article>
+</section>
+
+<section class="section" id="mm">
+  <div class="head"><h2>M平方版</h2></div>
+  <p>M平方版（台灣-大盤融資維持率含 ETF，資料日 11/19，來源 <span class="srclink"><a href="https://www.macromicro.me/series/91339/taiwan-taiex-maintenance-margin-including-etfs-listed-and-otc">https://www.macromicro.me/series/91339/taiwan-taiex-maintenance-margin-including-etfs-listed-and-otc</a></span>）</p>
+
+  <article class="alert-orange card" style="margin-top:12px">
+    <span class="alert-kicker">上市櫃合計 145.96%</span>
+    <p>上市櫃合計：145.96%，前一日是 154.41%，下降 8.45 個百分點。</p>
+    <p>合計值離 140% 只剩約 6 個百分點</p>
+    <div class="gauge" role="img" aria-label="145.96% ，140%">
+  <div class="gauge-track">
+    <div class="gauge-fill is-watch" style="width:64.900%"></div>
+    <span class="gauge-threshold" style="left:50%"><span>140%</span></span>
+  </div>
+</div>
+  </article>
+
+  <article class="alert-neutral card" style="margin-top:12px">
+    <p>上市：147.90%，前一日是 156.22%，下降 8.32 個百分點。</p>
+    <div class="gauge" role="img" aria-label="147.9% ，140%">
+  <div class="gauge-track">
+    <div class="gauge-fill is-ok" style="width:69.750%"></div>
+    <span class="gauge-threshold" style="left:50%"><span>140%</span></span>
+  </div>
+</div>
+  </article>
+
+  <article class="alert-red card" style="margin-top:12px">
+    <span class="alert-kicker">⚠️ 上櫃 139.59% 已低於 140%</span>
+    <p>上櫃：139.59%，前一日是 148.58%，下降 8.99 個百分點，已低於 140%。</p>
+    <div class="gauge" role="img" aria-label="139.59% ，140%">
+  <div class="gauge-track">
+    <div class="gauge-fill is-below" style="width:48.975%"></div>
+    <span class="gauge-threshold" style="left:50%"><span>140%</span></span>
+  </div>
+</div>
+  </article>
+</section>
+
+<section class="section decision card" id="view">
+  <h2>小台的初步判斷</h2>
+  <ul>
+    <li>追繳金額單日從 1.07 億跳到 29.64 億，放大將近 28 倍，是這波最大的一天。強制賣壓正在集中出現，接下來兩三天，處分金額通常還會隨著追繳期限放大。</li>
+    <li>合計值離 140% 只剩約 6 個百分點，再跌一兩天就可能跌破。即使跌破，也要等合計回到 140% 以上才算落底候選訊號，而且還要同時看到融資減幅收斂、指數守住前低、外資賣超收斂、台幣止穩。</li>
+    <li>策略：現在還是「不接刀」。如果之後條件成立，才考慮用 10–20% 的小部位試單，停損設在前低。</li>
+  </ul>
+</section>
+
+<footer class="footer">
+<p>兩個版本計算方式不同，分開列示，不互相比較。台北時間約 21:30 查詢。</p>
+<p class="srclink">證交所：<a href="https://wwwc.twse.com.tw/dashboard/zh/credit/margin.html">https://wwwc.twse.com.tw/dashboard/zh/credit/margin.html</a></p>
+<p class="srclink">M平方：<a href="https://www.macromicro.me/series/91339/taiwan-taiex-maintenance-margin-including-etfs-listed-and-otc">https://www.macromicro.me/series/91339/taiwan-taiex-maintenance-margin-including-etfs-listed-and-otc</a></p>
+<p>僅為策略建議，非下單指示</p>
+</footer>
+</main>
+</body>
+</html>
